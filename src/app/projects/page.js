@@ -16,37 +16,13 @@ var response;
 var nodes = [];
 var titles = [];
 
-async function addData(object)
-{
-    //nodes.push(object);
-
-    for (let i = 0; i < titles.length; i++) {
-
-        const res = await octokit.request('GET /repos/{owner}/{repo}/properties/values', {
-          owner: 'ibm-client-engineering',
-          repo: titles[i],
-          headers: {
-            'X-GitHub-Api-Version': '2022-11-28'
-          }
-        })
-
-        for (let j = 0; j < res.data.length; j++)
-          if (res.data[j].property_name == 'Title')
-          {
-            // replace name with title if custom prop exists
-            nodes[i].name = res.data[j].value;
-            continue;        
-          }
-    }
-}
-
 function ProjectsPage() {
   const [repoData, setRepoData] = useState([]);
 
   useEffect(() => {
     async function getGitHubRepos() {
       var result;
-      response = await fetch('https://api.github.com/graphql', {
+      const res = await fetch('https://api.github.com/graphql', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -83,41 +59,56 @@ function ProjectsPage() {
       }),
     })
     .then((res) => res.json())
-    .then(data => {
-      result = data;
+    .then(data => {result = data;
     })
-    .then(async () => {
-      var obj = result.data.search.edges;
-      let i=0;
+    .then(async() => {
+
+    var obj = result.data.search.edges;
+    let i=0;
 
     // only save the ones that have a homepageUrl
     for (const [key, value] of Object.entries(obj)) {
-        var homepageUrl = value.node.homepageUrl;
-        var repoTopics = value.node.repositoryTopics;
+      var homepageUrl = value.node.homepageUrl;
+      var repoTopics = value.node.repositoryTopics;
 
-        if (homepageUrl != null && homepageUrl != "")
-        {
-            nodes.push(value.node);
-            titles.push(nodes[i].name);
+      if (homepageUrl != null && homepageUrl != "")
+      {
+          nodes.push(value.node);
+          titles.push(nodes[i].name);
 
-            nodes[i].repositoryTopics = [];
-            for (const [key3, value3] of Object.entries(repoTopics)){
-              for (const [key4, value4] of Object.entries(value3)){
-                nodes[i].repositoryTopics.push(value4.topic.name);
-              }
+          nodes[i].repositoryTopics = [];
+          for (const [key3, value3] of Object.entries(repoTopics)){
+            for (const [key4, value4] of Object.entries(value3)){
+              nodes[i].repositoryTopics.push(value4.topic.name);
             }
-            i++;
-        }
+          }
+          i++;
       }
+    }
 
-      await addData(response);
+    // get custom properties to update titles
+    for (let i = 0; i < titles.length; i++) {
+      const res = await octokit.request('GET /repos/{owner}/{repo}/properties/values', {
+        owner: 'ibm-client-engineering',
+        repo: titles[i],
+        headers: {
+          'X-GitHub-Api-Version': '2022-11-28'
+        }
+      })
 
-    })
-    .then(() => {
-      setRepoData(nodes);
-    });
+      for (let j = 0; j < res.data.length; j++)
+        if (res.data[j].property_name == 'Title')
+        {
+          // replace name with title if custom prop exists
+          nodes[i].name = res.data[j].value;
+          continue;        
+        }
     }
     
+    })
+    .then(() => setRepoData(nodes));
+    };
+
     getGitHubRepos();
 
   }, []);
