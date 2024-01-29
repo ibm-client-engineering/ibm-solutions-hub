@@ -2,51 +2,14 @@
 
 import { Link, Grid, Column } from "@carbon/react";
 import React, { useEffect, useState } from "react";
-import ProjectsTable from "./ProjectsTable";
+import ProjectsTiles from "./ProjectsTiles";
 
-const headers = [
-  {
-    key: 'name',
-    header: 'Name',
-  },
-  {
-    key: 'description',
-    header: 'Description',
-  },
-  {
-    key: 'links',
-    header: 'Links',
-  },
-];
-
-const LinkList = ({ url, homepageUrl }) => (
-  <ul style={{ display: 'flex' }}>
-    <li>
-      <Link href={url}>GitHub</Link>
-    </li>
-    {homepageUrl && (
-      <li>
-        <span>&nbsp;|&nbsp;</span>
-        <Link href={homepageUrl}>Homepage</Link>
-      </li>
-    )}
-  </ul>
-);
-
-const getRowItems = (rows) =>
-  rows.map((row, id) => ({
-    key: row,id,
-    name: row.name,
-    description: row.description,
-    links: <LinkList url={row.url} homepageUrl={row.homepageUrl} />,
-  }));
 
 function ProjectsPage() {
-  const [rows, setRows] = useState([]);
+  const [repoData, setRepoData] = useState([]);
 
   useEffect(() => {
     function getGitHubRepos() {
-      console.log(process.env.NEXT_PUBLIC_GITHUB_AUTH)
       var result;
       var nodes = [];
       fetch('https://api.github.com/graphql', {
@@ -67,6 +30,13 @@ function ProjectsPage() {
                         description
                         url
                         homepageUrl
+                        repositoryTopics(first: 100) {
+                          nodes {
+                              topic {
+                                  name
+                              }
+                          }
+                      }
                     }
                     }
                 }
@@ -84,31 +54,48 @@ function ProjectsPage() {
     })
     .then(() => {
       var obj = result.data.search.edges;
+      let i=0;
 
     // only save the ones that have a homepageUrl
     for (const [key, value] of Object.entries(obj)) {
         var homepageUrl = value.node.homepageUrl;
-        
+        var repoTopics = value.node.repositoryTopics;
+
         if (homepageUrl != null && homepageUrl != "")
         {
             nodes.push(value.node);
+            nodes[i].repositoryTopics = [];
+            for (const [key3, value3] of Object.entries(repoTopics)){
+              for (const [key4, value4] of Object.entries(value3)){
+                nodes[i].repositoryTopics.push(value4.topic.name);
+              }
+            }
+            i++;
         }
-
-            // create a tile with each of these...
       }
     })
     .then(() => {
       console.log(nodes);
-      setRows(getRowItems(nodes));
+      setRepoData(nodes);
     });
     }
     getGitHubRepos();
   }, []);
 
   return (
-    <Grid className="repo-page">
-      <Column lg={16} md={8} sm={4} className="repo-page__r1">
-        <ProjectsTable headers={headers} rows={rows} />
+    <Grid fullWidth>
+      <Column className="banner-container" lg={16} md={8} sm={4}>
+          <Column className="banner-title-container" lg={8} md={4} sm={2}>
+            <h1 className="banner-title">Projects</h1>
+          </Column>
+          <Column className="banner-image-container" lg={8} md={4} sm={2}>
+          </Column>
+      </Column>
+      <Column lg={4} md={2} sm={1}>
+        FILTER SETTING
+      </Column>
+      <Column lg={12} md={6} sm={3} className="repoTiles">
+        <ProjectsTiles data={repoData}/>
       </Column>
     </Grid>
   );
