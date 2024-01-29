@@ -1,0 +1,26 @@
+@use '@carbon/react/scss/spacing' as *;
+@use '@carbon/react/scss/type' as *;
+@use '@carbon/react/scss/breakpoint' as *;
+@use '@carbon/react/scss/theme' as *;
+
+
+.landing-page__banner {
+    padding-top: $spacing-05;
+    padding-bottom: $spacing-07 * 4;
+    padding-left: $spacing-06;
+  }
+
+.landing-page__r2 {
+    padding-top: $spacing-05;
+    padding-bottom: $spacing-07 * 4;
+    padding-left: $spacing-06;
+  }
+
+.landing-page__r3 {
+    padding-top: $spacing-05;
+    padding-bottom: $spacing-07 * 4;
+    padding-left: $spacing-06;
+  }
+
+
+

@@ -1,0 +1,61 @@
+.banner-container {
+    display: flex;
+    height: 260px;
+    width: 100%;
+}
+
+.banner-title-container {
+    flex: 1 1 auto;
+    position: relative;
+}
+
+.banner-image-container {
+    background-image: url("https://cloud.ibm.com/catalog/imgs/catalog-banner-light398a.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left top;
+    width: 50%;
+}
+
+.repoTiles{
+    margin-bottom: 0;
+    height: auto;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+    grid-template-rows: auto;
+    grid-gap: 1rem;
+}
+
+.projectTile {
+    border: 1px solid var(--UI-ui-03, #E0E0E0);
+    background: #FFF;
+    width: 300px;
+    height: 250px;
+  }
+
+.projectTile__title {
+    display: flex;
+    padding: 16px 32px 0px 0px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    align-self: stretch;
+}
+
+.projectTile__description {
+    display: flex;
+    padding: 16px 32px 16px 0px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    align-self: stretch;
+}
+
+.projectTileContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 16px;
+    align-self: stretch;
+  }
