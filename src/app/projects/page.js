@@ -4,15 +4,49 @@ import { Link, Grid, Column } from "@carbon/react";
 import React, { useEffect, useState } from "react";
 import ProjectsTiles from "./ProjectsTiles";
 
+const { Octokit, App } = require("@octokit/core");
+
+// Octokit.js
+// https://github.com/octokit/core.js#readme
+const octokit = new Octokit({
+  auth: `bearer ${process.env.NEXT_PUBLIC_GITHUB_AUTH}`
+})
+
+var response;
+var nodes = [];
+var titles = [];
+
+async function addData(object)
+{
+    //nodes.push(object);
+
+    for (let i = 0; i < titles.length; i++) {
+
+        const res = await octokit.request('GET /repos/{owner}/{repo}/properties/values', {
+          owner: 'ibm-client-engineering',
+          repo: titles[i],
+          headers: {
+            'X-GitHub-Api-Version': '2022-11-28'
+          }
+        })
+
+        for (let j = 0; j < res.data.length; j++)
+          if (res.data[j].property_name == 'Title')
+          {
+            // replace name with title if custom prop exists
+            nodes[i].name = res.data[j].value;
+            continue;        
+          }
+    }
+}
 
 function ProjectsPage() {
   const [repoData, setRepoData] = useState([]);
 
   useEffect(() => {
-    function getGitHubRepos() {
+    async function getGitHubRepos() {
       var result;
-      var nodes = [];
-      fetch('https://api.github.com/graphql', {
+      response = await fetch('https://api.github.com/graphql', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -52,7 +86,7 @@ function ProjectsPage() {
     .then(data => {
       result = data;
     })
-    .then(() => {
+    .then(async () => {
       var obj = result.data.search.edges;
       let i=0;
 
@@ -64,6 +98,8 @@ function ProjectsPage() {
         if (homepageUrl != null && homepageUrl != "")
         {
             nodes.push(value.node);
+            titles.push(nodes[i].name);
+
             nodes[i].repositoryTopics = [];
             for (const [key3, value3] of Object.entries(repoTopics)){
               for (const [key4, value4] of Object.entries(value3)){
@@ -73,13 +109,17 @@ function ProjectsPage() {
             i++;
         }
       }
+
+      await addData(response);
+
     })
     .then(() => {
-      console.log(nodes);
       setRepoData(nodes);
     });
     }
+    
     getGitHubRepos();
+
   }, []);
 
   return (
