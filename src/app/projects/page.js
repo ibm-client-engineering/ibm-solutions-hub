@@ -118,7 +118,8 @@ function ProjectsPage() {
         // once we have the json from the result, we can parse the data
         extractRepos(result);
         replaceTitles();
-        setRepoData(nodes);
+        if (nodes != repoData)
+          setRepoData(nodes);
         setLoading(false);
       }
       catch (error) {
