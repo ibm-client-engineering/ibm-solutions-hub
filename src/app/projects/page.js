@@ -15,7 +15,8 @@ const octokit = new Octokit({
 var nodes = [];
 var titles = [];
 
-async function extractNodes(queryResult) {
+// filters repos, adds topics and sets up titles array to query the custom properties
+function extractRepos(queryResult) {
   var obj = queryResult.data.search.edges;
   let i=0;
 
@@ -40,24 +41,30 @@ async function extractNodes(queryResult) {
   }
 }
 
+// tries to find the title custom property for each repo to replace the name
 async function replaceTitles() {
       // get custom properties to update titles
       for (let i = 0; i < titles.length; i++) {
-        const res = await octokit.request('GET /repos/{owner}/{repo}/properties/values', {
-          owner: 'ibm-client-engineering',
-          repo: titles[i],
-          headers: {
-            'X-GitHub-Api-Version': '2022-11-28'
+        try {
+          const res = await octokit.request('GET /repos/{owner}/{repo}/properties/values', {
+            owner: 'ibm-client-engineering',
+            repo: titles[i],
+            headers: {
+              'X-GitHub-Api-Version': '2022-11-28'
+            }
+          })
+    
+          for (let j = 0; j < res.data.length; j++)
+            if (res.data[j].property_name == 'Title')
+            {
+              // replace name with title if custom prop exists
+              nodes[i].name = res.data[j].value;
+              continue;        
+            }
           }
-        })
-  
-        for (let j = 0; j < res.data.length; j++)
-          if (res.data[j].property_name == 'Title')
-          {
-            // replace name with title if custom prop exists
-            nodes[i].name = res.data[j].value;
-            continue;        
-          }
+        catch (error) {
+          console.log(error);
+        }
       }
 }
 
@@ -109,8 +116,8 @@ function ProjectsPage() {
         result = await res.json();
 
         // once we have the json from the result, we can parse the data
-        await extractNodes(result);
-        await replaceTitles();
+        extractRepos(result);
+        replaceTitles();
         setRepoData(nodes);
         setLoading(false);
       }
