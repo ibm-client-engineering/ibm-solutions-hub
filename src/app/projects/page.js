@@ -111,11 +111,11 @@ function ProjectsPage() {
       })
 
       .then(async() => {
-        await replaceTitles();
+        await replaceTitles(setRepoData);
       })
 
       .then(() => {
-      setRepoData(nodes);
+        setRepoData(nodes);
       })
 
     };
