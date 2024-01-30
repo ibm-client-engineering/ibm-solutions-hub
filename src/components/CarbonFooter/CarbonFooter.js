@@ -4,8 +4,9 @@ import C4DFooterContainer from '@carbon/ibmdotcom-web-components/es/components-r
 const CarbonFooter = () => (
   <C4DFooterContainer
   lang-display="United States - English"
-  language-selector-label="Choose a language"
-  clear-selection-label="Clear language selection"
-  selected-language="English"></C4DFooterContainer>
+  selected-language="English"
+  size="short"
+  >
+  </C4DFooterContainer>
 )
 export default CarbonFooter;
