@@ -15,7 +15,7 @@ const octokit = new Octokit({
 var nodes = [];
 var titles = [];
 
-function extractNodes(queryResult) {
+async function extractNodes(queryResult) {
   var obj = queryResult.data.search.edges;
   let i=0;
 
@@ -63,60 +63,60 @@ async function replaceTitles() {
 
 function ProjectsPage() {
   const [repoData, setRepoData] = useState([]);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     async function getGitHubRepos() {
+      setLoading(true);
       var result;
-      const res = await fetch('https://api.github.com/graphql', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-        'Authorization': `bearer ${process.env.NEXT_PUBLIC_GITHUB_AUTH}`,
-      },
-      body: JSON.stringify({
-        query: `
-            query myOrgRepos($queryString: String!) {
-                search(query: $queryString, type: REPOSITORY, first: 100) {
-                repositoryCount
-                edges {
-                    node {
-                    ... on Repository {
-                        name
-                        description
-                        url
-                        homepageUrl
-                        repositoryTopics(first: 100) {
-                          nodes {
-                              topic {
-                                  name
-                              }
-                          }
-                      }
-                    }
-                    }
-                }
-                }
-            }
-          `,
-        variables: {
-          queryString: "org:ibm-client-engineering sort:updated",
+      try {
+        const res = await fetch('https://api.github.com/graphql', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Authorization': `bearer ${process.env.NEXT_PUBLIC_GITHUB_AUTH}`,
         },
-      }),
-      })
-      .then((res) => res.json())
+        body: JSON.stringify({
+          query: `
+              query myOrgRepos($queryString: String!) {
+                  search(query: $queryString, type: REPOSITORY, first: 100) {
+                  repositoryCount
+                  edges {
+                      node {
+                      ... on Repository {
+                          name
+                          description
+                          homepageUrl
+                          repositoryTopics(first: 5) {
+                            nodes {
+                                topic {
+                                    name
+                                }
+                            }
+                        }
+                      }
+                      }
+                  }
+                  }
+              }
+            `,
+          variables: {
+            queryString: "org:ibm-client-engineering sort:updated",
+          },
+        }),
+        })
+        // when res (response) is valid, turn it into a json
+        result = await res.json();
 
-      .then(data => {
-        result = data;
-        extractNodes(result);
-      })
-
-      .then(async() => {
-        await replaceTitles(setRepoData);
-      })
-
-      .then(() => {
+        // once we have the json from the result, we can parse the data
+        await extractNodes(result);
+        await replaceTitles();
         setRepoData(nodes);
-      })
+        setLoading(false);
+      }
+      catch (error) {
+        console.log(`ERROR: ${error}`)
+      }
 
     };
 
@@ -124,23 +124,26 @@ function ProjectsPage() {
 
   }, []);
 
-  return (
-    <Grid fullWidth>
-      <Column className="banner-container" lg={16} md={8} sm={4}>
-          <Column className="banner-title-container" lg={8} md={4} sm={2}>
-            <h1 className="banner-title">Projects</h1>
-          </Column>
-          <Column className="banner-image-container" lg={8} md={4} sm={2}>
-          </Column>
-      </Column>
-      <Column lg={4} md={2} sm={1}>
-        FILTER SETTING
-      </Column>
-      <Column lg={12} md={6} sm={3} className="repoTiles">
-        <ProjectsTiles data={repoData}/>
-      </Column>
-    </Grid>
-  );
+  if (loading || repoData.length == 0)
+    return 'Loading...';
+  else
+    return (
+      <Grid fullWidth>
+        <Column className="banner-container" lg={16} md={8} sm={4}>
+            <Column className="banner-title-container" lg={8} md={4} sm={2}>
+              <h1 className="banner-title">Projects</h1>
+            </Column>
+            <Column className="banner-image-container" lg={8} md={4} sm={2}>
+            </Column>
+        </Column>
+        <Column lg={4} md={2} sm={1}>
+          FILTER SETTING
+        </Column>
+        <Column lg={12} md={6} sm={3} className="repoTiles">
+          <ProjectsTiles data={repoData}/>
+        </Column>
+      </Grid>
+    );
 }
 
 export default ProjectsPage;
