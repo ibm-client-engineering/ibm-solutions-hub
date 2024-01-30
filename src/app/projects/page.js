@@ -3,6 +3,7 @@
 import { Link, Grid, Column } from "@carbon/react";
 import React, { useEffect, useState } from "react";
 import ProjectsTiles from "./ProjectsTiles";
+import Loading from "@carbon/react/lib/components/Loading";
 
 const { Octokit, App } = require("@octokit/core");
 
@@ -133,7 +134,23 @@ function ProjectsPage() {
   }, []);
 
   if (loading || repoData.length == 0)
-    return 'Loading...';
+    return (
+        <Grid fullWidth>
+        <Column className="banner-container" lg={16} md={8} sm={4}>
+            <Column className="banner-title-container" lg={8} md={4} sm={2}>
+              <h1 className="banner-title">Projects</h1>
+            </Column>
+            <Column className="banner-image-container" lg={8} md={4} sm={2}>
+            </Column>
+        </Column>
+        <Column lg={4} md={2} sm={1}>
+          FILTER SETTING
+        </Column>
+        <Column lg={12} md={6} sm={3} className="repoTiles">
+          <Loading/>
+        </Column>
+      </Grid>
+    );
   else
     return (
       <Grid fullWidth>
