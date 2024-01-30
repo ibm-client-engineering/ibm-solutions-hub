@@ -1,6 +1,6 @@
 'use client';
 
-import { Link, Grid, Column } from "@carbon/react";
+import { Link, Grid, Column, Search} from "@carbon/react";
 import React, { useEffect, useState } from "react";
 import ProjectsTiles from "./ProjectsTiles";
 import Loading from "@carbon/react/lib/components/Loading";
@@ -135,7 +135,7 @@ function ProjectsPage() {
 
   if (loading || repoData.length == 0)
     return (
-        <Grid fullWidth>
+      <Grid fullWidth narrow>
         <Column className="banner-container" lg={16} md={8} sm={4}>
             <Column className="banner-title-container" lg={8} md={4} sm={2}>
               <h1 className="banner-title">Projects</h1>
@@ -143,28 +143,23 @@ function ProjectsPage() {
             <Column className="banner-image-container" lg={8} md={4} sm={2}>
             </Column>
         </Column>
-        <Column lg={4} md={2} sm={1}>
-          FILTER SETTING
-        </Column>
-        <Column lg={12} md={6} sm={3} className="repoTiles">
+        <Column lg={16} md={8} sm={4} className="repoTiles">
           <Loading/>
         </Column>
       </Grid>
     );
   else
     return (
-      <Grid fullWidth>
+      <Grid fullWidth narrow>
         <Column className="banner-container" lg={16} md={8} sm={4}>
             <Column className="banner-title-container" lg={8} md={4} sm={2}>
-              <h1 className="banner-title">Projects</h1>
+              <p className="banner-title">Projects</p>
+              <Search className="banner-search" size="lg" placeholder="Find a project" labelText="Search" closeButtonLabelText="Clear search input"/>
             </Column>
             <Column className="banner-image-container" lg={8} md={4} sm={2}>
             </Column>
         </Column>
-        <Column lg={4} md={2} sm={1}>
-          FILTER SETTING
-        </Column>
-        <Column lg={12} md={6} sm={3} className="repoTiles">
+        <Column lg={16} md={8} sm={2} className="repoTiles">
           <ProjectsTiles data={repoData}/>
         </Column>
       </Grid>
