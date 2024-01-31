@@ -8,7 +8,7 @@ export default function LandingPage() {
   return (
     <FlexGrid className="landing-page" fullWidth>
       <Row condensed className='row-padding'>
-        <Column lg={4} md={2} sm={1}>
+        <Column lg={4} md={2} sm={1} >
           <h1 className="landing-page__header"><strong>IBM Client Engineering</strong></h1>
           <br /><br />
           <h1 className="landing-page__header-description">Working in the Open</h1>
@@ -57,7 +57,7 @@ export default function LandingPage() {
         </Column>
       </Row>
 
-      <Row fullWidth className='row-padding' condensed>
+      <Row fullWidth className='row-padding'>
         <Column md={2} lg={4} sm={1} className="landing-page__subheader">
           <h3>Recent Projects</h3>
           <br /><br />
@@ -95,7 +95,7 @@ export default function LandingPage() {
         </Column>
       </Row>
 
-      <Row fullWidth className='row-padding' condensed>
+      <Row fullWidth className='row-padding'>
         <Column md={2} lg={4} sm={1} className="landing-page__subheader">
           <h3>Popular Projects</h3>
           <br /><br />
