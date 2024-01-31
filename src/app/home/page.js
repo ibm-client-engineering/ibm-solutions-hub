@@ -1,13 +1,13 @@
 `use client`;
-import { FlexGrid, Column, ClickableTile, Row } from '@carbon/react';
+import { FlexGrid, Column, ClickableTile, Row, Tag } from '@carbon/react';
 import React, { use } from "react";
-import { Add, WatsonxAi, MachineLearningModel, IbmSecurity, Data_1, CloudApp, ZSystems, Carbon, ArrowDownRight, ArrowRight } from '@carbon/icons-react';
+import { Add, WatsonxAi, MachineLearningModel, IbmSecurity, Data_1, CloudApp, ZSystems, Launch, Number_1, Number_2, Number_3, WatsonHealthEdgeEnhancement_01, WatsonHealthEdgeEnhancement_02, WatsonHealthEdgeEnhancement_03, RecentlyViewed} from '@carbon/icons-react';
 
 
 export default function LandingPage() {
    return (
         <FlexGrid className="landing-page" fullWidth>
-          <Row condensed>
+          <Row condensed className='row-padding'>
             <Column lg={4} md={2} sm={1}>
               <h1 className="landing-page__header"><strong>IBM Client Engineering</strong></h1>
               <br/><br/>
@@ -56,18 +56,80 @@ export default function LandingPage() {
               </ClickableTile>
             </Column>
             </Row>
-            <Row fullWidth>
-              <Column md={4} lg={4} sm={4} className="landing-page__subheader">
+
+            <Row fullWidth className='row-padding' condensed>
+              <Column md={2} lg={4} sm={1} className="landing-page__subheader">
                 <h3>Recent Projects</h3>
                 <br/><br/>
                 <h4>Recently published projects from the Client Engineering Team</h4>
               </Column>
+              <Column lg={4} md={2} sm={1}>
+              <ClickableTile className="projectTile" href={"https://ibm-client-engineering.github.io/solution-wxo/"} target="_blank" rel="noopener noreferrer" renderIcon={Launch} style={{height: '400px'}}>
+                <RecentlyViewed size={32}/>
+                <h6 className="projectTile__title">solution-wxo</h6>
+                <p3 className="projectTile__description">Using Integrated Custom Skills in IBM Watsonx Orchestrate</p3>
+                <Tag className="projectTile__topics">
+                  Automation
+                </Tag>
+              </ClickableTile>
+              </Column>
+              <Column lg={4} md={2} sm={1}>
+              <ClickableTile className="projectTile" href={"https://ibm-client-engineering.github.io/solution-cp4ba-document-processing/"} target="_blank" rel="noopener noreferrer" renderIcon={Launch} style={{height: '400px'}}>
+                <RecentlyViewed size={32}/>
+                <h6 className="projectTile__title">solution-cp4ba-document-processing</h6>
+                <p3 className="projectTile__description">Automated Document Processing Solutions Using IBM Cloud Pak for Business Automation</p3>
+                <Tag className="projectTile__topics">
+                  Automation
+                </Tag>
+              </ClickableTile>
+              </Column>
+              <Column lg={4} md={2} sm={1}>
+              <ClickableTile className="projectTile" href={"https://ibm-client-engineering.github.io/solution-filenet-aws"} target="_blank" rel="noopener noreferrer" renderIcon={Launch} style={{height: '400px'}}>
+                <RecentlyViewed size={32}/>
+                <h6 className="projectTile__title">solution-filenet-aws</h6>
+                <p3 className="projectTile__description">Solution to Deploy IBM FileNet Content Manager on AWS EKS</p3>
+                <Tag className="projectTile__topics">
+                  Automation
+                </Tag>
+              </ClickableTile>
+              </Column>
             </Row>
-            <Row narrow>
-              <Column md={4} lg={4} sm={4} className="landing-page__subheader">
+
+            <Row fullWidth className='row-padding' condensed>
+              <Column md={2} lg={4} sm={1} className="landing-page__subheader">
                 <h3>Popular Projects</h3>
                 <br/><br/>
                 <h4>Highly valueable and most used projects</h4>
+              </Column>
+              <Column lg={4} md={2} sm={1}>
+              <ClickableTile className="projectTile" href={"https://ibm-client-engineering.github.io/solution-sfg-aws/"} target="_blank" rel="noopener noreferrer" renderIcon={Launch} style={{height: '400px'}}>
+              <WatsonHealthEdgeEnhancement_01 size={34}/>
+                <h6 className="projectTile__title">solution-sfg-aws</h6>
+                <p3 className="projectTile__description">Installing IBM Sterling File Gateway (and other B2Bi Components) on Amazon EKS</p3>
+                <Tag className="projectTile__topics">
+                  Automation
+                </Tag>
+              </ClickableTile>
+              </Column>
+              <Column lg={4} md={2} sm={1}>
+              <ClickableTile className="projectTile" href={"https://ibm-client-engineering.github.io/solution-watsonx-assistant/"} target="_blank" rel="noopener noreferrer" renderIcon={Launch} style={{height: '400px'}}>
+              <WatsonHealthEdgeEnhancement_02 size={34}/>
+                <h6 className="projectTile__title">solution-watsonx-assistant</h6>
+                <p3 className="projectTile__description">Enhancing Customer Care Journeys Using IBM Watsonx Products</p3>
+                <Tag className="projectTile__topics">
+                  Automation
+                </Tag>
+              </ClickableTile>
+              </Column>
+              <Column lg={4} md={2} sm={1}>
+              <ClickableTile className="projectTile" href={"https://ibm-client-engineering.github.io/solution-processmining/"} target="_blank" rel="noopener noreferrer" renderIcon={Launch} style={{height: '400px'}}>
+              <WatsonHealthEdgeEnhancement_03 size={34}/>
+                <h6 className="projectTile__title">solution-processmining</h6>
+                <p3 className="projectTile__description">IBM Cloud Pak for Business Automation Process Mining on Red Hat OpenShift</p3>
+                <Tag className="projectTile__topics">
+                  Automation
+                </Tag>
+              </ClickableTile>
               </Column>
           </Row>
         </FlexGrid>
