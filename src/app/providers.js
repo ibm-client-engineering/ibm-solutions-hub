@@ -11,9 +11,7 @@ export function Providers({ children }) {
             <CarbonHeader />
         </Theme>
         <Content>{children}</Content>
-        <Theme theme="white">
-            <CarbonFooter />
-        </Theme>
+        <CarbonFooter />
     </div>
   );
 }

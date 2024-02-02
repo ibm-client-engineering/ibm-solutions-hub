@@ -66,7 +66,7 @@ export default function LandingPage() {
         <Column lg={4} md={2} sm={1}>
           <ClickableTile className="projectTile" href={"https://ibm-client-engineering.github.io/solution-wxo/"} target="_blank" rel="noopener noreferrer" renderIcon={Launch} style={{ height: '400px' }}>
             <RecentlyViewed size={32} />
-            <h6 className="projectTile__title">solution-wxo</h6>
+            <h6 className="projectTile__title">Watson Orchestrate Integrations</h6>
             <p3 className="projectTile__description">Using Integrated Custom Skills in IBM Watsonx Orchestrate</p3>
             <Tag className="projectTile__topics">
               Automation
@@ -76,7 +76,7 @@ export default function LandingPage() {
         <Column lg={4} md={2} sm={1}>
           <ClickableTile className="projectTile" href={"https://ibm-client-engineering.github.io/solution-cp4ba-document-processing/"} target="_blank" rel="noopener noreferrer" renderIcon={Launch} style={{ height: '400px' }}>
             <RecentlyViewed size={32} />
-            <h6 className="projectTile__title">solution-cp4ba-document-processing</h6>
+            <h6 className="projectTile__title">Automated Document Processing</h6>
             <p3 className="projectTile__description">Automated Document Processing Solutions Using IBM Cloud Pak for Business Automation</p3>
             <Tag className="projectTile__topics">
               Automation
@@ -86,7 +86,7 @@ export default function LandingPage() {
         <Column lg={4} md={2} sm={1}>
           <ClickableTile className="projectTile" href={"https://ibm-client-engineering.github.io/solution-filenet-aws"} target="_blank" rel="noopener noreferrer" renderIcon={Launch} style={{ height: '400px' }}>
             <RecentlyViewed size={32} />
-            <h6 className="projectTile__title">solution-filenet-aws</h6>
+            <h6 className="projectTile__title">FileNet Content Manager on AWS EKS</h6>
             <p3 className="projectTile__description">Solution to Deploy IBM FileNet Content Manager on AWS EKS</p3>
             <Tag className="projectTile__topics">
               Automation
@@ -104,7 +104,7 @@ export default function LandingPage() {
         <Column lg={4} md={2} sm={1}>
           <ClickableTile className="projectTile" href={"https://ibm-client-engineering.github.io/solution-sfg-aws/"} target="_blank" rel="noopener noreferrer" renderIcon={Launch} style={{ height: '400px' }}>
             <WatsonHealthEdgeEnhancement_01 size={34} />
-            <h6 className="projectTile__title">solution-sfg-aws</h6>
+            <h6 className="projectTile__title">Sterling File Gateway on AWS EKS</h6>
             <p3 className="projectTile__description">Installing IBM Sterling File Gateway (and other B2Bi Components) on Amazon EKS</p3>
             <Tag className="projectTile__topics">
               Automation
@@ -114,7 +114,7 @@ export default function LandingPage() {
         <Column lg={4} md={2} sm={1}>
           <ClickableTile className="projectTile" href={"https://ibm-client-engineering.github.io/solution-watsonx-assistant/"} target="_blank" rel="noopener noreferrer" renderIcon={Launch} style={{ height: '400px' }}>
             <WatsonHealthEdgeEnhancement_02 size={34} />
-            <h6 className="projectTile__title">solution-watsonx-assistant</h6>
+            <h6 className="projectTile__title">Customer Care Virtual Agents</h6>
             <p3 className="projectTile__description">Enhancing Customer Care Journeys Using IBM Watsonx Products</p3>
             <Tag className="projectTile__topics">
               Automation
@@ -124,7 +124,7 @@ export default function LandingPage() {
         <Column lg={4} md={2} sm={1}>
           <ClickableTile className="projectTile" href={"https://ibm-client-engineering.github.io/solution-processmining/"} target="_blank" rel="noopener noreferrer" renderIcon={Launch} style={{ height: '400px' }}>
             <WatsonHealthEdgeEnhancement_03 size={34} />
-            <h6 className="projectTile__title">solution-processmining</h6>
+            <h6 className="projectTile__title">Process Mining on Red Hat OpenShift</h6>
             <p3 className="projectTile__description">IBM Cloud Pak for Business Automation Process Mining on Red Hat OpenShift</p3>
             <Tag className="projectTile__topics">
               Automation
