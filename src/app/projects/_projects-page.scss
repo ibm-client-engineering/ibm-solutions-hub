@@ -1,3 +1,8 @@
+@use '@carbon/react/scss/spacing' as *;
+@use '@carbon/react/scss/type' as *;
+@use '@carbon/react/scss/breakpoint' as *;
+@use '@carbon/react/scss/theme' as *;
+
 .banner-container {
     display: flex;
     height: 260px;
@@ -7,6 +12,12 @@
 .banner-title-container {
     flex: 1 1 auto;
     position: relative;
+}
+
+.banner-title {
+    @include type-style ('heading-06');
+    padding-top: 32px;
+    padding-bottom: 48px;
 }
 
 .banner-image-container {
