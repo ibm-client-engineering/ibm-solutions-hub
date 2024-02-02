@@ -80,21 +80,16 @@ function ProjectsPage() {
 
     nodes.forEach((node) => {
       var isVisible =
-        node.name.toLowerCase().includes(inputText) || 
+        node.name && node.name.toLowerCase().includes(inputText) ||
+        node.description &&
         node.description.toLowerCase().includes(inputText);
 
-      console.log(node.repositoryTopics.length);
-      console.log(node.repositoryTopics);
-      if (node.repositoryTopics.length) {
-        for (let i = 0; i < node.repositoryTopics.length && !isVisible; i++) {
-          isVisible = node.repositoryTopics[i].toLowerCase().includes(inputText);
-        }
+      if (document.getElementById(node.name)) {
+        if (isVisible)
+          document.getElementById(node.name).style.display = "block";
+        else
+          document.getElementById(node.name).style.display = "none";
       }
-
-      if (isVisible)
-        document.getElementById(node.name).style.display = "block";
-      else
-        document.getElementById(node.name).style.display = "none";
     })
 
     setRepoData(nodes);
