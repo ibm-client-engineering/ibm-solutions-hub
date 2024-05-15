@@ -1,0 +1,475 @@
+{
+  "organization": {
+    "repositories": {
+      "nodes": [
+        {
+          "name": "solution-mq-rdqm-hadr",
+          "description": "Set up IBM MQ Traditional with RDQM ",
+          "homepageUrl": "",
+          "repositoryTopics": {
+            "nodes": [
+              {
+                "topic": {
+                  "name": "co-create"
+                }
+              },
+              {
+                "topic": {
+                  "name": "ibm-client-engineering"
+                }
+              },
+              {
+                "topic": {
+                  "name": "solution-library"
+                }
+              },
+              {
+                "topic": {
+                  "name": "ibm-mq"
+                }
+              },
+              {
+                "topic": {
+                  "name": "ibm-mq-installation"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "name": "solution-template",
+          "description": null,
+          "homepageUrl": null,
+          "repositoryTopics": {
+            "nodes": [
+              {
+                "topic": {
+                  "name": "ibm-client-engineering"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "name": "solution-workflow-on-containers",
+          "description": null,
+          "homepageUrl": null,
+          "repositoryTopics": {
+            "nodes": [
+              {
+                "topic": {
+                  "name": "ibm-client-engineering"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "name": "solution-websphere-automation",
+          "description": null,
+          "homepageUrl": null,
+          "repositoryTopics": {
+            "nodes": [
+              {
+                "topic": {
+                  "name": "ibm-client-engineering"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "name": "solution-middleware-automation",
+          "description": "Automated Certificate Management for IBM MQ using Red Hat Ansible",
+          "homepageUrl": null,
+          "repositoryTopics": {
+            "nodes": [
+              {
+                "topic": {
+                  "name": "ibm-client-engineering"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "name": "solution-mq-aws-eks",
+          "description": "IBM MQ on Amazon Elastic Container Service (EKS)",
+          "homepageUrl": null,
+          "repositoryTopics": {
+            "nodes": [
+              {
+                "topic": {
+                  "name": "ibm-client-engineering"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "name": "MikeZFileShare",
+          "description": null,
+          "homepageUrl": null,
+          "repositoryTopics": {
+            "nodes": []
+          }
+        },
+        {
+          "name": "solution-sfg-aws",
+          "description": "Installing IBM Sterling File Gateway (and other B2Bi components) on Amazon EKS",
+          "homepageUrl": "https://ibm-client-engineering.github.io/solution-sfg-aws/",
+          "repositoryTopics": {
+            "nodes": [
+              {
+                "topic": {
+                  "name": "aws-eks"
+                }
+              },
+              {
+                "topic": {
+                  "name": "ibm-sterling"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "name": "solution-mq-gitops",
+          "description": "MQ automation through gitops",
+          "homepageUrl": null,
+          "repositoryTopics": {
+            "nodes": []
+          }
+        },
+        {
+          "name": "solution-cmis-containerized",
+          "description": "Deploy IBM Content Management Interoperability Services (CMIS) on Containers",
+          "homepageUrl": null,
+          "repositoryTopics": {
+            "nodes": [
+              {
+                "topic": {
+                  "name": "ibm-client-engineering"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "name": "mq-helm-fork",
+          "description": "A fork of the original code",
+          "homepageUrl": "",
+          "repositoryTopics": {
+            "nodes": []
+          }
+        },
+        {
+          "name": "solution-filenet-aws",
+          "description": "Solution to deploy IBM FileNet Content Manager on AWS EKS",
+          "homepageUrl": "https://ibm-client-engineering.github.io/solution-filenet-aws/",
+          "repositoryTopics": {
+            "nodes": [
+              {
+                "topic": {
+                  "name": "aws-eks"
+                }
+              },
+              {
+                "topic": {
+                  "name": "business-automation"
+                }
+              },
+              {
+                "topic": {
+                  "name": "filenet-content-manager"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "name": "mq-ansible-fork",
+          "description": "Ansible roles for IBM MQ",
+          "homepageUrl": "",
+          "repositoryTopics": {
+            "nodes": []
+          }
+        },
+        {
+          "name": ".github",
+          "description": "IBM Client Engineering",
+          "homepageUrl": null,
+          "repositoryTopics": {
+            "nodes": []
+          }
+        },
+        {
+          "name": "solution-satellite",
+          "description": "Deploying an application on a satellite location on IBM and AWS using IBM Cloud Console, Terraform, and Helmcharts",
+          "homepageUrl": "https://ibm-client-engineering.github.io/solution-satellite/",
+          "repositoryTopics": {
+            "nodes": [
+              {
+                "topic": {
+                  "name": "aspera-sync"
+                }
+              },
+              {
+                "topic": {
+                  "name": "satellite"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "name": "solution-kafka-prometheus",
+          "description": "JMX Metrics capture for Kafka, and visualized in prometheus",
+          "homepageUrl": null,
+          "repositoryTopics": {
+            "nodes": []
+          }
+        },
+        {
+          "name": "solution-how-we-work",
+          "description": "This will be the solution doc of solution docs",
+          "homepageUrl": "",
+          "repositoryTopics": {
+            "nodes": []
+          }
+        },
+        {
+          "name": "solution-aspera-sync",
+          "description": "Improving synchronization between severs at maximum speed with minimum cost with IBM Aspera Sync",
+          "homepageUrl": "https://ibm-client-engineering.github.io/solution-aspera-sync/",
+          "repositoryTopics": {
+            "nodes": [
+              {
+                "topic": {
+                  "name": "aspera-sync"
+                }
+              },
+              {
+                "topic": {
+                  "name": "data"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "name": "solution-processmining",
+          "description": "IBM Cloud Pak for Business Automation Process Mining on Red Hat OpenShift",
+          "homepageUrl": "https://ibm-client-engineering.github.io/solution-processmining/",
+          "repositoryTopics": {
+            "nodes": [
+              {
+                "topic": {
+                  "name": "business-automation"
+                }
+              },
+              {
+                "topic": {
+                  "name": "openshift"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "name": "solution-watson-orchestrate",
+          "description": "Connecting AWS Lambda to IBM Watson Orchestrate",
+          "homepageUrl": "https://ibm-client-engineering.github.io/solution-watson-orchestrate/",
+          "repositoryTopics": {
+            "nodes": [
+              {
+                "topic": {
+                  "name": "aws-lambda"
+                }
+              },
+              {
+                "topic": {
+                  "name": "business-automation"
+                }
+              },
+              {
+                "topic": {
+                  "name": "watson-orchestrate"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "name": "solution-watsonx-assistant",
+          "description": "Enhancing Customer Care Journeys Using IBM Watsonx Products",
+          "homepageUrl": "https://ibm-client-engineering.github.io/solution-watsonx-assistant/",
+          "repositoryTopics": {
+            "nodes": [
+              {
+                "topic": {
+                  "name": "generative-ai"
+                }
+              },
+              {
+                "topic": {
+                  "name": "watsonx-assistant"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "name": "legend",
+          "description": "The Legend project",
+          "homepageUrl": "https://legend.finos.org",
+          "repositoryTopics": {
+            "nodes": []
+          }
+        },
+        {
+          "name": "solution-consumer-bankchat-bot",
+          "description": null,
+          "homepageUrl": "",
+          "repositoryTopics": {
+            "nodes": []
+          }
+        },
+        {
+          "name": "solution-cp4ba-processmining",
+          "description": null,
+          "homepageUrl": "",
+          "repositoryTopics": {
+            "nodes": []
+          }
+        },
+        {
+          "name": "solution-cp4ba-document-processing",
+          "description": "Automated Document Processing Solutions Using IBM Cloud Pak for Business Automation",
+          "homepageUrl": "https://ibm-client-engineering.github.io/solution-cp4ba-document-processing/",
+          "repositoryTopics": {
+            "nodes": [
+              {
+                "topic": {
+                  "name": "business-automation"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "name": "solution-wxo",
+          "description": "Using Integrated Custom Skills in IBM Watsonx Orchestrate",
+          "homepageUrl": "https://ibm-client-engineering.github.io/solution-wxo/",
+          "repositoryTopics": {
+            "nodes": [
+              {
+                "topic": {
+                  "name": "watsonx"
+                }
+              },
+              {
+                "topic": {
+                  "name": "watsonx-orchestrate"
+                }
+              },
+              {
+                "topic": {
+                  "name": "business-automation"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "name": "solution-template-gatsby",
+          "description": null,
+          "homepageUrl": null,
+          "repositoryTopics": {
+            "nodes": []
+          }
+        },
+        {
+          "name": "ce-solutions-hub",
+          "description": "Client Engineering Solutions Hub",
+          "homepageUrl": "",
+          "repositoryTopics": {
+            "nodes": []
+          }
+        },
+        {
+          "name": "forward-foundry",
+          "description": null,
+          "homepageUrl": "",
+          "repositoryTopics": {
+            "nodes": []
+          }
+        },
+        {
+          "name": "solution-ai-sidekick",
+          "description": null,
+          "homepageUrl": null,
+          "repositoryTopics": {
+            "nodes": []
+          }
+        },
+        {
+          "name": "solution-watsonx-news-scraper",
+          "description": null,
+          "homepageUrl": "https://ibm-client-engineering.github.io/solution-watsonx-news-scraper/",
+          "repositoryTopics": {
+            "nodes": []
+          }
+        },
+        {
+          "name": "solution-wxai-aws",
+          "description": null,
+          "homepageUrl": "https://ibm-client-engineering.github.io/solution-wxai-aws/",
+          "repositoryTopics": {
+            "nodes": []
+          }
+        },
+        {
+          "name": "solution-trusteer-entra",
+          "description": null,
+          "homepageUrl": "https://pages.github.ibm.com/ibm-client-engineering/solution-trusteer-entra/",
+          "repositoryTopics": {
+            "nodes": []
+          }
+        },
+        {
+          "name": "solution-sentibot",
+          "description": null,
+          "homepageUrl": "",
+          "repositoryTopics": {
+            "nodes": []
+          }
+        },
+        {
+          "name": "dtcc_rag_chatbot",
+          "description": null,
+          "homepageUrl": null,
+          "repositoryTopics": {
+            "nodes": []
+          }
+        },
+        {
+          "name": "solution-watsonx-governance",
+          "description": null,
+          "homepageUrl": "https://ibm-client-engineering.github.io/solution-watsonx-governance/",
+          "repositoryTopics": {
+            "nodes": []
+          }
+        },
+        {
+          "name": "solution-watsonx-orchestrate",
+          "description": null,
+          "homepageUrl": "https://ibm-client-engineering.github.io/solution-watsonx-orchestrate/",
+          "repositoryTopics": {
+            "nodes": []
+          }
+        }
+      ]
+    }
+  }
+}
