@@ -1,0 +1,35 @@
+name: Get GitHub Repos
+
+on:
+    # cronjob trigger
+  schedule:
+  - cron:  "0 0 * * *"
+  # manual trigger
+  workflow_dispatch:
+jobs:
+  get-github-repos:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+
+      - name: Install dependencies
+        run: npm install graphql request@^2.88.2
+
+      - name: Get Repository Info
+        run: |
+          node getRepos.js ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Commit and push JSON file
+        run: |
+          git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add repoData.json
+          git commit -m "Add repository data JSON file"
+          git push
