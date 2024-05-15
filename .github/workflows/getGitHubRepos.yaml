@@ -20,7 +20,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           script: |
-            const query = `query($org:String!, $sort:String!) {
+            const query = `query($org:String!) {
               organization(login: $org) {
                 repositories(first: 100) {
                   nodes {
@@ -40,8 +40,7 @@ jobs:
             }`;
 
             const variables = {
-              org: 'ibm-client-engineering',
-              sort: 'updated'
+              org: 'ibm-client-engineering'
             }
 
             const result = await github.graphql(query, variables)
