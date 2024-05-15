@@ -24,7 +24,7 @@ jobs:
 
       - name: Get Repository Info
         run: |
-          node getRepos.js ${{ secrets.GITHUB_TOKEN }}
+          node ./.github/workflows/getRepos.js ${{ secrets.GITHUB_TOKEN }}
 
       - name: Commit and push JSON file
         run: |
