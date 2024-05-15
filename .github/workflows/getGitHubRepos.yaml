@@ -20,6 +20,8 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           script: |
+            var fs = require('fs')
+
             const query = `query($org:String!) {
               organization(login: $org) {
                 repositories(first: 100) {
