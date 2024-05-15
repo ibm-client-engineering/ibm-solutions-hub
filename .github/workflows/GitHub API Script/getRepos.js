@@ -32,7 +32,7 @@ const endpoint = 'https://api.github.com/graphql';
 (async () => {
   try {
     const response = await request(endpoint, query, variables, {
-      Authorization: `Bearer ${process.argv[2]}`
+      Authorization: `Bearer ${process.env.GITHUB_TOKEN}`
     });
 
     const data = [];
