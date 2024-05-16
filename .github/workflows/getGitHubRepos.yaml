@@ -22,7 +22,7 @@ jobs:
           script: |
             var fs = require('fs')
 
-            const query = `query($queryString: String!) {
+            const query = `query($queryString:String!) {
               organization(login: $org) {
                 repositories(first: 100) {
                   nodes {
@@ -43,7 +43,7 @@ jobs:
 
             const variables = {
               queryString: "org:ibm-client-engineering sort:updated",
-              org: 'ibm-client-engineering',
+              org: 'ibm-client-engineering'
             }
 
             const result = await github.graphql(query, variables)
