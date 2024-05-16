@@ -43,6 +43,7 @@ jobs:
 
             const variables = {
               queryString: "org:ibm-client-engineering sort:updated",
+              org: 'ibm-client-engineering',
             }
 
             const result = await github.graphql(query, variables)
