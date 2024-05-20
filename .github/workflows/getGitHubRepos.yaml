@@ -54,7 +54,7 @@ jobs:
 
             const repoData = await github.graphql(query, variables)
 
-            const getProps = require('/getProps.js')
+            const getProps = require('./.github/workflows/getProps.js')
 
             const finalRepoData = await getProps({repoData})
 
