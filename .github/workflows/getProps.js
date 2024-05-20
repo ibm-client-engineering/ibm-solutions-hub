@@ -1,8 +1,4 @@
-module.exports = async ({repoData, Octokit}) => {
-
-    const octokit = new Octokit({
-        auth: `bearer ${process.env.GITHUB_TOKEN}`
-    })
+module.exports = async ({repoData, octokit}) => {
 
     for (let i = 0; i < repoData.organization.repositories.nodes.length; i++) {
         const res = await octokit.request('GET /repos/{owner}/{repo}/properties/values', {
