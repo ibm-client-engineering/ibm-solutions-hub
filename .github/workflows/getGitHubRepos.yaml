@@ -26,7 +26,10 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           script: |
-            const { Octokit } = require("@octokit/core");
+            const octokit = require('@octokit/core')({
+              auth: `bearer ${process.env.GITHUB_TOKEN}`
+            })
+
             var fs = require('fs');
 
             const query = `query($org: String!) {
@@ -56,7 +59,7 @@ jobs:
 
             const getProps = require('./.github/workflows/getProps.js')
 
-            const finalRepoData = await getProps({repoData})
+            const finalRepoData = await getProps({repoData, octokit})
 
             fs.writeFileSync('repoData.json', JSON.stringify(finalRepoData, null, 2));
       
