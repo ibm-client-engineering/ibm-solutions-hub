@@ -57,9 +57,9 @@ jobs:
 
             const getProps = require('/getProps.js')
 
-            await getProps({repoData})
+            const finalRepoData = await getProps({repoData})
 
-            fs.writeFileSync('repoData.json', JSON.stringify(repoData, null, 2));
+            fs.writeFileSync('repoData.json', JSON.stringify(finalRepoData, null, 2));
       
       - name: Commit and push JSON file
         run: |

@@ -23,4 +23,6 @@ module.exports = async ({repoData, Octokit}) => {
         }
     }
 
+    return repoData;
+
 }
