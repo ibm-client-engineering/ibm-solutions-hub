@@ -8,7 +8,9 @@
           "homepageUrl": "",
           "repositoryTopics": {
             "nodes": []
-          }
+          },
+          "publish": "False",
+          "title": "IBM Client Engineering Solutions Hub"
         },
         {
           "name": "solution-wxai-aws",
@@ -16,7 +18,8 @@
           "homepageUrl": "https://ibm-client-engineering.github.io/solution-wxai-aws/",
           "repositoryTopics": {
             "nodes": []
-          }
+          },
+          "publish": "False"
         },
         {
           "name": "solution-watsonx-governance",
@@ -24,7 +27,8 @@
           "homepageUrl": "https://ibm-client-engineering.github.io/solution-watsonx-governance/",
           "repositoryTopics": {
             "nodes": []
-          }
+          },
+          "publish": "False"
         },
         {
           "name": "forward-foundry",
@@ -32,7 +36,8 @@
           "homepageUrl": "",
           "repositoryTopics": {
             "nodes": []
-          }
+          },
+          "publish": "False"
         },
         {
           "name": "solution-watsonx-assistant",
@@ -51,7 +56,9 @@
                 }
               }
             ]
-          }
+          },
+          "publish": "True",
+          "title": "Customer Care Virtual Agents"
         },
         {
           "name": "solution-watsonx-orchestrate",
@@ -59,7 +66,8 @@
           "homepageUrl": "https://ibm-client-engineering.github.io/solution-watsonx-orchestrate/",
           "repositoryTopics": {
             "nodes": []
-          }
+          },
+          "publish": "False"
         },
         {
           "name": "dtcc_rag_chatbot",
@@ -67,7 +75,8 @@
           "homepageUrl": null,
           "repositoryTopics": {
             "nodes": []
-          }
+          },
+          "publish": "False"
         },
         {
           "name": "solution-wxo",
@@ -91,7 +100,9 @@
                 }
               }
             ]
-          }
+          },
+          "publish": "True",
+          "title": "Watsonx Orchestrate Integrations"
         },
         {
           "name": "solution-processmining",
@@ -110,7 +121,9 @@
                 }
               }
             ]
-          }
+          },
+          "publish": "True",
+          "title": "Process Mining on Red Hat OpenShift"
         },
         {
           "name": "solution-mq-aws-eks",
@@ -124,7 +137,8 @@
                 }
               }
             ]
-          }
+          },
+          "publish": "False"
         },
         {
           "name": "solution-sentibot",
@@ -132,7 +146,8 @@
           "homepageUrl": "",
           "repositoryTopics": {
             "nodes": []
-          }
+          },
+          "publish": "False"
         },
         {
           "name": "solution-trusteer-entra",
@@ -140,7 +155,8 @@
           "homepageUrl": "https://pages.github.ibm.com/ibm-client-engineering/solution-trusteer-entra/",
           "repositoryTopics": {
             "nodes": []
-          }
+          },
+          "publish": "False"
         },
         {
           "name": "solution-template",
@@ -154,7 +170,8 @@
                 }
               }
             ]
-          }
+          },
+          "publish": "False"
         },
         {
           "name": "solution-watsonx-news-scraper",
@@ -162,7 +179,9 @@
           "homepageUrl": "https://ibm-client-engineering.github.io/solution-watsonx-news-scraper/",
           "repositoryTopics": {
             "nodes": []
-          }
+          },
+          "publish": "True",
+          "title": "Watsonx News Scraper"
         },
         {
           "name": "solution-ai-sidekick",
@@ -170,7 +189,8 @@
           "homepageUrl": null,
           "repositoryTopics": {
             "nodes": []
-          }
+          },
+          "publish": "False"
         },
         {
           "name": "solution-sfg-aws",
@@ -189,7 +209,9 @@
                 }
               }
             ]
-          }
+          },
+          "publish": "True",
+          "title": "Sterling File Gateway on AWS EKS"
         },
         {
           "name": "solution-satellite",
@@ -208,7 +230,9 @@
                 }
               }
             ]
-          }
+          },
+          "publish": "True",
+          "title": "IBM Satellite on IBM Cloud and AWS"
         },
         {
           "name": "solution-aspera-sync",
@@ -227,7 +251,9 @@
                 }
               }
             ]
-          }
+          },
+          "publish": "True",
+          "title": "Aspera Install Using Ansible Playbooks"
         },
         {
           "name": "solution-watson-orchestrate",
@@ -251,7 +277,9 @@
                 }
               }
             ]
-          }
+          },
+          "publish": "True",
+          "title": "AWS Lambda on Watson Orchestrate"
         },
         {
           "name": "solution-filenet-aws",
@@ -275,7 +303,9 @@
                 }
               }
             ]
-          }
+          },
+          "publish": "True",
+          "title": "FileNet Content Manager on AWS EKS "
         },
         {
           "name": "solution-cp4ba-document-processing",
@@ -289,7 +319,9 @@
                 }
               }
             ]
-          }
+          },
+          "publish": "True",
+          "title": "Automated Document Processing"
         },
         {
           "name": "solution-how-we-work",
@@ -297,7 +329,8 @@
           "homepageUrl": "",
           "repositoryTopics": {
             "nodes": []
-          }
+          },
+          "publish": "False"
         },
         {
           "name": "solution-consumer-bankchat-bot",
@@ -305,7 +338,8 @@
           "homepageUrl": "",
           "repositoryTopics": {
             "nodes": []
-          }
+          },
+          "publish": "False"
         },
         {
           "name": "solution-cp4ba-processmining",
@@ -313,7 +347,8 @@
           "homepageUrl": "",
           "repositoryTopics": {
             "nodes": []
-          }
+          },
+          "publish": "False"
         },
         {
           "name": "solution-template-gatsby",
@@ -321,7 +356,8 @@
           "homepageUrl": null,
           "repositoryTopics": {
             "nodes": []
-          }
+          },
+          "publish": "False"
         },
         {
           "name": "legend",
@@ -329,7 +365,8 @@
           "homepageUrl": "https://legend.finos.org",
           "repositoryTopics": {
             "nodes": []
-          }
+          },
+          "publish": "False"
         },
         {
           "name": "solution-cmis-containerized",
@@ -343,7 +380,8 @@
                 }
               }
             ]
-          }
+          },
+          "publish": "False"
         },
         {
           "name": "solution-kafka-prometheus",
@@ -351,7 +389,8 @@
           "homepageUrl": null,
           "repositoryTopics": {
             "nodes": []
-          }
+          },
+          "publish": "False"
         },
         {
           "name": "solution-mq-gitops",
@@ -359,7 +398,8 @@
           "homepageUrl": null,
           "repositoryTopics": {
             "nodes": []
-          }
+          },
+          "publish": "False"
         },
         {
           "name": ".github",
@@ -367,7 +407,8 @@
           "homepageUrl": null,
           "repositoryTopics": {
             "nodes": []
-          }
+          },
+          "publish": "False"
         },
         {
           "name": "solution-workflow-on-containers",
@@ -381,7 +422,8 @@
                 }
               }
             ]
-          }
+          },
+          "publish": "False"
         },
         {
           "name": "solution-websphere-automation",
@@ -395,7 +437,8 @@
                 }
               }
             ]
-          }
+          },
+          "publish": "False"
         },
         {
           "name": "solution-middleware-automation",
@@ -409,7 +452,8 @@
                 }
               }
             ]
-          }
+          },
+          "publish": "False"
         },
         {
           "name": "mq-ansible-fork",
@@ -417,7 +461,8 @@
           "homepageUrl": "",
           "repositoryTopics": {
             "nodes": []
-          }
+          },
+          "publish": "False"
         },
         {
           "name": "mq-helm-fork",
@@ -425,7 +470,8 @@
           "homepageUrl": "",
           "repositoryTopics": {
             "nodes": []
-          }
+          },
+          "publish": "False"
         },
         {
           "name": "solution-mq-rdqm-hadr",
@@ -459,7 +505,8 @@
                 }
               }
             ]
-          }
+          },
+          "publish": "False"
         },
         {
           "name": "MikeZFileShare",
@@ -467,7 +514,8 @@
           "homepageUrl": null,
           "repositoryTopics": {
             "nodes": []
-          }
+          },
+          "publish": "False"
         }
       ]
     }

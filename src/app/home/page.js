@@ -70,7 +70,13 @@ export default function LandingPage() {
             <h6 className="projectTile__title">Watson Orchestrate Integrations</h6>
             <p3 className="projectTile__description">Using Integrated Custom Skills in IBM Watsonx Orchestrate</p3>
             <Tag className="projectTile__topics">
-              Automation
+              watsonx
+            </Tag>
+            <Tag className="projectTile__topics">
+              watsonx-orchestrate
+            </Tag>
+            <Tag className="projectTile__topics">
+              business-automation
             </Tag>
           </ClickableTile>
         </Column>
@@ -80,7 +86,7 @@ export default function LandingPage() {
             <h6 className="projectTile__title">Automated Document Processing</h6>
             <p3 className="projectTile__description">Automated Document Processing Solutions Using IBM Cloud Pak for Business Automation</p3>
             <Tag className="projectTile__topics">
-              Automation
+              business-automation
             </Tag>
           </ClickableTile>
         </Column>
@@ -90,7 +96,13 @@ export default function LandingPage() {
             <h6 className="projectTile__title">FileNet Content Manager on AWS EKS</h6>
             <p3 className="projectTile__description">Solution to Deploy IBM FileNet Content Manager on AWS EKS</p3>
             <Tag className="projectTile__topics">
-              Automation
+              aws-eks
+            </Tag>
+            <Tag className="projectTile__topics">
+              business-automation
+            </Tag>
+            <Tag className="projectTile__topics">
+              filenet-content-manager
             </Tag>
           </ClickableTile>
         </Column>
@@ -108,7 +120,10 @@ export default function LandingPage() {
             <h6 className="projectTile__title">Sterling File Gateway on AWS EKS</h6>
             <p3 className="projectTile__description">Installing IBM Sterling File Gateway (and other B2Bi Components) on Amazon EKS</p3>
             <Tag className="projectTile__topics">
-              Automation
+              aws-eks
+            </Tag>
+            <Tag className="projectTile__topics">
+              ibm-sterling
             </Tag>
           </ClickableTile>
         </Column>
@@ -118,7 +133,10 @@ export default function LandingPage() {
             <h6 className="projectTile__title">Customer Care Virtual Agents</h6>
             <p3 className="projectTile__description">Enhancing Customer Care Journeys Using IBM Watsonx Products</p3>
             <Tag className="projectTile__topics">
-              Automation
+              generative-ai
+            </Tag>
+            <Tag className="projectTile__topics">
+              watsonx-assistant
             </Tag>
           </ClickableTile>
         </Column>
@@ -128,7 +146,10 @@ export default function LandingPage() {
             <h6 className="projectTile__title">Process Mining on Red Hat OpenShift</h6>
             <p3 className="projectTile__description">IBM Cloud Pak for Business Automation Process Mining on Red Hat OpenShift</p3>
             <Tag className="projectTile__topics">
-              Automation
+              business-automation
+            </Tag>
+            <Tag className="projectTile__topics">
+              openshift
             </Tag>
           </ClickableTile>
         </Column>
