@@ -8,28 +8,22 @@ import {
 } from "@carbon/react";
 
 const ProjectsTiles = ({ data }) => {
-  try {
-    if (data)
-      return (
-        <>
-          {data.map((item, index) => (
-            <ClickableTile id={item.name} className="projectTile" key={index} href={item.homepageUrl} target="_blank" rel="noopener noreferrer" renderIcon={Launch}>
-                <h6 className="projectTile__title">{item.name}</h6>
-                <p3 className="projectTile__description">{item.description}</p3>
-                {item.repositoryTopics.map((topic, index) => (
-                    <Tag className="projectTile__topics" key={index}>
-                        {topic}
+  return (
+    <>
+      {data.map((repo) => (
+        <ClickableTile id={repo.name} className="projectTile" href={repo.homepageUrl} target="_blank" rel="noopener noreferrer" renderIcon={Launch}>
+          <h6 className="projectTile__title">{repo.title}</h6>
+          <p3 className="projectTile__description">{repo.description}</p3>
+          {repo.repositoryTopics.nodes.map((nodes) => (
+                    <Tag className="projectTile__topics">
+                        {nodes.topic.name}
                     </Tag>
                 ))}
-            </ClickableTile>
-          ))}
-        </>
-      );
-  }
-  catch (error) {
-    console.log(error);
-    location.reload();
-  }
+
+        </ClickableTile>
+      ))}
+    </>
+  );
 };
 
 export default ProjectsTiles;
