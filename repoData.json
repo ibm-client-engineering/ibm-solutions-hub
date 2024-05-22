@@ -5,7 +5,7 @@
         {
           "name": "ce-solutions-hub",
           "description": "Client Engineering Solutions Hub",
-          "homepageUrl": "",
+          "homepageUrl": "https://ibm-client-engineering.github.io/ce-solutions-hub/",
           "repositoryTopics": {
             "nodes": []
           },
@@ -19,7 +19,8 @@
           "repositoryTopics": {
             "nodes": []
           },
-          "publish": "False"
+          "publish": "False",
+          "title": "[Insert Solution Name]"
         },
         {
           "name": "solution-watsonx-governance",
@@ -28,7 +29,8 @@
           "repositoryTopics": {
             "nodes": []
           },
-          "publish": "False"
+          "publish": "False",
+          "title": "[Insert Solution Name]"
         },
         {
           "name": "forward-foundry",
@@ -37,7 +39,8 @@
           "repositoryTopics": {
             "nodes": []
           },
-          "publish": "False"
+          "publish": "False",
+          "title": "[Insert Solution Name]"
         },
         {
           "name": "solution-watsonx-assistant",
@@ -67,7 +70,8 @@
           "repositoryTopics": {
             "nodes": []
           },
-          "publish": "False"
+          "publish": "False",
+          "title": "[Insert Solution Name]"
         },
         {
           "name": "dtcc_rag_chatbot",
@@ -76,7 +80,8 @@
           "repositoryTopics": {
             "nodes": []
           },
-          "publish": "False"
+          "publish": "False",
+          "title": "[Insert Solution Name]"
         },
         {
           "name": "solution-wxo",
@@ -138,7 +143,8 @@
               }
             ]
           },
-          "publish": "False"
+          "publish": "False",
+          "title": "[Insert Solution Name]"
         },
         {
           "name": "solution-sentibot",
@@ -147,7 +153,8 @@
           "repositoryTopics": {
             "nodes": []
           },
-          "publish": "False"
+          "publish": "False",
+          "title": "[Insert Solution Name]"
         },
         {
           "name": "solution-trusteer-entra",
@@ -156,7 +163,8 @@
           "repositoryTopics": {
             "nodes": []
           },
-          "publish": "False"
+          "publish": "False",
+          "title": "[Insert Solution Name]"
         },
         {
           "name": "solution-template",
@@ -171,7 +179,8 @@
               }
             ]
           },
-          "publish": "False"
+          "publish": "False",
+          "title": "[Insert Solution Name]"
         },
         {
           "name": "solution-watsonx-news-scraper",
@@ -190,7 +199,8 @@
           "repositoryTopics": {
             "nodes": []
           },
-          "publish": "False"
+          "publish": "False",
+          "title": "[Insert Solution Name]"
         },
         {
           "name": "solution-sfg-aws",
@@ -330,7 +340,8 @@
           "repositoryTopics": {
             "nodes": []
           },
-          "publish": "False"
+          "publish": "False",
+          "title": "[Insert Solution Name]"
         },
         {
           "name": "solution-consumer-bankchat-bot",
@@ -339,7 +350,8 @@
           "repositoryTopics": {
             "nodes": []
           },
-          "publish": "False"
+          "publish": "False",
+          "title": "[Insert Solution Name]"
         },
         {
           "name": "solution-cp4ba-processmining",
@@ -348,7 +360,8 @@
           "repositoryTopics": {
             "nodes": []
           },
-          "publish": "False"
+          "publish": "False",
+          "title": "[Insert Solution Name]"
         },
         {
           "name": "solution-template-gatsby",
@@ -357,7 +370,8 @@
           "repositoryTopics": {
             "nodes": []
           },
-          "publish": "False"
+          "publish": "False",
+          "title": "[Insert Solution Name]"
         },
         {
           "name": "legend",
@@ -366,7 +380,8 @@
           "repositoryTopics": {
             "nodes": []
           },
-          "publish": "False"
+          "publish": "False",
+          "title": "[Insert Solution Name]"
         },
         {
           "name": "solution-cmis-containerized",
@@ -381,7 +396,8 @@
               }
             ]
           },
-          "publish": "False"
+          "publish": "False",
+          "title": "[Insert Solution Name]"
         },
         {
           "name": "solution-kafka-prometheus",
@@ -390,7 +406,8 @@
           "repositoryTopics": {
             "nodes": []
           },
-          "publish": "False"
+          "publish": "False",
+          "title": "[Insert Solution Name]"
         },
         {
           "name": "solution-mq-gitops",
@@ -399,7 +416,8 @@
           "repositoryTopics": {
             "nodes": []
           },
-          "publish": "False"
+          "publish": "False",
+          "title": "[Insert Solution Name]"
         },
         {
           "name": ".github",
@@ -408,7 +426,8 @@
           "repositoryTopics": {
             "nodes": []
           },
-          "publish": "False"
+          "publish": "False",
+          "title": "[Insert Solution Name]"
         },
         {
           "name": "solution-workflow-on-containers",
@@ -423,7 +442,8 @@
               }
             ]
           },
-          "publish": "False"
+          "publish": "False",
+          "title": "[Insert Solution Name]"
         },
         {
           "name": "solution-websphere-automation",
@@ -438,7 +458,8 @@
               }
             ]
           },
-          "publish": "False"
+          "publish": "False",
+          "title": "[Insert Solution Name]"
         },
         {
           "name": "solution-middleware-automation",
@@ -453,7 +474,8 @@
               }
             ]
           },
-          "publish": "False"
+          "publish": "False",
+          "title": "[Insert Solution Name]"
         },
         {
           "name": "mq-ansible-fork",
@@ -462,7 +484,8 @@
           "repositoryTopics": {
             "nodes": []
           },
-          "publish": "False"
+          "publish": "False",
+          "title": "[Insert Solution Name]"
         },
         {
           "name": "mq-helm-fork",
@@ -471,7 +494,8 @@
           "repositoryTopics": {
             "nodes": []
           },
-          "publish": "False"
+          "publish": "False",
+          "title": "[Insert Solution Name]"
         },
         {
           "name": "solution-mq-rdqm-hadr",
@@ -506,7 +530,8 @@
               }
             ]
           },
-          "publish": "False"
+          "publish": "False",
+          "title": "[Insert Solution Name]"
         },
         {
           "name": "MikeZFileShare",
@@ -515,7 +540,8 @@
           "repositoryTopics": {
             "nodes": []
           },
-          "publish": "False"
+          "publish": "False",
+          "title": "[Insert Solution Name]"
         }
       ]
     }
