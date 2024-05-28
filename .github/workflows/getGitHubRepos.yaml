@@ -72,6 +72,7 @@ jobs:
       - name: Create Pull Request
         id: cpr
         uses: peter-evans/create-pull-request@v3
+        continue-on-error: true
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           add-paths: |
@@ -79,7 +80,7 @@ jobs:
           commit-message: Add repository data JSON file
 
       - name: Enable Pull Request Automerge
-        if: steps.cpr.outputs.pull-request-operation == 'created'
+        if: ${{steps.cpr.outcome == 'success' && steps.cpr.outputs.pull-request-operation == 'created'}}
         uses: peter-evans/enable-pull-request-automerge@v3
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
@@ -88,13 +89,14 @@ jobs:
 
       - name: Generate a token
         id: generate-token
+        if: ${{steps.cpr.outcome == 'success' && steps.cpr.outputs.pull-request-operation == 'created'}}
         uses: actions/create-github-app-token@v1
         with:
           app-id: ${{ vars.SOLUTIONS_HUB_APP_ID }}
           private-key: ${{ secrets.SOLUTIONS_HUB_APP_KEY }}
 
       - name: Auto approve
-        if: steps.cpr.outputs.pull-request-operation == 'created'
+        if: ${{steps.cpr.outcome == 'success' && steps.cpr.outputs.pull-request-operation == 'created'}}
         run: gh pr review --approve "${{ steps.cpr.outputs.pull-request-number }}"
         env:
           GH_TOKEN: ${{ steps.generate-token.outputs.token }}

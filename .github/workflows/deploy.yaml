@@ -1,6 +1,10 @@
 name: Site Build
 
 on:
+  workflow_run:
+    workflows: ["Get GitHub Repos"]
+    types:
+      - completed
   push:
     branches:
       - main
