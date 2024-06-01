@@ -13,6 +13,16 @@
           "title": "[Insert Solution Name]"
         },
         {
+          "name": "ce-solutions-hub",
+          "description": "Client Engineering Solutions Hub",
+          "homepageUrl": "https://ibm-client-engineering.github.io/ce-solutions-hub/",
+          "repositoryTopics": {
+            "nodes": []
+          },
+          "publish": "False",
+          "title": "IBM Client Engineering Solutions Hub"
+        },
+        {
           "name": "solution-mq-rdqm-hadr",
           "description": "Set up IBM MQ Traditional with RDQM ",
           "homepageUrl": "",
@@ -47,16 +57,6 @@
           },
           "publish": "False",
           "title": "[Insert Solution Name]"
-        },
-        {
-          "name": "ce-solutions-hub",
-          "description": "Client Engineering Solutions Hub",
-          "homepageUrl": "https://ibm-client-engineering.github.io/ce-solutions-hub/",
-          "repositoryTopics": {
-            "nodes": []
-          },
-          "publish": "False",
-          "title": "IBM Client Engineering Solutions Hub"
         },
         {
           "name": "solution-filenet-aws",
