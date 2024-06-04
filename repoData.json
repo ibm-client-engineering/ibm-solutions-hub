@@ -3,14 +3,25 @@
     "repositories": {
       "nodes": [
         {
-          "name": "ce-solutions-hub",
-          "description": "Client Engineering Solutions Hub",
-          "homepageUrl": "https://ibm-client-engineering.github.io/ce-solutions-hub/",
+          "name": "solution-sentibot",
+          "description": "A news scraper and sentiment analyzer powered by watsonx.ai",
+          "homepageUrl": "https://ibm-client-engineering.github.io/solution-sentibot/",
           "repositoryTopics": {
-            "nodes": []
+            "nodes": [
+              {
+                "topic": {
+                  "name": "watsonx-ai"
+                }
+              },
+              {
+                "topic": {
+                  "name": "generative-ai"
+                }
+              }
+            ]
           },
-          "publish": "False",
-          "title": "IBM Client Engineering Solutions Hub"
+          "publish": "True",
+          "title": "Sentibot"
         },
         {
           "name": "solution-wxai-aws",
@@ -21,6 +32,16 @@
           },
           "publish": "False",
           "title": "[Insert Solution Name]"
+        },
+        {
+          "name": "ce-solutions-hub",
+          "description": "Client Engineering Solutions Hub",
+          "homepageUrl": "https://ibm-client-engineering.github.io/ce-solutions-hub/",
+          "repositoryTopics": {
+            "nodes": []
+          },
+          "publish": "False",
+          "title": "IBM Client Engineering Solutions Hub"
         },
         {
           "name": "solution-mq-rdqm-hadr",
@@ -225,16 +246,6 @@
           "title": "[Insert Solution Name]"
         },
         {
-          "name": "solution-sentibot",
-          "description": null,
-          "homepageUrl": "",
-          "repositoryTopics": {
-            "nodes": []
-          },
-          "publish": "False",
-          "title": "[Insert Solution Name]"
-        },
-        {
           "name": "solution-trusteer-entra",
           "description": null,
           "homepageUrl": "https://pages.github.ibm.com/ibm-client-engineering/solution-trusteer-entra/",
@@ -267,7 +278,7 @@
           "repositoryTopics": {
             "nodes": []
           },
-          "publish": "True",
+          "publish": "False",
           "title": "Watsonx News Scraper"
         },
         {
