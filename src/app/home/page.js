@@ -2,7 +2,12 @@
 
 import { FlexGrid, Column, ClickableTile, Row, Tag } from '@carbon/react';
 import React from "react";
-import { Add, WatsonxAi, MachineLearningModel, IbmSecurity, Data_1, CloudApp, ZSystems, Launch, WatsonHealthEdgeEnhancement_01, WatsonHealthEdgeEnhancement_02, WatsonHealthEdgeEnhancement_03, RecentlyViewed } from '@carbon/icons-react';
+import { Add, WatsonxAi, MachineLearningModel, IbmSecurity, Data_1, CloudApp, ZSystems, Launch, WatsonHealthEdgeEnhancement_01, WatsonHealthEdgeEnhancement_02, WatsonHealthEdgeEnhancement_03 } from '@carbon/icons-react';
+import RecentProjectsTiles from "./RecentProjectsTiles";
+import data from "../../../repoData.json"
+
+var repoData = data.organization.repositories.nodes.filter(repo => repo.publish === 'True');
+var recentRepos = repoData.slice(0, 3)
 
 
 export default function LandingPage() {
@@ -64,48 +69,7 @@ export default function LandingPage() {
           <br /><br />
           <h4>Recently published projects from the Client Engineering Team</h4>
         </Column>
-        <Column lg={4} md={2} sm={1}>
-          <ClickableTile className="projectTile" href={"https://ibm-client-engineering.github.io/solution-wxo/"} target="_blank" rel="noopener noreferrer" renderIcon={Launch} style={{ height: '400px' }}>
-            <RecentlyViewed size={32} />
-            <h6 className="projectTile__title">Watson Orchestrate Integrations</h6>
-            <p3 className="projectTile__description">Using Integrated Custom Skills in IBM Watsonx Orchestrate</p3>
-            <Tag className="projectTile__topics">
-              watsonx
-            </Tag>
-            <Tag className="projectTile__topics">
-              watsonx-orchestrate
-            </Tag>
-            <Tag className="projectTile__topics">
-              business-automation
-            </Tag>
-          </ClickableTile>
-        </Column>
-        <Column lg={4} md={2} sm={1}>
-          <ClickableTile className="projectTile" href={"https://ibm-client-engineering.github.io/solution-cp4ba-document-processing/"} target="_blank" rel="noopener noreferrer" renderIcon={Launch} style={{ height: '400px' }}>
-            <RecentlyViewed size={32} />
-            <h6 className="projectTile__title">Automated Document Processing</h6>
-            <p3 className="projectTile__description">Automated Document Processing Solutions Using IBM Cloud Pak for Business Automation</p3>
-            <Tag className="projectTile__topics">
-              business-automation
-            </Tag>
-          </ClickableTile>
-        </Column>
-        <Column lg={4} md={2} sm={1}>
-          <ClickableTile className="projectTile" href={"https://ibm-client-engineering.github.io/solution-filenet-aws"} target="_blank" rel="noopener noreferrer" renderIcon={Launch} style={{ height: '400px' }}>
-            <RecentlyViewed size={32} />
-            <h6 className="projectTile__title">FileNet Content Manager on AWS EKS</h6>
-            <p3 className="projectTile__description">Solution to Deploy IBM FileNet Content Manager on AWS EKS</p3>
-            <Tag className="projectTile__topics">
-              aws-eks
-            </Tag>
-            <Tag className="projectTile__topics">
-              business-automation
-            </Tag>
-            <Tag className="projectTile__topics">
-              filenet-content-manager
-            </Tag>
-          </ClickableTile>
-        </Column>
+        <RecentProjectsTiles data={recentRepos}></RecentProjectsTiles>
       </Row>
 
       <Row fullWidth className='row-padding'>
