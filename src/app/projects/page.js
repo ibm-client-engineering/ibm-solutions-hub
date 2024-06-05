@@ -15,7 +15,16 @@ function ProjectsPage() {
 
     repoData.forEach((node) => {
       console.log(node)
+      var inTag = false
+      node.repositoryTopics.nodes.forEach((tag) => {
+        if (tag.topic.name.toLowerCase().includes(inputText)) {
+          inTag = true
+        }
+      })
+      
+
       var isVisible =
+        inTag ||
         node.name && node.name.toLowerCase().includes(inputText) ||
         node.description &&
         node.description.toLowerCase().includes(inputText) ||
