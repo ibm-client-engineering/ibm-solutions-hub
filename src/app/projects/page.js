@@ -85,7 +85,7 @@ function ProjectsPage() {
         <Column className="banner-title-container" lg={8} md={4} sm={2}>
           <p className="banner-title">Projects</p>
           <Search className="banner-search" size="lg" placeholder="Find a project" labelText="Search" closeButtonLabelText="Clear search input" onChange={searchProjects} />
-          <FilterableMultiSelect id="carbon-multiselect" titleText="Filter by tag" items={tagsArray} itemToString={item => item ? item : ''} selectionFeedback="top-after-reopen" onChange={filterProjects}/>
+          <FilterableMultiSelect id="carbon-multiselect" size="lg" placeholder="Filter by tag" items={tagsArray} itemToString={item => item ? item : ''} selectionFeedback="top-after-reopen" onChange={filterProjects}/>
         </Column>
         <Column className="banner-image-container" lg={8} md={4} sm={2}>
         </Column>
