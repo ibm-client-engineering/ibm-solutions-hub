@@ -7,15 +7,15 @@ import ProjectsTiles from "./ProjectsTiles";
 import data from "../../../repoData.json"
 
 var repoData = data.organization.repositories.nodes.filter(repo => repo.publish === 'True');
-var repoFiltered = new Map() //for checking if the repo falls under the current search or tag filters
-var tags = new Set()
+var repoFiltered = new Map() //for checking if the repo falls under the current search or topic filters
+var topics = new Set()
 repoData.forEach((node) => {
-  repoFiltered.set(node.name, {"tag": true, "search": true})
-  node.repositoryTopics.nodes.forEach((tag) => {
-    tags.add(tag.topic.name)
+  repoFiltered.set(node.name, {"topic": true, "search": true})
+  node.repositoryTopics.nodes.forEach((topic) => {
+    topics.add(topic.topic.name)
   })
 })
-const tagsArray = Array.from(tags)
+const topicsArray = Array.from(topics)
 
 
 function ProjectsPage() {
@@ -23,7 +23,7 @@ function ProjectsPage() {
   let renderProjects = () => {
     repoData.forEach((node) => {
       if (document.getElementById(node.name)) {
-        if (repoFiltered.get(node.name).tag && repoFiltered.get(node.name).search)
+        if (repoFiltered.get(node.name).topic && repoFiltered.get(node.name).search)
           document.getElementById(node.name).style.display = "block";
         else
           document.getElementById(node.name).style.display = "none";
@@ -34,16 +34,16 @@ function ProjectsPage() {
   let searchProjects = (e) => {
     const inputText = e.target.value.toLowerCase();
     repoData.forEach((node) => {
-      var inTag = false
-      node.repositoryTopics.nodes.forEach((tag) => {
-        if (tag.topic.name.toLowerCase().includes(inputText)) {
-          inTag = true
+      var inTopic = false
+      node.repositoryTopics.nodes.forEach((topic) => {
+        if (topic.topic.name.toLowerCase().includes(inputText)) {
+          inTopic = true
         }
       })
       
 
       var isVisible =
-        inTag ||
+        inTopic ||
         node.name && node.name.toLowerCase().includes(inputText) ||
         node.description &&
         node.description.toLowerCase().includes(inputText) ||
@@ -58,14 +58,14 @@ function ProjectsPage() {
   }
 
   let filterProjects = (e) => {
-    const inputTags = e.selectedItems;
+    const inputTopics = e.selectedItems;
     repoData.forEach((node) => {
-      var nodeTags = node.repositoryTopics.nodes.map((tag) => tag.topic.name)
-      var inRepo = inputTags.every((tag) => nodeTags.includes(tag))
+      var nodeTopics = node.repositoryTopics.nodes.map((topic) => topic.topic.name)
+      var inRepo = inputTopics.every((topic) => nodeTopics.includes(topic))
 
       if (document.getElementById(node.name)) {
         var temp = repoFiltered.get(node.name)
-        temp.tag = inRepo
+        temp.topic = inRepo
         repoFiltered.set(node.name, temp)
       }
     })
@@ -80,7 +80,7 @@ function ProjectsPage() {
           <p className="banner-title">Projects</p>
           <Row className='search-row'>
             <Search className="banner-search" size="lg" placeholder="Search" labelText="Search" closeButtonLabelText="Clear search input" onChange={searchProjects} />
-            <FilterableMultiSelect id="carbon-multiselect" className="filter-search" size="lg" placeholder="Tags" items={tagsArray} itemToString={item => item ? item : ''} selectionFeedback="top-after-reopen" onChange={filterProjects}/>
+            <FilterableMultiSelect id="carbon-multiselect" className="filter-search" size="lg" placeholder="Topics" items={topicsArray} itemToString={item => item ? item : ''} selectionFeedback="top-after-reopen" onChange={filterProjects}/>
           </Row>
         </Column>
         <Column className="banner-image-container" lg={8} md={4} sm={2}>
