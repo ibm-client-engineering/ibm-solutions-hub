@@ -16,6 +16,10 @@ repoData.forEach((node) => {
   })
 })
 const tagsArray = Array.from(tags)
+// var tagsObjArray = []
+// tagsArray.forEach((str) => {
+//   tagsObjArray.push({"item": })
+// })
 
 
 function ProjectsPage() {
@@ -60,15 +64,15 @@ function ProjectsPage() {
 
   let filterProjects = (e) => {
     const inputTags = e.selectedItems;
+    console.log(inputTags)
     repoData.forEach((node) => {
-      console.log(node)
       var inRepo = inputTags.length == 0
       node.repositoryTopics.nodes.forEach((tag) => {
-        if (inputTags.includes(tag.topic.name.toLowerCase())) {
-          inRepo = true
+        if (!inputTags.includes(tag.topic.name.toLowerCase()) && inputTags.length > 0) {
+          inRepo = false
         }
       })
-
+      console.log(inRepo)
       if (document.getElementById(node.name)) {
         var temp = repoFiltered.get(node.name)
         temp.tag = inRepo
