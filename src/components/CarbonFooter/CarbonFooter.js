@@ -8,5 +8,3 @@ const CarbonFooter = () => (
 );
 
 export default CarbonFooter;
-
-// export default CarbonFooter;
