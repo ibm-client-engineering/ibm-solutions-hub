@@ -13,6 +13,16 @@
           "title": "[Insert Solution Name]"
         },
         {
+          "name": "ce-solutions-hub",
+          "description": "Client Engineering Solutions Hub",
+          "homepageUrl": "https://ibm-client-engineering.github.io/ce-solutions-hub/",
+          "repositoryTopics": {
+            "nodes": []
+          },
+          "publish": "False",
+          "title": "IBM Client Engineering Solutions Hub"
+        },
+        {
           "name": "solution-filenet-aws",
           "description": "Solution to deploy IBM FileNet Content Manager on AWS EKS",
           "homepageUrl": "https://ibm-client-engineering.github.io/solution-filenet-aws/",
@@ -37,16 +47,6 @@
           },
           "publish": "True",
           "title": "FileNet Content Manager on AWS EKS "
-        },
-        {
-          "name": "ce-solutions-hub",
-          "description": "Client Engineering Solutions Hub",
-          "homepageUrl": "https://ibm-client-engineering.github.io/ce-solutions-hub/",
-          "repositoryTopics": {
-            "nodes": []
-          },
-          "publish": "False",
-          "title": "IBM Client Engineering Solutions Hub"
         },
         {
           "name": "solution-sentibot",
