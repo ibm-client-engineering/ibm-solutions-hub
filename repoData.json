@@ -3,6 +3,52 @@
     "repositories": {
       "nodes": [
         {
+          "name": "solution-wxai-aws",
+          "description": null,
+          "homepageUrl": "https://ibm-client-engineering.github.io/solution-wxai-aws/",
+          "repositoryTopics": {
+            "nodes": []
+          },
+          "publish": "False",
+          "title": "[Insert Solution Name]"
+        },
+        {
+          "name": "ce-solutions-hub",
+          "description": "Client Engineering Solutions Hub",
+          "homepageUrl": "https://ibm-client-engineering.github.io/ce-solutions-hub/",
+          "repositoryTopics": {
+            "nodes": []
+          },
+          "publish": "False",
+          "title": "IBM Client Engineering Solutions Hub"
+        },
+        {
+          "name": "solution-filenet-aws",
+          "description": "Solution to deploy IBM FileNet Content Manager on AWS EKS",
+          "homepageUrl": "https://ibm-client-engineering.github.io/solution-filenet-aws/",
+          "repositoryTopics": {
+            "nodes": [
+              {
+                "topic": {
+                  "name": "aws-eks"
+                }
+              },
+              {
+                "topic": {
+                  "name": "business-automation"
+                }
+              },
+              {
+                "topic": {
+                  "name": "filenet-content-manager"
+                }
+              }
+            ]
+          },
+          "publish": "True",
+          "title": "FileNet Content Manager on AWS EKS "
+        },
+        {
           "name": "solution-sentibot",
           "description": "A news scraper and sentiment analyzer powered by watsonx.ai",
           "homepageUrl": "https://ibm-client-engineering.github.io/solution-sentibot/",
@@ -22,26 +68,6 @@
           },
           "publish": "True",
           "title": "Sentibot"
-        },
-        {
-          "name": "solution-wxai-aws",
-          "description": null,
-          "homepageUrl": "https://ibm-client-engineering.github.io/solution-wxai-aws/",
-          "repositoryTopics": {
-            "nodes": []
-          },
-          "publish": "False",
-          "title": "[Insert Solution Name]"
-        },
-        {
-          "name": "ce-solutions-hub",
-          "description": "Client Engineering Solutions Hub",
-          "homepageUrl": "https://ibm-client-engineering.github.io/ce-solutions-hub/",
-          "repositoryTopics": {
-            "nodes": []
-          },
-          "publish": "False",
-          "title": "IBM Client Engineering Solutions Hub"
         },
         {
           "name": "solution-mq-rdqm-hadr",
@@ -78,32 +104,6 @@
           },
           "publish": "False",
           "title": "[Insert Solution Name]"
-        },
-        {
-          "name": "solution-filenet-aws",
-          "description": "Solution to deploy IBM FileNet Content Manager on AWS EKS",
-          "homepageUrl": "https://ibm-client-engineering.github.io/solution-filenet-aws/",
-          "repositoryTopics": {
-            "nodes": [
-              {
-                "topic": {
-                  "name": "aws-eks"
-                }
-              },
-              {
-                "topic": {
-                  "name": "business-automation"
-                }
-              },
-              {
-                "topic": {
-                  "name": "filenet-content-manager"
-                }
-              }
-            ]
-          },
-          "publish": "True",
-          "title": "FileNet Content Manager on AWS EKS "
         },
         {
           "name": "solution-cmis-containerized",
