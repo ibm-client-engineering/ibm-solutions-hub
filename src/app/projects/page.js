@@ -34,7 +34,6 @@ function ProjectsPage() {
   let searchProjects = (e) => {
     const inputText = e.target.value.toLowerCase();
     repoData.forEach((node) => {
-      console.log(node)
       var inTag = false
       node.repositoryTopics.nodes.forEach((tag) => {
         if (tag.topic.name.toLowerCase().includes(inputText)) {
@@ -60,12 +59,10 @@ function ProjectsPage() {
 
   let filterProjects = (e) => {
     const inputTags = e.selectedItems;
-    console.log(inputTags)
     repoData.forEach((node) => {
       var nodeTags = node.repositoryTopics.nodes.map((tag) => tag.topic.name)
       var inRepo = inputTags.every((tag) => nodeTags.includes(tag))
-      
-      console.log(inRepo)
+
       if (document.getElementById(node.name)) {
         var temp = repoFiltered.get(node.name)
         temp.tag = inRepo
