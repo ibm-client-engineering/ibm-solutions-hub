@@ -1,6 +1,6 @@
 'use client';
 
-import { Grid, Column, Search, FilterableMultiSelect } from "@carbon/react";
+import { Grid, Column, Search, FilterableMultiSelect, Row } from "@carbon/react";
 import React, { useEffect, useState } from "react";
 import ProjectsTiles from "./ProjectsTiles";
 
@@ -88,8 +88,10 @@ function ProjectsPage() {
       <Column className="banner-container" lg={16} md={8} sm={4}>
         <Column className="banner-title-container" lg={8} md={4} sm={2}>
           <p className="banner-title">Projects</p>
-          <Search className="banner-search" size="lg" placeholder="Find a project" labelText="Search" closeButtonLabelText="Clear search input" onChange={searchProjects} />
-          <FilterableMultiSelect id="carbon-multiselect" size="lg" placeholder="Filter by tag" items={tagsArray} itemToString={item => item ? item : ''} selectionFeedback="top-after-reopen" onChange={filterProjects}/>
+          <Row className='search-row'>
+            <Search className="banner-search" size="lg" placeholder="Search" labelText="Search" closeButtonLabelText="Clear search input" onChange={searchProjects} />
+            <FilterableMultiSelect id="carbon-multiselect" className="filter-search" size="lg" placeholder="Tags" items={tagsArray} itemToString={item => item ? item : ''} selectionFeedback="top-after-reopen" onChange={filterProjects}/>
+          </Row>
         </Column>
         <Column className="banner-image-container" lg={8} md={4} sm={2}>
         </Column>
