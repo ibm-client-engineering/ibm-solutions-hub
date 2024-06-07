@@ -4,13 +4,29 @@
       "nodes": [
         {
           "name": "solution-wxai-aws",
-          "description": null,
+          "description": "Deploying watsonx.ai on AWS for AI Assistant Solutions",
           "homepageUrl": "https://ibm-client-engineering.github.io/solution-wxai-aws/",
           "repositoryTopics": {
-            "nodes": []
+            "nodes": [
+              {
+                "topic": {
+                  "name": "aws"
+                }
+              },
+              {
+                "topic": {
+                  "name": "watsonx-ai"
+                }
+              },
+              {
+                "topic": {
+                  "name": "watsonx-assistant"
+                }
+              }
+            ]
           },
-          "publish": "False",
-          "title": "[Insert Solution Name]"
+          "publish": "True",
+          "title": "Deploying watsonx.ai on AWS for AI Assistant Solutions"
         },
         {
           "name": "ce-solutions-hub",
@@ -173,16 +189,6 @@
           "title": "[Insert Solution Name]"
         },
         {
-          "name": "dtcc_rag_chatbot",
-          "description": null,
-          "homepageUrl": null,
-          "repositoryTopics": {
-            "nodes": []
-          },
-          "publish": "False",
-          "title": "[Insert Solution Name]"
-        },
-        {
           "name": "solution-wxo",
           "description": "Using Integrated Custom Skills in IBM Watsonx Orchestrate",
           "homepageUrl": "https://ibm-client-engineering.github.io/solution-wxo/",
@@ -246,16 +252,6 @@
           "title": "[Insert Solution Name]"
         },
         {
-          "name": "solution-trusteer-entra",
-          "description": null,
-          "homepageUrl": "https://pages.github.ibm.com/ibm-client-engineering/solution-trusteer-entra/",
-          "repositoryTopics": {
-            "nodes": []
-          },
-          "publish": "False",
-          "title": "[Insert Solution Name]"
-        },
-        {
           "name": "solution-template",
           "description": null,
           "homepageUrl": null,
@@ -280,16 +276,6 @@
           },
           "publish": "False",
           "title": "Watsonx News Scraper"
-        },
-        {
-          "name": "solution-ai-sidekick",
-          "description": null,
-          "homepageUrl": null,
-          "repositoryTopics": {
-            "nodes": []
-          },
-          "publish": "False",
-          "title": "[Insert Solution Name]"
         },
         {
           "name": "solution-sfg-aws",
@@ -399,26 +385,6 @@
         {
           "name": "solution-how-we-work",
           "description": "This will be the solution doc of solution docs",
-          "homepageUrl": "",
-          "repositoryTopics": {
-            "nodes": []
-          },
-          "publish": "False",
-          "title": "[Insert Solution Name]"
-        },
-        {
-          "name": "solution-consumer-bankchat-bot",
-          "description": null,
-          "homepageUrl": "",
-          "repositoryTopics": {
-            "nodes": []
-          },
-          "publish": "False",
-          "title": "[Insert Solution Name]"
-        },
-        {
-          "name": "solution-cp4ba-processmining",
-          "description": null,
           "homepageUrl": "",
           "repositoryTopics": {
             "nodes": []
