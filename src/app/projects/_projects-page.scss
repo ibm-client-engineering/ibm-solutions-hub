@@ -65,10 +65,9 @@
 
 .projectTileContainer {
     display: flex;
-    flex-direction: row;
-    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: flex-start;
     gap: 16px;
-    align-self: stretch;
   }
 
 .filter-search {
@@ -83,3 +82,5 @@
     width: 100%;
     padding-left: 1em;
 }
+
+
