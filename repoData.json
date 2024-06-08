@@ -3,6 +3,16 @@
     "repositories": {
       "nodes": [
         {
+          "name": "ce-solutions-hub",
+          "description": "Client Engineering Solutions Hub",
+          "homepageUrl": "https://ibm-client-engineering.github.io/ce-solutions-hub/",
+          "repositoryTopics": {
+            "nodes": []
+          },
+          "publish": "False",
+          "title": "IBM Client Engineering Solutions Hub"
+        },
+        {
           "name": "solution-wxai-aws",
           "description": "Deploying watsonx.ai on AWS for AI Assistant Solutions",
           "homepageUrl": "https://ibm-client-engineering.github.io/solution-wxai-aws/",
@@ -26,17 +36,7 @@
             ]
           },
           "publish": "True",
-          "title": "Deploying watsonx.ai on AWS for AI Assistant Solutions"
-        },
-        {
-          "name": "ce-solutions-hub",
-          "description": "Client Engineering Solutions Hub",
-          "homepageUrl": "https://ibm-client-engineering.github.io/ce-solutions-hub/",
-          "repositoryTopics": {
-            "nodes": []
-          },
-          "publish": "False",
-          "title": "IBM Client Engineering Solutions Hub"
+          "title": "IBM watsonx.ai on AWS"
         },
         {
           "name": "solution-filenet-aws",
