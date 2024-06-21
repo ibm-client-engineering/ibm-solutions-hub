@@ -3,6 +3,32 @@
     "repositories": {
       "nodes": [
         {
+          "name": "solution-wxai-aws",
+          "description": "Deploying watsonx.ai on AWS for AI Assistant Solutions",
+          "homepageUrl": "https://ibm-client-engineering.github.io/solution-wxai-aws/",
+          "repositoryTopics": {
+            "nodes": [
+              {
+                "topic": {
+                  "name": "aws"
+                }
+              },
+              {
+                "topic": {
+                  "name": "watsonx-ai"
+                }
+              },
+              {
+                "topic": {
+                  "name": "watsonx-assistant"
+                }
+              }
+            ]
+          },
+          "publish": "True",
+          "title": "IBM watsonx.ai on AWS"
+        },
+        {
           "name": "ce-solutions-hub",
           "description": "Client Engineering Solutions Hub",
           "homepageUrl": "https://ibm-client-engineering.github.io/ce-solutions-hub/",
@@ -37,32 +63,6 @@
           },
           "publish": "True",
           "title": "FileNet Content Manager on AWS EKS "
-        },
-        {
-          "name": "solution-wxai-aws",
-          "description": "Deploying watsonx.ai on AWS for AI Assistant Solutions",
-          "homepageUrl": "https://ibm-client-engineering.github.io/solution-wxai-aws/",
-          "repositoryTopics": {
-            "nodes": [
-              {
-                "topic": {
-                  "name": "aws"
-                }
-              },
-              {
-                "topic": {
-                  "name": "watsonx-ai"
-                }
-              },
-              {
-                "topic": {
-                  "name": "watsonx-assistant"
-                }
-              }
-            ]
-          },
-          "publish": "True",
-          "title": "IBM watsonx.ai on AWS"
         },
         {
           "name": "solution-sentibot",
