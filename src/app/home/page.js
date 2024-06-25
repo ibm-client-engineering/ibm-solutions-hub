@@ -4,7 +4,9 @@ import { FlexGrid, Column, ClickableTile, Row, Tag } from '@carbon/react';
 import React from "react";
 import { Add, WatsonxAi, MachineLearningModel, IbmSecurity, Data_1, CloudApp, ZSystems, Launch, WatsonHealthEdgeEnhancement_01, WatsonHealthEdgeEnhancement_02, WatsonHealthEdgeEnhancement_03 } from '@carbon/icons-react';
 import RecentProjectsTiles from "./RecentProjectsTiles";
-import data from "../../../repoData.json"
+import data from "../../../repoData.json";
+import Link from 'next/link';
+import ProjectsTiles from '../projects/ProjectsTiles'; 
 
 var repoData = data.organization.repositories.nodes.filter(repo => repo.publish === 'True');
 var recentRepos = repoData.slice(0, 3)
@@ -20,11 +22,16 @@ export default function LandingPage() {
           <h1 className="landing-page__header-description">Working in the Open</h1>
         </Column>
         <Column lg={4} md={2} sm={1}>
-          <ClickableTile className="clickable-tile-1" renderIcon={Add} style={{ height: '240px' }}>
-            <WatsonxAi size={32} />
-            <br /><br /><br /><br />
-            <h4 className="clickable-tile-title">Generative AI</h4>
-            <p1 className="clickable-tile-description">Easily deploy and embed AI across your business, manage all data sources, and accelerate responsible AI workflows—all on one platform</p1>
+          <ClickableTile
+              className="clickable-tile-1"
+              renderIcon={Add}
+              style={{ height: '240px' }}
+              href="/ce-solutions-hub/projects?tag=generative-ai"
+            >
+              <WatsonxAi size={32} />
+              <br /><br /><br /><br />
+              <h4 className="clickable-tile-title">Generative AI</h4>
+              <p1 className="clickable-tile-description">Easily deploy and embed AI across your business, manage all data sources, and accelerate responsible AI workflows—all on one platform</p1>
           </ClickableTile>
           <ClickableTile className="clickable-tile-2" renderIcon={Add} style={{ height: '240px' }}>
             <IbmSecurity size={32} />
