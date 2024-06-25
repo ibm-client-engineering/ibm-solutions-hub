@@ -20,8 +20,8 @@ const topicsArray = Array.from(topics);
 
 // Parse URL parameters outside the component
 const urlParams = new URLSearchParams(window.location.search);
-const tag = urlParams.get('tag');
-const initialSelectedTopics = tag ? [tag] : [];
+const topic = urlParams.get('topic');
+const initialSelectedTopics = topic ? [topic] : [];
 
 function ProjectsPage() {
   const [selectedTopics, setSelectedTopics] = useState(initialSelectedTopics);
@@ -41,8 +41,8 @@ function ProjectsPage() {
 
   //this function calls renderProjects initially to reflect initial selection
   React.useEffect(() => {
-    if (tag) {
-      filterProjectsByTag(tag);
+    if (topic) {
+      filterProjectsByTag(topic);
     }
   }, []);
 
@@ -89,10 +89,10 @@ function ProjectsPage() {
   };
 
   // Define the filterProjectsByTag function
-  let filterProjectsByTag = (tag) => {
+  let filterProjectsByTag = (topic) => {
     repoData.forEach((node) => {
       var nodeTopics = node.repositoryTopics.nodes.map((topic) => topic.topic.name);
-      var inRepo = nodeTopics.includes(tag);
+      var inRepo = nodeTopics.includes(topic);
 
       if (document.getElementById(node.name)) {
         var temp = repoFiltered.get(node.name);

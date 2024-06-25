@@ -26,7 +26,7 @@ export default function LandingPage() {
               className="clickable-tile-1"
               renderIcon={Add}
               style={{ height: '240px' }}
-              href="/ce-solutions-hub/projects?tag=generative-ai"
+              href="/ce-solutions-hub/projects?topic=generative-ai"
             >
               <WatsonxAi size={32} />
               <br /><br /><br /><br />
