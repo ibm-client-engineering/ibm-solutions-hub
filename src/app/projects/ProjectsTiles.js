@@ -13,7 +13,7 @@ const ProjectsTiles = ({ data }) => {
       {data.map((repo, index) => (
         <ClickableTile id={repo.name} className="projectTile" key={index} href={repo.homepageUrl} target="_blank" rel="noopener noreferrer" renderIcon={Launch}>
           <h6 className="projectTile__title">{repo.title}</h6>
-          <p className="projectTile__description">{repo.description}</p>
+          <p3 className="projectTile__description">{repo.description}</p3>
           {repo.repositoryTopics.nodes.map((nodes, index) => (
             <Tag className="projectTile__topics" key={index}>
               {nodes.topic.name}
