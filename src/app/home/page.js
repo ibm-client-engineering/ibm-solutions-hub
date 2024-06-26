@@ -33,7 +33,8 @@ export default function LandingPage() {
               <h4 className="clickable-tile-title">Generative AI</h4>
               <p1 className="clickable-tile-description">Easily deploy and embed AI across your business, manage all data sources, and accelerate responsible AI workflows—all on one platform</p1>
           </ClickableTile>
-          <ClickableTile className="clickable-tile-2" renderIcon={Add} style={{ height: '240px' }}>
+          <ClickableTile className="clickable-tile-2" renderIcon={Add} style={{ height: '240px' }}
+            href="/ce-solutions-hub/projects">
             <IbmSecurity size={32} />
             <br /><br /><br /><br />
             <h4 className="clickable-tile-title">Security</h4>
@@ -41,13 +42,17 @@ export default function LandingPage() {
           </ClickableTile>
         </Column>
         <Column lg={4} md={2} sm={1}>
-          <ClickableTile className="clickable-tile-3" renderIcon={Add} style={{ height: '240px' }}>
+          <ClickableTile className="clickable-tile-3" renderIcon={Add} style={{ height: '240px' }}
+            href="/ce-solutions-hub/projects?topic=data"
+            >
             <Data_1 size={32} />
             <br /><br /><br /><br />
             <h4 className="clickable-tile-title">Data</h4>
             <p1 className="clickable-tile-description">Predict outcomes faster using a platform built with data fabric architecture. Collect, organize and analyze data, no matter where it resides</p1>
           </ClickableTile>
-          <ClickableTile className="clickable-tile-4" renderIcon={Add} style={{ height: '240px' }}>
+          <ClickableTile className="clickable-tile-4" renderIcon={Add} style={{ height: '240px' }}
+            href="/ce-solutions-hub/projects"
+            >
             <MachineLearningModel size={32} />
             <br /><br /><br /><br />
             <h4 className="clickable-tile-title">AI Ops</h4>
@@ -55,13 +60,15 @@ export default function LandingPage() {
           </ClickableTile>
         </Column>
         <Column lg={4} md={2} sm={1}>
-          <ClickableTile className="clickable-tile-5" renderIcon={Add} style={{ height: '240px' }}>
+          <ClickableTile className="clickable-tile-5" renderIcon={Add} style={{ height: '240px' }}
+            href="/ce-solutions-hub/projects">
             <CloudApp size={32} />
             <br /><br /><br /><br />
             <h4 className="clickable-tile-title">Hybrid Cloud</h4>
             <p1 className="clickable-tile-description">Hybrid cloud allows for the seamless integration of platforms, applications, and infrastructure built on public cloud, private cloud and on-prem</p1>
           </ClickableTile>
-          <ClickableTile className="clickable-tile-6" renderIcon={Add} style={{ height: '240px' }}>
+          <ClickableTile className="clickable-tile-6" renderIcon={Add} style={{ height: '240px' }}
+            href="/ce-solutions-hub/projects">
             <ZSystems size={32} />
             <br /><br /><br /><br />
             <h4 className="clickable-tile-title">IBM Z</h4>
