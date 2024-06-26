@@ -122,7 +122,7 @@ function ProjectsPage() {
                 setSelectedTopics(e.selectedItems);
                 filterProjects(e);
               }} 
-              selectedItems={selectedTopics} // Set selected items based on state
+              initialSelectedItems={selectedTopics} // Set selected items based on state
             />
           </Row>
         </Column>
