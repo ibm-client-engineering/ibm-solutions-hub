@@ -1,7 +1,8 @@
+
 'use client';
 
 import { Grid, Column, Search, FilterableMultiSelect, Row } from "@carbon/react";
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import ProjectsTiles from "./ProjectsTiles";
 
 import data from "../../../repoData.json";
@@ -17,8 +18,13 @@ repoData.forEach((node) => {
 });
 const topicsArray = Array.from(topics);
 
+// Parse URL parameters outside the component
+const urlParams = new URLSearchParams(window.location.search);
+const topic = urlParams.get('topic');
+const initialSelectedTopics = topic ? [topic] : [];
+
 function ProjectsPage() {
-  const [selectedTopics, setSelectedTopics] = useState([]);
+  const [selectedTopics, setSelectedTopics] = useState(initialSelectedTopics);
 
   // Define the renderProjects function
   let renderProjects = () => {
@@ -34,16 +40,12 @@ function ProjectsPage() {
   };
 
   //this function calls renderProjects initially to reflect initial selection
-  useEffect(() => {
-    if (typeof window !== "undefined") {
-      const urlParams = new URLSearchParams(window.location.search);
-      const topic = urlParams.get('topic');
-      if (topic) {
-        setSelectedTopics([topic]);
-        filterProjectsByTag(topic);
-      }
+  React.useEffect(() => {
+    if (topic) {
+      filterProjectsByTag(topic);
     }
   }, []);
+
 
   let searchProjects = (e) => {
     const inputText = e.target.value.toLowerCase();
