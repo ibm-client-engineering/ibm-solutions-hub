@@ -77,23 +77,23 @@ export default function LandingPage() {
         </Column>
       </Row>
 
-      <Row fullWidth className='row-padding'>
+      <Row condensed className='row-padding'>
         <Column md={2} lg={4} sm={1} className="landing-page__subheader">
           <h3>Recent Projects</h3>
-          <br /><br />
-          <h4>Recently published projects from the Client Engineering Team</h4>
+          <br />
+          <h4 className='subheading-text'>Recently published projects from the Client Engineering Team</h4>
         </Column>
         <RecentProjectsTiles data={recentRepos}></RecentProjectsTiles>
       </Row>
 
-      <Row fullWidth className='row-padding'>
+      <Row condensed className='row-padding'>
         <Column md={2} lg={4} sm={1} className="landing-page__subheader">
           <h3>Popular Projects</h3>
-          <br /><br />
-          <h4>Highly valueable and most used projects</h4>
+          <br />
+          <h4 className='subheading-text'>Highly valuable and most used projects</h4>
         </Column>
-        <Column lg={4} md={2} sm={1}>
-          <ClickableTile className="projectTile" href={"https://ibm-client-engineering.github.io/solution-sfg-aws/"} target="_blank" rel="noopener noreferrer" renderIcon={Launch} style={{ height: '400px' }}>
+        <Column lg={4} md={2} sm={1} className='centered-col'>
+          <ClickableTile className="projectTile-home" href={"https://ibm-client-engineering.github.io/solution-sfg-aws/"} target="_blank" rel="noopener noreferrer" renderIcon={Launch}>
             <WatsonHealthEdgeEnhancement_01 size={34} />
             <h6 className="projectTile__title">Sterling File Gateway on AWS EKS</h6>
             <p3 className="projectTile__description">Installing IBM Sterling File Gateway (and other B2Bi Components) on Amazon EKS</p3>
@@ -105,8 +105,8 @@ export default function LandingPage() {
             </Tag>
           </ClickableTile>
         </Column>
-        <Column lg={4} md={2} sm={1}>
-          <ClickableTile className="projectTile" href={"https://ibm-client-engineering.github.io/solution-watsonx-assistant/"} target="_blank" rel="noopener noreferrer" renderIcon={Launch} style={{ height: '400px' }}>
+        <Column lg={4} md={2} sm={1} className='centered-col'>
+          <ClickableTile className="projectTile-home" href={"https://ibm-client-engineering.github.io/solution-watsonx-assistant/"} target="_blank" rel="noopener noreferrer" renderIcon={Launch}>
             <WatsonHealthEdgeEnhancement_02 size={34} />
             <h6 className="projectTile__title">Customer Care Virtual Agents</h6>
             <p3 className="projectTile__description">Enhancing Customer Care Journeys Using IBM Watsonx Products</p3>
@@ -118,8 +118,8 @@ export default function LandingPage() {
             </Tag>
           </ClickableTile>
         </Column>
-        <Column lg={4} md={2} sm={1}>
-          <ClickableTile className="projectTile" href={"https://ibm-client-engineering.github.io/solution-processmining/"} target="_blank" rel="noopener noreferrer" renderIcon={Launch} style={{ height: '400px' }}>
+        <Column lg={4} md={2} sm={1} className='centered-col'>
+          <ClickableTile className="projectTile-home" href={"https://ibm-client-engineering.github.io/solution-processmining/"} target="_blank" rel="noopener noreferrer" renderIcon={Launch}>
             <WatsonHealthEdgeEnhancement_03 size={34} />
             <h6 className="projectTile__title">Process Mining on Red Hat OpenShift</h6>
             <p3 className="projectTile__description">IBM Cloud Pak for Business Automation Process Mining on Red Hat OpenShift</p3>
