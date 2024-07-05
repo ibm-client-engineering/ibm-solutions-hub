@@ -92,7 +92,7 @@ export default function LandingPage() {
           <br />
           <h4 className='subheading-text'>Highly valuable and most used projects</h4>
         </Column>
-        <Column lg={4} md={2} sm={1} className='centered-col'>
+        <Column lg={4} md={2} sm={1} className='project-col' style={{justifyContent: 'left', alignItems: 'left'}}>
           <ClickableTile className="projectTile-home" href={"https://ibm-client-engineering.github.io/solution-sfg-aws/"} target="_blank" rel="noopener noreferrer" renderIcon={Launch}>
             <WatsonHealthEdgeEnhancement_01 size={34} />
             <h6 className="projectTile__title">Sterling File Gateway on AWS EKS</h6>
@@ -105,7 +105,7 @@ export default function LandingPage() {
             </Tag>
           </ClickableTile>
         </Column>
-        <Column lg={4} md={2} sm={1} className='centered-col'>
+        <Column lg={4} md={2} sm={1} className='project-col' style={{justifyContent: 'center', alignItems: 'center'}}>
           <ClickableTile className="projectTile-home" href={"https://ibm-client-engineering.github.io/solution-watsonx-assistant/"} target="_blank" rel="noopener noreferrer" renderIcon={Launch}>
             <WatsonHealthEdgeEnhancement_02 size={34} />
             <h6 className="projectTile__title">Customer Care Virtual Agents</h6>
@@ -118,7 +118,7 @@ export default function LandingPage() {
             </Tag>
           </ClickableTile>
         </Column>
-        <Column lg={4} md={2} sm={1} className='centered-col'>
+        <Column lg={4} md={2} sm={1} className='project-col' style={{justifyContent: 'right', alignItems: 'right'}}>
           <ClickableTile className="projectTile-home" href={"https://ibm-client-engineering.github.io/solution-processmining/"} target="_blank" rel="noopener noreferrer" renderIcon={Launch}>
             <WatsonHealthEdgeEnhancement_03 size={34} />
             <h6 className="projectTile__title">Process Mining on Red Hat OpenShift</h6>
