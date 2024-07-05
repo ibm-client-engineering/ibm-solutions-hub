@@ -7,70 +7,83 @@
 .landing-page__banner {
     font-family: 'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;
     padding-top: $spacing-05;
-  }
+}
 
-  .landing-page__header {
-    @include type-style ('heading-07');
-    padding-right: $spacing-07 * 3;
+.landing-page__header {
+  @include type-style ('heading-07');
+  padding-right: $spacing-07 * 3;
 
-  }
-  .landing-page__header-description {
-    @include type-style ('heading-06');
-    padding-right: $spacing-07 * 3;
-  }
+}
+.landing-page__header-description {
+  @include type-style ('heading-06');
+  padding-right: $spacing-07 * 3;
+}
 
 .landing-page__subheader {
     @include type-style ('heading-03');
     padding-right: $spacing-07 * 3;
-  }
+}
 .row-padding {
   padding-bottom: $spacing-07 * 2;
 }
-  .clickable-tile-title {
-    @include type-style ('heading-03');
-  }
-  .clickable-tile-description {
-    @include type-style ('body-01');
-  }
+.clickable-tile-title {
+  @include type-style ('heading-03');
+}
+.clickable-tile-description {
+  @include type-style ('body-01');
+}
 
-  .clickable-tile-1 {
-    background: #FFD7D9,
-  }
-  .clickable-tile-1:hover {
-    background: #ffebec,
-  }
+.clickable-tile-1 {
+  background: #FFD7D9,
+}
+.clickable-tile-1:hover {
+  background: #ffebec,
+}
 
-  .clickable-tile-2 {
-    background: #A7F0BA,
-  }
-  .clickable-tile-2:hover {
-    background: #d3f7dc,
-  }
+.clickable-tile-2 {
+  background: #A7F0BA,
+}
+.clickable-tile-2:hover {
+  background: #d3f7dc,
+}
 
-  .clickable-tile-3 {
-    background: #DCC7FF,
-  }
-  .clickable-tile-3:hover {
-    background: #ede3ff,
-  }
+.clickable-tile-3 {
+  background: #DCC7FF,
+}
+.clickable-tile-3:hover {
+  background: #ede3ff,
+}
 
-  .clickable-tile-4 {
-    background: #C6C6C6,
-  }
-  .clickable-tile-4:hover {
-    background: #e2e2e2,
-  }
+.clickable-tile-4 {
+  background: #C6C6C6,
+}
+.clickable-tile-4:hover {
+  background: #e2e2e2,
+}
 
-  .clickable-tile-5 {
-    background: #D0E2FF,
-  }
-  .clickable-tile-5:hover {
-    background: #e7f0ff,
-  }
+.clickable-tile-5 {
+  background: #D0E2FF,
+}
+.clickable-tile-5:hover {
+  background: #e7f0ff,
+}
 
-  .clickable-tile-6 {
-    background: #F1C21B,
-  }
-  .clickable-tile-6:hover {
-    background: #f8e08d,
-  }
+.clickable-tile-6 {
+  background: #F1C21B,
+}
+.clickable-tile-6:hover {
+  background: #f8e08d,
+}
+
+.projectTile-home {
+  height: 400px;
+  width: 370px;
+}
+
+.project-col {
+  display: flex;
+}
+
+.subheading-text {
+  padding-right: 30%;
+}
