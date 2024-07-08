@@ -41,7 +41,7 @@ function ProjectsPage() {
   //this function calls renderProjects initially to reflect initial selection
   React.useEffect(() => {
     if (topic) {
-      filterProjectsByTag(topic);
+      filterProjectsByTopic(topic);
     }
   }, []);
 
@@ -87,8 +87,8 @@ function ProjectsPage() {
     renderProjects();
   };
 
-  // Define the filterProjectsByTag function
-  let filterProjectsByTag = (topic) => {
+  // Define the filterProjectsByTopic function
+  let filterProjectsByTopic = (topic) => {
     repoData.forEach((node) => {
       var nodeTopics = node.repositoryTopics.nodes.map((topic) => topic.topic.name);
       var inRepo = nodeTopics.includes(topic);
