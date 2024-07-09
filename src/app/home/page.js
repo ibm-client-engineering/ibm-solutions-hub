@@ -76,16 +76,16 @@ export default function LandingPage() {
         </Column>
       </Row>
 
-      <Row fullWidth className='row-padding'>
+      <Row condensed className='row-padding'>
         <Column md={2} lg={4} sm={1} className="landing-page__subheader">
           <h3>Recent Projects</h3>
-          <br /><br />
-          <h4>Recently published projects from the Client Engineering Team</h4>
+          <br />
+          <h4 className='subheading-text'>Recently published projects from the Client Engineering Team</h4>
         </Column>
         <RecentProjectsTiles data={recentRepos.slice(0, 3)}></RecentProjectsTiles>
       </Row>
 
-      <Row fullWidth className='row-padding'>
+      <Row condensed className='row-padding'>
         <Column lg={4} md={2} sm={1}></Column> {}
         <RecentProjectsTiles data={recentRepos.slice(3, 6)}></RecentProjectsTiles>
       </Row>
