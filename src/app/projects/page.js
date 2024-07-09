@@ -1,14 +1,13 @@
 'use client';
 
 import { Grid, Column, Search, FilterableMultiSelect, Row } from "@carbon/react";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import ProjectsTiles from "./ProjectsTiles";
-
 import data from "../../../repoData.json";
 
-var repoData = data.organization.repositories.nodes.filter(repo => repo.publish === 'True');
-var repoFiltered = new Map(); // For checking if the repo falls under the current search or topic filters
-var topics = new Set();
+const repoData = data.organization.repositories.nodes.filter(repo => repo.publish === 'True');
+const repoFiltered = new Map(); // For checking if the repo falls under the current search or topic filters
+const topics = new Set();
 repoData.forEach((node) => {
   repoFiltered.set(node.name, { "topic": true, "search": true });
   node.repositoryTopics.nodes.forEach((topic) => {
@@ -18,15 +17,15 @@ repoData.forEach((node) => {
 const topicsArray = Array.from(topics);
 
 // Parse URL parameters outside the component
-const urlParams = new URLSearchParams(window.location.search);
-const topic = urlParams.get('topic');
+const urlParams = typeof window !== 'undefined' ? new URLSearchParams(window.location.search) : null;
+const topic = urlParams ? urlParams.get('topic') : null;
 const initialSelectedTopics = topic ? [topic] : [];
 
 function ProjectsPage() {
   const [selectedTopics, setSelectedTopics] = useState(initialSelectedTopics);
 
   // Define the renderProjects function
-  let renderProjects = () => {
+  const renderProjects = () => {
     repoData.forEach((node) => {
       if (document.getElementById(node.name)) {
         if (repoFiltered.get(node.name).topic && repoFiltered.get(node.name).search) {
@@ -38,32 +37,31 @@ function ProjectsPage() {
     });
   };
 
-  //this function calls renderProjects initially to reflect initial selection
-  React.useEffect(() => {
+  // This function calls renderProjects initially to reflect initial selection
+  useEffect(() => {
     if (topic) {
       filterProjectsByTopic(topic);
     }
-  }, []);
+  }, [topic]);
 
-
-  let searchProjects = (e) => {
+  const searchProjects = (e) => {
     const inputText = e.target.value.toLowerCase();
     repoData.forEach((node) => {
-      var inTopic = false;
+      let inTopic = false;
       node.repositoryTopics.nodes.forEach((topic) => {
         if (topic.topic.name.toLowerCase().includes(inputText)) {
           inTopic = true;
         }
       });
 
-      var isVisible = 
+      const isVisible = 
         inTopic ||
         (node.name && node.name.toLowerCase().includes(inputText)) ||
         (node.description && node.description.toLowerCase().includes(inputText)) ||
         (node.title && node.title.toLowerCase().includes(inputText));
 
       if (document.getElementById(node.name)) {
-        var temp = repoFiltered.get(node.name);
+        const temp = repoFiltered.get(node.name);
         temp.search = isVisible;
         repoFiltered.set(node.name, temp);
       }
@@ -71,15 +69,15 @@ function ProjectsPage() {
     renderProjects();
   };
 
-  let filterProjects = (e) => {
+  const filterProjects = (e) => {
     const inputTopics = e.selectedItems;
     setSelectedTopics(inputTopics);
     repoData.forEach((node) => {
-      var nodeTopics = node.repositoryTopics.nodes.map((topic) => topic.topic.name);
-      var inRepo = inputTopics.every((topic) => nodeTopics.includes(topic));
+      const nodeTopics = node.repositoryTopics.nodes.map((topic) => topic.topic.name);
+      const inRepo = inputTopics.every((topic) => nodeTopics.includes(topic));
 
       if (document.getElementById(node.name)) {
-        var temp = repoFiltered.get(node.name);
+        const temp = repoFiltered.get(node.name);
         temp.topic = inRepo;
         repoFiltered.set(node.name, temp);
       }
@@ -88,13 +86,13 @@ function ProjectsPage() {
   };
 
   // Define the filterProjectsByTopic function
-  let filterProjectsByTopic = (topic) => {
+  const filterProjectsByTopic = (topic) => {
     repoData.forEach((node) => {
-      var nodeTopics = node.repositoryTopics.nodes.map((topic) => topic.topic.name);
-      var inRepo = nodeTopics.includes(topic);
+      const nodeTopics = node.repositoryTopics.nodes.map((topic) => topic.topic.name);
+      const inRepo = nodeTopics.includes(topic);
 
       if (document.getElementById(node.name)) {
-        var temp = repoFiltered.get(node.name);
+        const temp = repoFiltered.get(node.name);
         temp.topic = inRepo;
         repoFiltered.set(node.name, temp);
       }
@@ -117,10 +115,7 @@ function ProjectsPage() {
               items={topicsArray} 
               itemToString={item => item ? item : ''} 
               selectionFeedback="top-after-reopen" 
-              onChange={(e) => {
-                setSelectedTopics(e.selectedItems);
-                filterProjects(e);
-              }} 
+              onChange={filterProjects} 
               initialSelectedItems={selectedTopics} // Set selected items based on state
             />
           </Row>
