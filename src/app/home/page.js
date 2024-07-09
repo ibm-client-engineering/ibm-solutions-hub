@@ -9,8 +9,7 @@ import Link from 'next/link';
 import ProjectsTiles from '../projects/ProjectsTiles'; 
 
 var repoData = data.organization.repositories.nodes.filter(repo => repo.publish === 'True');
-var recentRepos = repoData.slice(0, 3)
-
+var recentRepos = repoData.slice(0, 6); // Updated to fetch 6 most recent projects
 
 export default function LandingPage() {
   return (
@@ -83,55 +82,11 @@ export default function LandingPage() {
           <br />
           <h4 className='subheading-text'>Recently published projects from the Client Engineering Team</h4>
         </Column>
-        <RecentProjectsTiles data={recentRepos}></RecentProjectsTiles>
-      </Row>
-
-      <Row condensed className='row-padding'>
-        <Column md={2} lg={4} sm={1} className="landing-page__subheader">
-          <h3>Popular Projects</h3>
-          <br />
-          <h4 className='subheading-text'>Highly valuable and most used projects</h4>
-        </Column>
-        <Column lg={4} md={2} sm={1} className='project-col' style={{justifyContent: 'left', alignItems: 'left'}}>
-          <ClickableTile className="projectTile-home" href={"https://ibm-client-engineering.github.io/solution-sfg-aws/"} target="_blank" rel="noopener noreferrer" renderIcon={Launch}>
-            <WatsonHealthEdgeEnhancement_01 size={34} />
-            <h6 className="projectTile__title">Sterling File Gateway on AWS EKS</h6>
-            <p3 className="projectTile__description">Installing IBM Sterling File Gateway (and other B2Bi Components) on Amazon EKS</p3>
-            <Tag className="projectTile__topics">
-              aws-eks
-            </Tag>
-            <Tag className="projectTile__topics">
-              ibm-sterling
-            </Tag>
-          </ClickableTile>
-        </Column>
-        <Column lg={4} md={2} sm={1} className='project-col' style={{justifyContent: 'center', alignItems: 'center'}}>
-          <ClickableTile className="projectTile-home" href={"https://ibm-client-engineering.github.io/solution-watsonx-assistant/"} target="_blank" rel="noopener noreferrer" renderIcon={Launch}>
-            <WatsonHealthEdgeEnhancement_02 size={34} />
-            <h6 className="projectTile__title">Customer Care Virtual Agents</h6>
-            <p3 className="projectTile__description">Enhancing Customer Care Journeys Using IBM Watsonx Products</p3>
-            <Tag className="projectTile__topics">
-              generative-ai
-            </Tag>
-            <Tag className="projectTile__topics">
-              watsonx-assistant
-            </Tag>
-          </ClickableTile>
-        </Column>
-        <Column lg={4} md={2} sm={1} className='project-col' style={{justifyContent: 'right', alignItems: 'right'}}>
-          <ClickableTile className="projectTile-home" href={"https://ibm-client-engineering.github.io/solution-processmining/"} target="_blank" rel="noopener noreferrer" renderIcon={Launch}>
-            <WatsonHealthEdgeEnhancement_03 size={34} />
-            <h6 className="projectTile__title">Process Mining on Red Hat OpenShift</h6>
-            <p3 className="projectTile__description">IBM Cloud Pak for Business Automation Process Mining on Red Hat OpenShift</p3>
-            <Tag className="projectTile__topics">
-              business-automation
-            </Tag>
-            <Tag className="projectTile__topics">
-              openshift
-            </Tag>
-          </ClickableTile>
-        </Column>
+        <RecentProjectsTiles data={recentRepos.slice(0, 3)}></RecentProjectsTiles>
+        <Column lg={4} md={2} sm={1}></Column> {}
+        <RecentProjectsTiles data={recentRepos.slice(3, 6)}></RecentProjectsTiles>
       </Row>
     </FlexGrid>
   );
 }
+

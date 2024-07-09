@@ -14,7 +14,8 @@ const RecentProjectsTiles = ({ data }) => {
   return (
     <>
       {data.map((repo, index) => (
-        <Column lg={4} md={2} sm={1} key={index} className='project-col' style={{justifyContent: alignment[index], alignItems: alignment[index]}}><ClickableTile id={repo.name} className="projectTile-home" key={index} href={repo.homepageUrl} target="_blank" rel="noopener noreferrer" renderIcon={Launch} style={{ height: '400px' }}>
+        <Column lg={4} md={2} sm={1} key={index} className='project-col' style={{justifyContent: alignment[index], alignItems: alignment[index]}}>
+          <ClickableTile id={repo.name} className="projectTile-home" key={index} href={repo.homepageUrl} target="_blank" rel="noopener noreferrer" renderIcon={Launch}>
           <RecentlyViewed size={32} />
           <h6 className="projectTile__title">{repo.title}</h6>
           <p3 className="projectTile__description">{repo.description}</p3>
