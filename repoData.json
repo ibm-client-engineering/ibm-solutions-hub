@@ -3,6 +3,16 @@
     "repositories": {
       "nodes": [
         {
+          "name": "solution-onprem-wxai",
+          "description": null,
+          "homepageUrl": null,
+          "repositoryTopics": {
+            "nodes": []
+          },
+          "publish": "False",
+          "title": "[Insert Solution Name]"
+        },
+        {
           "name": "ce-solutions-hub",
           "description": "Client Engineering Solutions Hub",
           "homepageUrl": "https://ibm-client-engineering.github.io/ce-solutions-hub/",
