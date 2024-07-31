@@ -22,6 +22,9 @@ import Link from 'next/link';
             </HeaderName>
           </Link>
           <HeaderNavigation aria-label="Solutions Hub">
+          <Link href="/mission" passHref legacyBehavior>
+            <HeaderMenuItem>Mission</HeaderMenuItem>
+          </Link>
           <Link href="/projects" passHref legacyBehavior>
             <HeaderMenuItem>Projects</HeaderMenuItem>
           </Link>  
