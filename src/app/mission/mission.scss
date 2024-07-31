@@ -3,36 +3,38 @@
 @use '@carbon/react/scss/breakpoint' as *;
 @use '@carbon/react/scss/theme' as *;
 
-
 .mission-page {
-    padding: 20px;
-    font-family: 'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;
-  }
-  
-  .mission-page h1 {
-    font-size: 2.5em;
-    margin-bottom: 20px;
-  }
-  
-  .mission-page p {
-    font-size: 1.2em;
-    line-height: 1.6;
-    margin-bottom: 20px;
-  }
-  
-  .mission-page a {
-    color: blue;
-    text-decoration: none;
-    font-size: 1.2em;
-  }
-  
-  .image-container {
-    margin-top: 15px;
-    text-align: left;
-  }
-  
-  .image-container img {
-    max-width: 40%;
-    height: auto;
-  }
+  padding: 20px;
+  font-family: 'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;
+  max-width: 850px; /* Set a max-width for the container */
+  margin-left: 20px; /* Adjust the left margin to align more to the left */
+}
+
+.mission-page h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.mission-page p {
+  font-size: 1.2em;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.mission-page a {
+  color: blue;
+  text-decoration: none;
+  font-size: 1.2em;
+}
+
+.image-container {
+  margin-top: 15px;
+  text-align: left;
+}
+
+.image-container img {
+  max-width: 70%;
+  height: auto;
+}
+
   
