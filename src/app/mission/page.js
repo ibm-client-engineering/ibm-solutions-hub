@@ -18,7 +18,9 @@ const MissionPage = () => {
         and methodologies to address business challenges. Client Engineering is a no-cost investment for IBM's 
         clients. Connect with us today!
       </p>
-      <a href="https://www.ibm.com/services/client-engineering">Learn more about Client Engineering →</a>
+      <a href="https://www.ibm.com/services/client-engineering" target="_blank" rel="noopener noreferrer">
+        Learn more about Client Engineering →
+      </a>
       <div className="image-container">
         <img src="https://www.ibm.com/content/dam/connectedassets-adobe-cms/worldwide-content/creative-assets/ibs/ul/g/66/9e/20230607_ibm_thomasprior_albany_4437.jpg/_jcr_content/renditions/cq5dam.web.1280.1280.jpeg" alt="Team collaboration" />
       </div>
@@ -27,3 +29,4 @@ const MissionPage = () => {
 };
 
 export default MissionPage;
+
