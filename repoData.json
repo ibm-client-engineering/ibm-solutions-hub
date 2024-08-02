@@ -3,14 +3,14 @@
     "repositories": {
       "nodes": [
         {
-          "name": "ce-solutions-hub",
-          "description": "Client Engineering Solutions Hub",
-          "homepageUrl": "https://ibm-client-engineering.github.io/ce-solutions-hub/",
+          "name": "solution-AskCSM",
+          "description": null,
+          "homepageUrl": null,
           "repositoryTopics": {
             "nodes": []
           },
           "publish": "False",
-          "title": "IBM Client Engineering Solutions Hub"
+          "title": "[Insert Solution Name]"
         },
         {
           "name": "engineering-journal-quantum-safe",
@@ -23,17 +23,17 @@
           "title": "[Insert Solution Name]"
         },
         {
-          "name": "solution-onprem-wxai",
-          "description": null,
-          "homepageUrl": null,
+          "name": "ce-solutions-hub",
+          "description": "Client Engineering Solutions Hub",
+          "homepageUrl": "https://ibm-client-engineering.github.io/ce-solutions-hub/",
           "repositoryTopics": {
             "nodes": []
           },
           "publish": "False",
-          "title": "[Insert Solution Name]"
+          "title": "IBM Client Engineering Solutions Hub"
         },
         {
-          "name": "solution-AskCSM",
+          "name": "solution-onprem-wxai",
           "description": null,
           "homepageUrl": null,
           "repositoryTopics": {
