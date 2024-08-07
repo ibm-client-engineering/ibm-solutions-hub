@@ -3,16 +3,6 @@
     "repositories": {
       "nodes": [
         {
-          "name": "solution-AskCSM",
-          "description": null,
-          "homepageUrl": null,
-          "repositoryTopics": {
-            "nodes": []
-          },
-          "publish": "False",
-          "title": "[Insert Solution Name]"
-        },
-        {
           "name": "engineering-journal-quantum-safe",
           "description": null,
           "homepageUrl": "https://ibm-client-engineering.github.io/engineering-journal-quantum-safe/",
@@ -31,6 +21,16 @@
           },
           "publish": "False",
           "title": "IBM Client Engineering Solutions Hub"
+        },
+        {
+          "name": "solution-AskCSM",
+          "description": null,
+          "homepageUrl": null,
+          "repositoryTopics": {
+            "nodes": []
+          },
+          "publish": "False",
+          "title": "[Insert Solution Name]"
         },
         {
           "name": "solution-onprem-wxai",
