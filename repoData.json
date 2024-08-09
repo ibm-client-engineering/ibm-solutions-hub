@@ -3,9 +3,9 @@
     "repositories": {
       "nodes": [
         {
-          "name": "solution-AskCSM",
+          "name": "solution-openpages-wx",
           "description": null,
-          "homepageUrl": "https://ibm-client-engineering.github.io/solution-AskCSM/",
+          "homepageUrl": "https://ibm-client-engineering.github.io/solution-openpages-wx/",
           "repositoryTopics": {
             "nodes": []
           },
@@ -21,6 +21,16 @@
           },
           "publish": "False",
           "title": "IBM Client Engineering Solutions Hub"
+        },
+        {
+          "name": "solution-AskCSM",
+          "description": null,
+          "homepageUrl": "https://ibm-client-engineering.github.io/solution-AskCSM/",
+          "repositoryTopics": {
+            "nodes": []
+          },
+          "publish": "False",
+          "title": "[Insert Solution Name]"
         },
         {
           "name": "engineering-journal-quantum-safe",
