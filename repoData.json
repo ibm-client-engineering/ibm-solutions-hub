@@ -3,14 +3,14 @@
     "repositories": {
       "nodes": [
         {
-          "name": "ce-solutions-hub",
-          "description": "Client Engineering Solutions Hub",
-          "homepageUrl": "https://ibm-client-engineering.github.io/ce-solutions-hub/",
+          "name": "solution-openpages-wx",
+          "description": null,
+          "homepageUrl": "https://ibm-client-engineering.github.io/solution-openpages-wx/",
           "repositoryTopics": {
             "nodes": []
           },
           "publish": "False",
-          "title": "IBM Client Engineering Solutions Hub"
+          "title": "[Insert Solution Name]"
         },
         {
           "name": "solution-wca4z-onprem",
@@ -23,14 +23,14 @@
           "title": "[Insert Solution Name]"
         },
         {
-          "name": "solution-openpages-wx",
-          "description": null,
-          "homepageUrl": "https://ibm-client-engineering.github.io/solution-openpages-wx/",
+          "name": "ce-solutions-hub",
+          "description": "Client Engineering Solutions Hub",
+          "homepageUrl": "https://ibm-client-engineering.github.io/ce-solutions-hub/",
           "repositoryTopics": {
             "nodes": []
           },
           "publish": "False",
-          "title": "[Insert Solution Name]"
+          "title": "IBM Client Engineering Solutions Hub"
         },
         {
           "name": "solution-AskCSM",
