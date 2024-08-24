@@ -13,6 +13,16 @@
           "title": "[Insert Solution Name]"
         },
         {
+          "name": ".github",
+          "description": "IBM Client Engineering",
+          "homepageUrl": null,
+          "repositoryTopics": {
+            "nodes": []
+          },
+          "publish": "False",
+          "title": "[Insert Solution Name]"
+        },
+        {
           "name": "engineering-journal-quantum-safe",
           "description": null,
           "homepageUrl": "https://ibm-client-engineering.github.io/engineering-journal-quantum-safe/",
@@ -495,16 +505,6 @@
         {
           "name": "solution-mq-gitops",
           "description": "MQ automation through gitops",
-          "homepageUrl": null,
-          "repositoryTopics": {
-            "nodes": []
-          },
-          "publish": "False",
-          "title": "[Insert Solution Name]"
-        },
-        {
-          "name": ".github",
-          "description": "IBM Client Engineering",
           "homepageUrl": null,
           "repositoryTopics": {
             "nodes": []
