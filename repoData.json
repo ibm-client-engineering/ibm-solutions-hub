@@ -3,9 +3,9 @@
     "repositories": {
       "nodes": [
         {
-          "name": "solution-watsonx-wca4z",
+          "name": "solution-openpages-wx",
           "description": null,
-          "homepageUrl": "https://ibm-client-engineering.github.io/solution-watsonx-wca4z/",
+          "homepageUrl": "https://ibm-client-engineering.github.io/solution-openpages-wx/",
           "repositoryTopics": {
             "nodes": []
           },
@@ -23,9 +23,9 @@
           "title": "IBM Client Engineering Solutions Hub"
         },
         {
-          "name": "solution-openpages-wx",
+          "name": "solution-watsonx-wca4z",
           "description": null,
-          "homepageUrl": "https://ibm-client-engineering.github.io/solution-openpages-wx/",
+          "homepageUrl": "https://ibm-client-engineering.github.io/solution-watsonx-wca4z/",
           "repositoryTopics": {
             "nodes": []
           },
