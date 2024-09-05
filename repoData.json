@@ -3,9 +3,9 @@
     "repositories": {
       "nodes": [
         {
-          "name": "solution-AskCSM",
+          "name": "engineering-journal-quantum-safe",
           "description": null,
-          "homepageUrl": "https://ibm-client-engineering.github.io/solution-AskCSM/",
+          "homepageUrl": "https://ibm-client-engineering.github.io/engineering-journal-quantum-safe/",
           "repositoryTopics": {
             "nodes": []
           },
@@ -15,27 +15,7 @@
         {
           "name": "solution-wca4z-onprem",
           "description": null,
-          "homepageUrl": null,
-          "repositoryTopics": {
-            "nodes": []
-          },
-          "publish": "False",
-          "title": "[Insert Solution Name]"
-        },
-        {
-          "name": "solution-openpages-wx",
-          "description": null,
-          "homepageUrl": "https://ibm-client-engineering.github.io/solution-openpages-wx/",
-          "repositoryTopics": {
-            "nodes": []
-          },
-          "publish": "False",
-          "title": "[Insert Solution Name]"
-        },
-        {
-          "name": "engineering-journal-quantum-safe",
-          "description": null,
-          "homepageUrl": "https://ibm-client-engineering.github.io/engineering-journal-quantum-safe/",
+          "homepageUrl": "https://ibm-client-engineering.github.io/solution-wca4z-onprem/",
           "repositoryTopics": {
             "nodes": []
           },
@@ -51,6 +31,26 @@
           },
           "publish": "False",
           "title": "IBM Client Engineering Solutions Hub"
+        },
+        {
+          "name": "solution-AskCSM",
+          "description": null,
+          "homepageUrl": "https://ibm-client-engineering.github.io/solution-AskCSM/",
+          "repositoryTopics": {
+            "nodes": []
+          },
+          "publish": "False",
+          "title": "[Insert Solution Name]"
+        },
+        {
+          "name": "solution-openpages-wx",
+          "description": null,
+          "homepageUrl": "https://ibm-client-engineering.github.io/solution-openpages-wx/",
+          "repositoryTopics": {
+            "nodes": []
+          },
+          "publish": "False",
+          "title": "[Insert Solution Name]"
         },
         {
           "name": "solution-watsonx-wca4z",
