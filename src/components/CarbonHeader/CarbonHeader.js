@@ -25,6 +25,9 @@ import Link from 'next/link';
           <Link href="/projects" passHref legacyBehavior>
             <HeaderMenuItem>Projects</HeaderMenuItem>
           </Link>  
+          <Link href="/mission" passHref legacyBehavior>
+            <HeaderMenuItem>Mission</HeaderMenuItem>
+          </Link>
           </HeaderNavigation>
         </Header>
       )}
