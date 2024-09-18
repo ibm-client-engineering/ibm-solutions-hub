@@ -12,10 +12,11 @@ const MissionPage = () => {
         It represents IBM's commitment to transparency and collaboration, showcasing real-life customer 
         experiences to encourage the adoption of IBM Technology. This site allows IBMers, clients, and 
         interested parties to participate, provide feedback, and benefit from collective knowledge.
+        IBM Client Engineering collaborates with clients to co-create and innovate, utilizing IBM technology 
+        and methodologies to address business challenges. 
       </p>
       <p>
-        IBM Client Engineering collaborates with clients to co-create and innovate, utilizing IBM technology 
-        and methodologies to address business challenges. Client Engineering is a no-cost investment for IBM's 
+        Client Engineering is a no-cost investment for IBM's 
         clients. Connect with us today!
       </p>
       <a href="https://www.ibm.com/services/client-engineering" target="_blank" rel="noopener noreferrer">
