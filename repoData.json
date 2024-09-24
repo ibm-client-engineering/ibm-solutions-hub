@@ -3,6 +3,26 @@
     "repositories": {
       "nodes": [
         {
+          "name": "solution-openpages-wx",
+          "description": null,
+          "homepageUrl": "https://ibm-client-engineering.github.io/solution-openpages-wx/",
+          "repositoryTopics": {
+            "nodes": []
+          },
+          "publish": "False",
+          "title": "[Insert Solution Name]"
+        },
+        {
+          "name": "solution-watsonx-wca4z",
+          "description": null,
+          "homepageUrl": "https://ibm-client-engineering.github.io/solution-watsonx-wca4z/",
+          "repositoryTopics": {
+            "nodes": []
+          },
+          "publish": "False",
+          "title": "[Insert Solution Name]"
+        },
+        {
           "name": "ce-solutions-hub",
           "description": "Client Engineering Solutions Hub",
           "homepageUrl": "https://ibm-client-engineering.github.io/ce-solutions-hub/",
@@ -33,16 +53,6 @@
           "title": "[Insert Solution Name]"
         },
         {
-          "name": "solution-openpages-wx",
-          "description": null,
-          "homepageUrl": "https://ibm-client-engineering.github.io/solution-openpages-wx/",
-          "repositoryTopics": {
-            "nodes": []
-          },
-          "publish": "False",
-          "title": "[Insert Solution Name]"
-        },
-        {
           "name": "solution-wca4z-onprem",
           "description": null,
           "homepageUrl": "https://ibm-client-engineering.github.io/solution-wca4z-onprem/",
@@ -56,16 +66,6 @@
           "name": "solution-AskCSM",
           "description": null,
           "homepageUrl": "https://ibm-client-engineering.github.io/solution-AskCSM/",
-          "repositoryTopics": {
-            "nodes": []
-          },
-          "publish": "False",
-          "title": "[Insert Solution Name]"
-        },
-        {
-          "name": "solution-watsonx-wca4z",
-          "description": null,
-          "homepageUrl": "https://ibm-client-engineering.github.io/solution-watsonx-wca4z/",
           "repositoryTopics": {
             "nodes": []
           },
