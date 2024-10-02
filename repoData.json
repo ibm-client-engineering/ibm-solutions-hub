@@ -3,6 +3,16 @@
     "repositories": {
       "nodes": [
         {
+          "name": "solution-askhr",
+          "description": "Documentation and assets for Client Engineering implementing AskHR Usecases",
+          "homepageUrl": "https://ibm-client-engineering.github.io/solution-askhr/",
+          "repositoryTopics": {
+            "nodes": []
+          },
+          "publish": "False",
+          "title": "[Insert Solution Name]"
+        },
+        {
           "name": "ce-solutions-hub",
           "description": "Client Engineering Solutions Hub",
           "homepageUrl": "https://ibm-client-engineering.github.io/ce-solutions-hub/",
@@ -36,16 +46,6 @@
           "name": "solution-watsonx-wca4z",
           "description": null,
           "homepageUrl": "https://ibm-client-engineering.github.io/solution-watsonx-wca4z/",
-          "repositoryTopics": {
-            "nodes": []
-          },
-          "publish": "False",
-          "title": "[Insert Solution Name]"
-        },
-        {
-          "name": "solution-askhr",
-          "description": "Documentation and assets for Client Engineering implementing AskHR Usecases",
-          "homepageUrl": "https://ibm-client-engineering.github.io/solution-askhr/",
           "repositoryTopics": {
             "nodes": []
           },
