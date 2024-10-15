@@ -3,6 +3,16 @@
     "repositories": {
       "nodes": [
         {
+          "name": "solution-ai-assistants",
+          "description": null,
+          "homepageUrl": "https://ibm-client-engineering.github.io/solution-ai-assistants/",
+          "repositoryTopics": {
+            "nodes": []
+          },
+          "publish": "False",
+          "title": "AI Assistants"
+        },
+        {
           "name": "ce-solutions-hub",
           "description": "Client Engineering Solutions Hub",
           "homepageUrl": "https://ibm-client-engineering.github.io/ce-solutions-hub/",
