@@ -3,6 +3,16 @@
     "repositories": {
       "nodes": [
         {
+          "name": "solution-unified-virtual-agent",
+          "description": null,
+          "homepageUrl": "https://ibm-client-engineering.github.io/solution-unified-virtual-agent/",
+          "repositoryTopics": {
+            "nodes": []
+          },
+          "publish": "False",
+          "title": "Unified Virtual Agent"
+        },
+        {
           "name": "solution-ai-assistants",
           "description": null,
           "homepageUrl": "https://ibm-client-engineering.github.io/solution-ai-assistants/",
@@ -11,6 +21,16 @@
           },
           "publish": "False",
           "title": "AI Assistants"
+        },
+        {
+          "name": "ce-solutions-hub",
+          "description": "Client Engineering Solutions Hub",
+          "homepageUrl": "https://ibm-client-engineering.github.io/ce-solutions-hub/",
+          "repositoryTopics": {
+            "nodes": []
+          },
+          "publish": "False",
+          "title": "IBM Client Engineering Solutions Hub"
         },
         {
           "name": "engineering-journal-quantum-safe",
@@ -47,16 +67,6 @@
           },
           "publish": "True",
           "title": "IBM watsonx.ai on AWS"
-        },
-        {
-          "name": "ce-solutions-hub",
-          "description": "Client Engineering Solutions Hub",
-          "homepageUrl": "https://ibm-client-engineering.github.io/ce-solutions-hub/",
-          "repositoryTopics": {
-            "nodes": []
-          },
-          "publish": "False",
-          "title": "IBM Client Engineering Solutions Hub"
         },
         {
           "name": "solution-askhr",
