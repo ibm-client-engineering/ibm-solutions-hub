@@ -4,33 +4,55 @@
       "nodes": [
         {
           "name": "solution-unified-virtual-agent",
-          "description": null,
+          "description": "Build a unified virtual agent on watsonx Orchestrate with gen-AI routing, IAM, governance, RAG, and third-party integrations.",
           "homepageUrl": "https://ibm-client-engineering.github.io/solution-unified-virtual-agent/",
           "repositoryTopics": {
-            "nodes": []
+            "nodes": [
+              {
+                "topic": {
+                  "name": "generative-ai"
+                }
+              },
+              {
+                "topic": {
+                  "name": "watsonx-ai"
+                }
+              },
+              {
+                "topic": {
+                  "name": "watsonx-orchestrate"
+                }
+              }
+            ]
           },
-          "publish": "False",
+          "publish": "True",
           "title": "Unified Virtual Agent"
         },
         {
           "name": "solution-ai-assistants",
-          "description": null,
+          "description": "Enhancing Customer Care Journeys Using IBM watsonx AI Assistants",
           "homepageUrl": "https://ibm-client-engineering.github.io/solution-ai-assistants/",
           "repositoryTopics": {
-            "nodes": []
+            "nodes": [
+              {
+                "topic": {
+                  "name": "generative-ai"
+                }
+              },
+              {
+                "topic": {
+                  "name": "watsonx-ai"
+                }
+              },
+              {
+                "topic": {
+                  "name": "watsonx-assistant"
+                }
+              }
+            ]
           },
-          "publish": "False",
+          "publish": "True",
           "title": "AI Assistants"
-        },
-        {
-          "name": "ce-solutions-hub",
-          "description": "Client Engineering Solutions Hub",
-          "homepageUrl": "https://ibm-client-engineering.github.io/ce-solutions-hub/",
-          "repositoryTopics": {
-            "nodes": []
-          },
-          "publish": "False",
-          "title": "IBM Client Engineering Solutions Hub"
         },
         {
           "name": "engineering-journal-quantum-safe",
@@ -41,6 +63,26 @@
           },
           "publish": "False",
           "title": "[Insert Solution Name]"
+        },
+        {
+          "name": "solution-askhr",
+          "description": "Documentation and assets for Client Engineering implementing AskHR Usecases",
+          "homepageUrl": "https://ibm-client-engineering.github.io/solution-askhr/",
+          "repositoryTopics": {
+            "nodes": []
+          },
+          "publish": "False",
+          "title": "[Insert Solution Name]"
+        },
+        {
+          "name": "ce-solutions-hub",
+          "description": "Client Engineering Solutions Hub",
+          "homepageUrl": "https://ibm-client-engineering.github.io/ce-solutions-hub/",
+          "repositoryTopics": {
+            "nodes": []
+          },
+          "publish": "False",
+          "title": "IBM Client Engineering Solutions Hub"
         },
         {
           "name": "solution-wxai-aws",
@@ -67,16 +109,6 @@
           },
           "publish": "True",
           "title": "IBM watsonx.ai on AWS"
-        },
-        {
-          "name": "solution-askhr",
-          "description": "Documentation and assets for Client Engineering implementing AskHR Usecases",
-          "homepageUrl": "https://ibm-client-engineering.github.io/solution-askhr/",
-          "repositoryTopics": {
-            "nodes": []
-          },
-          "publish": "False",
-          "title": "[Insert Solution Name]"
         },
         {
           "name": "solution-openpages-wx",
@@ -285,7 +317,7 @@
               }
             ]
           },
-          "publish": "True",
+          "publish": "False",
           "title": "Customer Care Virtual Agents"
         },
         {
