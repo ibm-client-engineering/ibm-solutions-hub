@@ -3,6 +3,16 @@
     "repositories": {
       "nodes": [
         {
+          "name": "engineering-journal-quantum-safe",
+          "description": null,
+          "homepageUrl": "https://ibm-client-engineering.github.io/engineering-journal-quantum-safe/",
+          "repositoryTopics": {
+            "nodes": []
+          },
+          "publish": "False",
+          "title": "[Insert Solution Name]"
+        },
+        {
           "name": "ce-solutions-hub",
           "description": "Client Engineering Solutions Hub",
           "homepageUrl": "https://ibm-client-engineering.github.io/ce-solutions-hub/",
@@ -63,16 +73,6 @@
           },
           "publish": "True",
           "title": "AI Assistants"
-        },
-        {
-          "name": "engineering-journal-quantum-safe",
-          "description": null,
-          "homepageUrl": "https://ibm-client-engineering.github.io/engineering-journal-quantum-safe/",
-          "repositoryTopics": {
-            "nodes": []
-          },
-          "publish": "False",
-          "title": "[Insert Solution Name]"
         },
         {
           "name": "solution-askhr",
