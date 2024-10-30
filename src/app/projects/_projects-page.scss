@@ -42,7 +42,7 @@
     border: 1px solid var(--UI-ui-03, #E0E0E0);
     background: #FFF;
     width: 300px;
-    height: 250px;
+    height: 350px;
   }
 
 .projectTile__title {
@@ -53,6 +53,15 @@
     align-items: flex-start;
     gap: 8px;
     align-self: stretch;
+}
+
+.projectTile__industry {
+    display: flex;
+    //padding: 16px 16px 0px 0px;
+    flex-direction: column;
+    align-items: flex-start;
+    align-self: stretch;
+    font-style: italic;
 }
 
 .projectTile__description {
