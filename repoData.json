@@ -3,24 +3,26 @@
     "repositories": {
       "nodes": [
         {
-          "name": "engineering-journal-quantum-safe",
-          "description": null,
-          "homepageUrl": "https://ibm-client-engineering.github.io/engineering-journal-quantum-safe/",
-          "repositoryTopics": {
-            "nodes": []
-          },
-          "publish": "False",
-          "title": "[Insert Solution Name]"
-        },
-        {
           "name": "ce-solutions-hub",
           "description": "Client Engineering Solutions Hub",
           "homepageUrl": "https://ibm-client-engineering.github.io/ce-solutions-hub/",
           "repositoryTopics": {
             "nodes": []
           },
+          "industry": "Unspecified",
           "publish": "False",
           "title": "IBM Client Engineering Solutions Hub"
+        },
+        {
+          "name": "engineering-journal-quantum-safe",
+          "description": null,
+          "homepageUrl": "https://ibm-client-engineering.github.io/engineering-journal-quantum-safe/",
+          "repositoryTopics": {
+            "nodes": []
+          },
+          "industry": "Unspecified",
+          "publish": "False",
+          "title": "[Insert Solution Name]"
         },
         {
           "name": "solution-mq-gitops",
@@ -29,6 +31,7 @@
           "repositoryTopics": {
             "nodes": []
           },
+          "industry": "Unspecified",
           "publish": "False",
           "title": "[Insert Solution Name]"
         },
@@ -55,6 +58,7 @@
               }
             ]
           },
+          "industry": "Unspecified",
           "publish": "True",
           "title": "Unified Virtual Agent"
         },
@@ -81,6 +85,7 @@
               }
             ]
           },
+          "industry": "Unspecified",
           "publish": "True",
           "title": "AI Assistants"
         },
@@ -91,6 +96,7 @@
           "repositoryTopics": {
             "nodes": []
           },
+          "industry": "Unspecified",
           "publish": "False",
           "title": "[Insert Solution Name]"
         },
@@ -117,6 +123,7 @@
               }
             ]
           },
+          "industry": "Unspecified",
           "publish": "True",
           "title": "IBM watsonx.ai on AWS"
         },
@@ -127,6 +134,7 @@
           "repositoryTopics": {
             "nodes": []
           },
+          "industry": "Unspecified",
           "publish": "False",
           "title": "[Insert Solution Name]"
         },
@@ -137,6 +145,7 @@
           "repositoryTopics": {
             "nodes": []
           },
+          "industry": "Unspecified",
           "publish": "False",
           "title": "[Insert Solution Name]"
         },
@@ -147,6 +156,7 @@
           "repositoryTopics": {
             "nodes": []
           },
+          "industry": "Unspecified",
           "publish": "False",
           "title": "[Insert Solution Name]"
         },
@@ -157,6 +167,7 @@
           "repositoryTopics": {
             "nodes": []
           },
+          "industry": "Unspecified",
           "publish": "False",
           "title": "[Insert Solution Name]"
         },
@@ -167,6 +178,7 @@
           "repositoryTopics": {
             "nodes": []
           },
+          "industry": "Unspecified",
           "publish": "False",
           "title": "[Insert Solution Name]"
         },
@@ -177,6 +189,7 @@
           "repositoryTopics": {
             "nodes": []
           },
+          "industry": "Unspecified",
           "publish": "False",
           "title": "[Insert Solution Name]"
         },
@@ -187,6 +200,7 @@
           "repositoryTopics": {
             "nodes": []
           },
+          "industry": "Unspecified",
           "publish": "False",
           "title": "[Insert Solution Name]"
         },
@@ -213,6 +227,7 @@
               }
             ]
           },
+          "industry": "Unspecified",
           "publish": "True",
           "title": "FileNet Content Manager on AWS EKS "
         },
@@ -234,7 +249,11 @@
               }
             ]
           },
+          "industry": "Banking",
           "publish": "True",
+          "technology": [
+            "watsonx.ai"
+          ],
           "title": "Sentibot"
         },
         {
@@ -270,6 +289,7 @@
               }
             ]
           },
+          "industry": "Unspecified",
           "publish": "False",
           "title": "[Insert Solution Name]"
         },
@@ -286,6 +306,7 @@
               }
             ]
           },
+          "industry": "Unspecified",
           "publish": "False",
           "title": "[Insert Solution Name]"
         },
@@ -296,6 +317,7 @@
           "repositoryTopics": {
             "nodes": []
           },
+          "industry": "Unspecified",
           "publish": "False",
           "title": "[Insert Solution Name]"
         },
@@ -306,6 +328,7 @@
           "repositoryTopics": {
             "nodes": []
           },
+          "industry": "Unspecified",
           "publish": "False",
           "title": "[Insert Solution Name]"
         },
@@ -327,6 +350,7 @@
               }
             ]
           },
+          "industry": "Unspecified",
           "publish": "False",
           "title": "Customer Care Virtual Agents"
         },
@@ -337,6 +361,7 @@
           "repositoryTopics": {
             "nodes": []
           },
+          "industry": "Unspecified",
           "publish": "False",
           "title": "[Insert Solution Name]"
         },
@@ -363,6 +388,7 @@
               }
             ]
           },
+          "industry": "Unspecified",
           "publish": "True",
           "title": "Watsonx Orchestrate Integrations"
         },
@@ -384,6 +410,7 @@
               }
             ]
           },
+          "industry": "Unspecified",
           "publish": "True",
           "title": "Process Mining on Red Hat OpenShift"
         },
@@ -400,6 +427,7 @@
               }
             ]
           },
+          "industry": "Unspecified",
           "publish": "False",
           "title": "[Insert Solution Name]"
         },
@@ -416,6 +444,7 @@
               }
             ]
           },
+          "industry": "Unspecified",
           "publish": "False",
           "title": "[Insert Solution Name]"
         },
@@ -426,6 +455,7 @@
           "repositoryTopics": {
             "nodes": []
           },
+          "industry": "Unspecified",
           "publish": "False",
           "title": "Watsonx News Scraper"
         },
@@ -447,6 +477,7 @@
               }
             ]
           },
+          "industry": "Unspecified",
           "publish": "True",
           "title": "Sterling File Gateway on AWS EKS"
         },
@@ -468,6 +499,7 @@
               }
             ]
           },
+          "industry": "Unspecified",
           "publish": "True",
           "title": "IBM Satellite on IBM Cloud and AWS"
         },
@@ -489,6 +521,7 @@
               }
             ]
           },
+          "industry": "Unspecified",
           "publish": "True",
           "title": "Aspera Install Using Ansible Playbooks"
         },
@@ -515,6 +548,7 @@
               }
             ]
           },
+          "industry": "Unspecified",
           "publish": "True",
           "title": "AWS Lambda on Watson Orchestrate"
         },
@@ -531,6 +565,7 @@
               }
             ]
           },
+          "industry": "Unspecified",
           "publish": "True",
           "title": "Automated Document Processing"
         },
@@ -541,6 +576,7 @@
           "repositoryTopics": {
             "nodes": []
           },
+          "industry": "Unspecified",
           "publish": "False",
           "title": "[Insert Solution Name]"
         },
@@ -551,6 +587,7 @@
           "repositoryTopics": {
             "nodes": []
           },
+          "industry": "Unspecified",
           "publish": "False",
           "title": "[Insert Solution Name]"
         },
@@ -561,6 +598,7 @@
           "repositoryTopics": {
             "nodes": []
           },
+          "industry": "Unspecified",
           "publish": "False",
           "title": "[Insert Solution Name]"
         },
@@ -571,6 +609,7 @@
           "repositoryTopics": {
             "nodes": []
           },
+          "industry": "Unspecified",
           "publish": "False",
           "title": "[Insert Solution Name]"
         },
@@ -587,6 +626,7 @@
               }
             ]
           },
+          "industry": "Unspecified",
           "publish": "False",
           "title": "[Insert Solution Name]"
         },
@@ -603,6 +643,7 @@
               }
             ]
           },
+          "industry": "Unspecified",
           "publish": "False",
           "title": "[Insert Solution Name]"
         },
@@ -619,6 +660,7 @@
               }
             ]
           },
+          "industry": "Unspecified",
           "publish": "False",
           "title": "[Insert Solution Name]"
         },
@@ -629,6 +671,7 @@
           "repositoryTopics": {
             "nodes": []
           },
+          "industry": "Unspecified",
           "publish": "False",
           "title": "[Insert Solution Name]"
         },
@@ -639,6 +682,7 @@
           "repositoryTopics": {
             "nodes": []
           },
+          "industry": "Unspecified",
           "publish": "False",
           "title": "[Insert Solution Name]"
         },
@@ -649,6 +693,7 @@
           "repositoryTopics": {
             "nodes": []
           },
+          "industry": "Unspecified",
           "publish": "False",
           "title": "[Insert Solution Name]"
         }
