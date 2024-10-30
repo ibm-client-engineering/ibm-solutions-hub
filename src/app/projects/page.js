@@ -59,14 +59,20 @@ function ProjectsPage() {
     const inputText = e.target.value.toLowerCase();
     repoData.forEach((node) => {
       let inTopic = false;
+      let inTech = false;
       node.repositoryTopics.nodes.forEach((topic) => {
         if (topic.topic.name.toLowerCase().includes(inputText)) {
           inTopic = true;
         }
       });
+      node.technology?.forEach((tech) => {
+        if (tech.toLowerCase().includes(inputText)) {
+          inTech = true;
+        }
+      });
 
       const isVisible = 
-        inTopic ||
+        inTopic || inTech ||
         (node.name && node.name.toLowerCase().includes(inputText)) ||
         (node.description && node.description.toLowerCase().includes(inputText)) ||
         (node.title && node.title.toLowerCase().includes(inputText)) ||
