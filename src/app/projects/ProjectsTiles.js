@@ -13,6 +13,7 @@ const ProjectsTiles = ({ data }) => {
       {data.map((repo, index) => (
         <ClickableTile id={repo.name} className="projectTile" key={index} href={repo.homepageUrl} target="_blank" rel="noopener noreferrer" renderIcon={Launch}>
           <h6 className="projectTile__title">{repo.title}</h6>
+          <p3 className="projectTile__industry">{repo.industry}</p3>
           <p3 className="projectTile__description">{repo.description}</p3>
           { Object.hasOwn(repo, "technology") ? 
           repo.technology.map((tech, index) => (
