@@ -58,7 +58,8 @@ function ProjectsPage() {
         inTopic ||
         (node.name && node.name.toLowerCase().includes(inputText)) ||
         (node.description && node.description.toLowerCase().includes(inputText)) ||
-        (node.title && node.title.toLowerCase().includes(inputText));
+        (node.title && node.title.toLowerCase().includes(inputText)) ||
+        (node.industry && node.industry.toLowerCase().includes(inputText));
 
       if (document.getElementById(node.name)) {
         const temp = repoFiltered.get(node.name);
