@@ -16,6 +16,12 @@ module.exports = async ({repoData, octokit}) => {
             if (res.data[j].property_name == 'Publish') {
                 repoData.organization.repositories.nodes[i].publish = res.data[j].value;
             }
+            if (res.data[j].property_name == 'Industry') {
+                repoData.organization.repositories.nodes[i].industry = res.data[j].value;
+            }
+            if (res.data[j].property_name == 'Technology') {
+                repoData.organization.repositories.nodes[i].technology = res.data[j].value;
+            }
         }
     }
 
