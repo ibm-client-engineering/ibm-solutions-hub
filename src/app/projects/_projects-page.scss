@@ -84,6 +84,19 @@
     font-weight: bold;
 }
 
+.project__row {
+    padding: 0px 16px 0px 16px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.toolkit_icon {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: .5em;
+    margin-left: 0px;
+}
+
 .filter-search {
     width: 40%;
 }
