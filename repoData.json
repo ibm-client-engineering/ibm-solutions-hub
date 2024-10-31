@@ -58,8 +58,14 @@
               }
             ]
           },
-          "industry": "Unspecified",
+          "industry": "Insurance",
           "publish": "True",
+          "technology": [
+            "Security Verify",
+            "Watsonx Orchestrate",
+            "watsonx.ai",
+            "watsonx.governance"
+          ],
           "title": "Unified Virtual Agent"
         },
         {
@@ -85,8 +91,13 @@
               }
             ]
           },
-          "industry": "Unspecified",
+          "industry": "Various",
           "publish": "True",
+          "technology": [
+            "Watson Discovery",
+            "Watsonx Assistant",
+            "watsonx.ai"
+          ],
           "title": "AI Assistants"
         },
         {
@@ -123,8 +134,12 @@
               }
             ]
           },
-          "industry": "Unspecified",
+          "industry": "Various",
           "publish": "True",
+          "technology": [
+            "Openshift",
+            "watsonx.ai"
+          ],
           "title": "IBM watsonx.ai on AWS"
         },
         {
@@ -227,8 +242,11 @@
               }
             ]
           },
-          "industry": "Unspecified",
+          "industry": "Insurance",
           "publish": "True",
+          "technology": [
+            "FileNet"
+          ],
           "title": "FileNet Content Manager on AWS EKS "
         },
         {
@@ -388,8 +406,12 @@
               }
             ]
           },
-          "industry": "Unspecified",
+          "industry": "Various",
           "publish": "True",
+          "technology": [
+            "Watsonx Orchestrate",
+            "watsonx.ai"
+          ],
           "title": "Watsonx Orchestrate Integrations"
         },
         {
@@ -410,8 +432,12 @@
               }
             ]
           },
-          "industry": "Unspecified",
+          "industry": "Finance",
           "publish": "True",
+          "technology": [
+            "Openshift",
+            "Process Mining"
+          ],
           "title": "Process Mining on Red Hat OpenShift"
         },
         {
@@ -477,8 +503,11 @@
               }
             ]
           },
-          "industry": "Unspecified",
+          "industry": "Finance",
           "publish": "True",
+          "technology": [
+            "Sterling File Gateway"
+          ],
           "title": "Sterling File Gateway on AWS EKS"
         },
         {
@@ -499,8 +528,12 @@
               }
             ]
           },
-          "industry": "Unspecified",
+          "industry": "Banking",
           "publish": "True",
+          "technology": [
+            "IBM Cloud Satellite",
+            "Terraform"
+          ],
           "title": "IBM Satellite on IBM Cloud and AWS"
         },
         {
@@ -521,8 +554,12 @@
               }
             ]
           },
-          "industry": "Unspecified",
+          "industry": "Banking",
           "publish": "True",
+          "technology": [
+            "Ansible",
+            "Aspera"
+          ],
           "title": "Aspera Install Using Ansible Playbooks"
         },
         {
@@ -548,8 +585,11 @@
               }
             ]
           },
-          "industry": "Unspecified",
+          "industry": "Various",
           "publish": "True",
+          "technology": [
+            "Watsonx Orchestrate"
+          ],
           "title": "AWS Lambda on Watson Orchestrate"
         },
         {
@@ -565,8 +605,11 @@
               }
             ]
           },
-          "industry": "Unspecified",
+          "industry": "Various",
           "publish": "True",
+          "technology": [
+            "CP4BA"
+          ],
           "title": "Automated Document Processing"
         },
         {
