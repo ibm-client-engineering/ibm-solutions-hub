@@ -23,12 +23,6 @@ const ProjectsTiles = ({ data }) => {
               {tech}
             </Tag>
           )) : <></>}
-          </Row><Row className="project__row">
-          {repo.repositoryTopics.nodes.map((nodes, index) => (
-            <Tag className="projectTile__topics" key={index}>
-              {nodes.topic.name}
-            </Tag>
-          ))}
           </Row>
         </ClickableTile>
       ))}
