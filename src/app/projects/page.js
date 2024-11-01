@@ -19,18 +19,14 @@ repoData.forEach((node) => {
   //if the object has a technology field, add it to the techs set
   Object.hasOwn(node, "technology") ? node.technology.forEach((tech) => {techs.add(tech);}) : {};
 });
-const topicsArray = Array.from(topics);
 const techsArray = Array.from(techs);
 
 // Parse URL parameters outside the component
 const urlParams = typeof window !== 'undefined' ? new URLSearchParams(window.location.search) : null;
-const topic = urlParams ? urlParams.get('topic') : null;
 const tech = urlParams ? urlParams.get('tech') : null;
-const initialSelectedTopics = topic ? [topic] : [];
 const initialSelectedTechs = tech ? [tech] : [];
 
 function ProjectsPage() {
-  const [selectedTopics, setSelectedTopics] = useState(initialSelectedTopics);
   const [selectedTechs, setSelectedTechs] = useState(initialSelectedTechs);
 
   // Define the renderProjects function, which updates the page based on the user inputted filters
@@ -45,13 +41,6 @@ function ProjectsPage() {
       }
     });
   };
-
-  // This function calls renderProjects initially to reflect initial selection
-  useEffect(() => {
-    if (topic) {
-      filterProjectsTopicGiven(topic);
-    }
-  }, [topic]);
 
   //take the search value and see if it matches (at least partially) the name, title, description, or industry
   //updates the repoFiltered object, and calls renderProjects()
@@ -87,23 +76,6 @@ function ProjectsPage() {
     renderProjects();
   };
 
-  //callback function for the topic filter, filters the projects by the topics selected
-  const filterProjectsTopic = (e) => {
-    const inputTopics = e.selectedItems;
-    setSelectedTopics(inputTopics);
-    repoData.forEach((node) => {
-      const nodeTopics = node.repositoryTopics.nodes.map((topic) => topic.topic.name);
-      const inRepo = inputTopics.every((topic) => nodeTopics.includes(topic));
-
-      if (document.getElementById(node.name)) {
-        const temp = repoFiltered.get(node.name);
-        temp.topic = inRepo;
-        repoFiltered.set(node.name, temp);
-      }
-    });
-    renderProjects();
-  };
-
     //callback function for the technology filter, filters the projects by the technologies selected
     const filterProjectsTech = (e) => {
       const inputTechs = e.selectedItems;
@@ -123,21 +95,6 @@ function ProjectsPage() {
       renderProjects();
     };
 
-  // used just for the case that there is a topic already selected (ie in the query)
-  const filterProjectsTopicGiven = (topic) => {
-    repoData.forEach((node) => {
-      const nodeTopics = node.repositoryTopics.nodes.map((topic) => topic.topic.name);
-      const inRepo = nodeTopics.includes(topic);
-
-      if (document.getElementById(node.name)) {
-        const temp = repoFiltered.get(node.name);
-        temp.topic = inRepo;
-        repoFiltered.set(node.name, temp);
-      }
-    });
-    renderProjects();
-  };
-
   return (
     <Grid fullWidth narrow>
       <Column className="banner-container" lg={16} md={8} sm={4}>
@@ -145,8 +102,6 @@ function ProjectsPage() {
           <p className="banner-title">Projects</p>
           <Row className='search-row'>
             <Search className="banner-search" size="lg" placeholder="Search" labelText="Search" closeButtonLabelText="Clear search input" onChange={searchProjects} />
-          </Row>
-          <Row className='filter-row'>
             <FilterableMultiSelect 
               id="carbon-multiselect" 
               className="filter-search" 
@@ -157,17 +112,6 @@ function ProjectsPage() {
               selectionFeedback="top-after-reopen" 
               onChange={filterProjectsTech} 
               initialSelectedItems={selectedTechs} // Set selected items based on state
-            />
-            <FilterableMultiSelect 
-              id="carbon-multiselect" 
-              className="filter-search" 
-              size="lg" 
-              placeholder="Topics" 
-              items={topicsArray} 
-              itemToString={item => item ? item : ''} 
-              selectionFeedback="top-after-reopen" 
-              onChange={filterProjectsTopic} 
-              initialSelectedItems={selectedTopics} // Set selected items based on state
             />
           </Row>
         </Column>
