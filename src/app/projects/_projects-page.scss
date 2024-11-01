@@ -42,16 +42,26 @@
     border: 1px solid var(--UI-ui-03, #E0E0E0);
     background: #FFF;
     width: 300px;
-    height: 250px;
+    height: 300px;
   }
 
 .projectTile__title {
     display: flex;
+    font-size: 1.25em;
     padding: 16px 32px 0px 0px;
     flex-direction: column;
     align-items: flex-start;
     gap: 8px;
     align-self: stretch;
+}
+
+.projectTile__industry {
+    display: flex;
+    //padding: 16px 16px 0px 0px;
+    flex-direction: column;
+    align-items: flex-start;
+    align-self: stretch;
+    font-style: italic;
 }
 
 .projectTile__description {
@@ -70,15 +80,36 @@
     gap: 16px;
   }
 
+.projectTile__techs {
+    font-weight: bold;
+}
+
+.project__row {
+    padding: 0px 16px 0px 16px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.toolkit_icon {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: .5em;
+    margin-left: 0px;
+}
+
 .filter-search {
-    width: 35%;
+    width: 30%;
 }
 
 .banner-search {
-    width: 65%;
+    width: 70%;
 }
 
 .search-row {
+    width: 100%;
+    padding-left: 1em;
+}
+.filter-row {
     width: 100%;
     padding-left: 1em;
 }

@@ -6,29 +6,34 @@ import ProjectsTiles from "./ProjectsTiles";
 import data from "../../../repoData.json";
 
 const repoData = data.organization.repositories.nodes.filter(repo => repo.publish === 'True');
-const repoFiltered = new Map(); // For checking if the repo falls under the current search or topic filters
+// For checking if the repo falls under the current search or topic filters
+// It maps the repo name to an object that describes if it falls under the search filter and/or the topic .ilter
+const repoFiltered = new Map(); 
 const topics = new Set();
+const techs = new Set();
 repoData.forEach((node) => {
-  repoFiltered.set(node.name, { "topic": true, "search": true });
+  repoFiltered.set(node.name, { "topic": true, "search": true, "tech": true });
   node.repositoryTopics.nodes.forEach((topic) => {
     topics.add(topic.topic.name);
   });
+  //if the object has a technology field, add it to the techs set
+  Object.hasOwn(node, "technology") ? node.technology.forEach((tech) => {techs.add(tech);}) : {};
 });
-const topicsArray = Array.from(topics);
+const techsArray = Array.from(techs);
 
 // Parse URL parameters outside the component
 const urlParams = typeof window !== 'undefined' ? new URLSearchParams(window.location.search) : null;
-const topic = urlParams ? urlParams.get('topic') : null;
-const initialSelectedTopics = topic ? [topic] : [];
+const tech = urlParams ? urlParams.get('tech') : null;
+const initialSelectedTechs = tech ? [tech] : [];
 
 function ProjectsPage() {
-  const [selectedTopics, setSelectedTopics] = useState(initialSelectedTopics);
+  const [selectedTechs, setSelectedTechs] = useState(initialSelectedTechs);
 
-  // Define the renderProjects function
+  // Define the renderProjects function, which updates the page based on the user inputted filters
   const renderProjects = () => {
     repoData.forEach((node) => {
       if (document.getElementById(node.name)) {
-        if (repoFiltered.get(node.name).topic && repoFiltered.get(node.name).search) {
+        if (repoFiltered.get(node.name).topic && repoFiltered.get(node.name).search && repoFiltered.get(node.name).tech) {
           document.getElementById(node.name).style.display = "block";
         } else {
           document.getElementById(node.name).style.display = "none";
@@ -37,28 +42,30 @@ function ProjectsPage() {
     });
   };
 
-  // This function calls renderProjects initially to reflect initial selection
-  useEffect(() => {
-    if (topic) {
-      filterProjectsByTopic(topic);
-    }
-  }, [topic]);
-
+  //take the search value and see if it matches (at least partially) the name, title, description, or industry
+  //updates the repoFiltered object, and calls renderProjects()
   const searchProjects = (e) => {
     const inputText = e.target.value.toLowerCase();
     repoData.forEach((node) => {
       let inTopic = false;
+      let inTech = false;
       node.repositoryTopics.nodes.forEach((topic) => {
         if (topic.topic.name.toLowerCase().includes(inputText)) {
           inTopic = true;
         }
       });
+      node.technology?.forEach((tech) => {
+        if (tech.toLowerCase().includes(inputText)) {
+          inTech = true;
+        }
+      });
 
       const isVisible = 
-        inTopic ||
+        inTopic || inTech ||
         (node.name && node.name.toLowerCase().includes(inputText)) ||
         (node.description && node.description.toLowerCase().includes(inputText)) ||
-        (node.title && node.title.toLowerCase().includes(inputText));
+        (node.title && node.title.toLowerCase().includes(inputText)) ||
+        (node.industry && node.industry.toLowerCase().includes(inputText));
 
       if (document.getElementById(node.name)) {
         const temp = repoFiltered.get(node.name);
@@ -69,36 +76,24 @@ function ProjectsPage() {
     renderProjects();
   };
 
-  const filterProjects = (e) => {
-    const inputTopics = e.selectedItems;
-    setSelectedTopics(inputTopics);
-    repoData.forEach((node) => {
-      const nodeTopics = node.repositoryTopics.nodes.map((topic) => topic.topic.name);
-      const inRepo = inputTopics.every((topic) => nodeTopics.includes(topic));
+    //callback function for the technology filter, filters the projects by the technologies selected
+    const filterProjectsTech = (e) => {
+      const inputTechs = e.selectedItems;
+      setSelectedTechs(inputTechs);
+      repoData.forEach((node) => {
+        const nodeTechs = node.technology
+        //Need to check that the repo has a technology field, and if it does need to check if the selected tech(s) is in that array
+        //in the case where the repo has no techs listed, still needs to be true if there are no selected techs
+        const inRepo =  inputTechs.every((tech) => Object.hasOwn(node, "technology") ? nodeTechs.includes(tech) : inputTechs.length == 0);
 
-      if (document.getElementById(node.name)) {
-        const temp = repoFiltered.get(node.name);
-        temp.topic = inRepo;
-        repoFiltered.set(node.name, temp);
-      }
-    });
-    renderProjects();
-  };
-
-  // Define the filterProjectsByTopic function
-  const filterProjectsByTopic = (topic) => {
-    repoData.forEach((node) => {
-      const nodeTopics = node.repositoryTopics.nodes.map((topic) => topic.topic.name);
-      const inRepo = nodeTopics.includes(topic);
-
-      if (document.getElementById(node.name)) {
-        const temp = repoFiltered.get(node.name);
-        temp.topic = inRepo;
-        repoFiltered.set(node.name, temp);
-      }
-    });
-    renderProjects();
-  };
+        if (document.getElementById(node.name)) {
+          const temp = repoFiltered.get(node.name);
+          temp.tech = inRepo;
+          repoFiltered.set(node.name, temp);
+        }
+      });
+      renderProjects();
+    };
 
   return (
     <Grid fullWidth narrow>
@@ -111,12 +106,12 @@ function ProjectsPage() {
               id="carbon-multiselect" 
               className="filter-search" 
               size="lg" 
-              placeholder="Topics" 
-              items={topicsArray} 
+              placeholder="Technology" 
+              items={techsArray} 
               itemToString={item => item ? item : ''} 
               selectionFeedback="top-after-reopen" 
-              onChange={filterProjects} 
-              initialSelectedItems={selectedTopics} // Set selected items based on state
+              onChange={filterProjectsTech} 
+              initialSelectedItems={selectedTechs} // Set selected items based on state
             />
           </Row>
         </Column>
