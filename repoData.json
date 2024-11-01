@@ -3,17 +3,6 @@
     "repositories": {
       "nodes": [
         {
-          "name": "ce-solutions-hub",
-          "description": "Client Engineering Solutions Hub",
-          "homepageUrl": "https://ibm-client-engineering.github.io/ce-solutions-hub/",
-          "repositoryTopics": {
-            "nodes": []
-          },
-          "industry": "Unspecified",
-          "publish": "False",
-          "title": "IBM Client Engineering Solutions Hub"
-        },
-        {
           "name": "engineering-journal-quantum-safe",
           "description": null,
           "homepageUrl": "https://ibm-client-engineering.github.io/engineering-journal-quantum-safe/",
@@ -23,6 +12,17 @@
           "industry": "Unspecified",
           "publish": "False",
           "title": "[Insert Solution Name]"
+        },
+        {
+          "name": "ce-solutions-hub",
+          "description": "Client Engineering Solutions Hub",
+          "homepageUrl": "https://ibm-client-engineering.github.io/ce-solutions-hub/",
+          "repositoryTopics": {
+            "nodes": []
+          },
+          "industry": "Unspecified",
+          "publish": "False",
+          "title": "IBM Client Engineering Solutions Hub"
         },
         {
           "name": "solution-mq-gitops",
