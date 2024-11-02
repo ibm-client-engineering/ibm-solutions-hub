@@ -3,15 +3,15 @@
     "repositories": {
       "nodes": [
         {
-          "name": "engineering-journal-quantum-safe",
+          "name": "engineering-journal-zOS-datagate",
           "description": null,
-          "homepageUrl": "https://ibm-client-engineering.github.io/engineering-journal-quantum-safe/",
+          "homepageUrl": null,
           "repositoryTopics": {
             "nodes": []
           },
           "industry": "Unspecified",
           "publish": "False",
-          "title": "[Insert Solution Name]"
+          "title": "zOS-datagate"
         },
         {
           "name": "ce-solutions-hub",
@@ -23,6 +23,17 @@
           "industry": "Unspecified",
           "publish": "False",
           "title": "IBM Client Engineering Solutions Hub"
+        },
+        {
+          "name": "engineering-journal-quantum-safe",
+          "description": null,
+          "homepageUrl": "https://ibm-client-engineering.github.io/engineering-journal-quantum-safe/",
+          "repositoryTopics": {
+            "nodes": []
+          },
+          "industry": "Unspecified",
+          "publish": "False",
+          "title": "[Insert Solution Name]"
         },
         {
           "name": "solution-mq-gitops",
