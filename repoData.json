@@ -3,17 +3,6 @@
     "repositories": {
       "nodes": [
         {
-          "name": "engineering-journal-zOS-datagate",
-          "description": null,
-          "homepageUrl": null,
-          "repositoryTopics": {
-            "nodes": []
-          },
-          "industry": "Unspecified",
-          "publish": "False",
-          "title": "zOS-datagate"
-        },
-        {
           "name": "ce-solutions-hub",
           "description": "Client Engineering Solutions Hub",
           "homepageUrl": "https://ibm-client-engineering.github.io/ce-solutions-hub/",
@@ -23,6 +12,17 @@
           "industry": "Unspecified",
           "publish": "False",
           "title": "IBM Client Engineering Solutions Hub"
+        },
+        {
+          "name": "engineering-journal-zOS-datagate",
+          "description": null,
+          "homepageUrl": null,
+          "repositoryTopics": {
+            "nodes": []
+          },
+          "industry": "Unspecified",
+          "publish": "False",
+          "title": "zOS-datagate"
         },
         {
           "name": "engineering-journal-quantum-safe",
