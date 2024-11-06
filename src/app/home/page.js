@@ -2,7 +2,7 @@
 
 import { FlexGrid, Column, ClickableTile, Row, Tag } from '@carbon/react';
 import React from "react";
-import { Add, WatsonxAi, MachineLearningModel, IbmSecurity, Data_1, CloudApp, ZSystems, Launch, WatsonHealthEdgeEnhancement_01, WatsonHealthEdgeEnhancement_02, WatsonHealthEdgeEnhancement_03 } from '@carbon/icons-react';
+import { Add, WatsonxAi, WorkflowAutomation, IbmSecurity, Data_1, CloudApp, ZSystems, Launch, WatsonHealthEdgeEnhancement_01, WatsonHealthEdgeEnhancement_02, WatsonHealthEdgeEnhancement_03 } from '@carbon/icons-react';
 import RecentProjectsTiles from "./RecentProjectsTiles";
 import data from "../../../repoData.json";
 import Link from 'next/link';
@@ -52,10 +52,10 @@ export default function LandingPage() {
           <ClickableTile className="clickable-tile-4" renderIcon={Launch} style={{ height: '240px' }}
             href="/ce-solutions-hub/projects"
             >
-            <MachineLearningModel size={32} />
+            <WorkflowAutomation size={32} />
             <br /><br /><br /><br />
-            <h4 className="clickable-tile-title">AI Ops</h4>
-            <p1 className="clickable-tile-description">Discover how AI for IT operations deliver the insights you need to help drive exceptional business performance </p1>
+            <h4 className="clickable-tile-title">Automation</h4>
+            <p1 className="clickable-tile-description">Discover how to automate key AI and IT operations to deliver the insights you need to help drive exceptional business performance </p1>
           </ClickableTile>
         </Column>
         <Column lg={4} md={2} sm={1}>
