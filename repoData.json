@@ -3,6 +3,31 @@
     "repositories": {
       "nodes": [
         {
+          "name": "ThirdPartyRisk",
+          "description": "Evaluating third party information technology products and their cybersecurity risks using watsonx.ai.",
+          "homepageUrl": null,
+          "repositoryTopics": {
+            "nodes": []
+          },
+          "industry": "Banking",
+          "publish": "True",
+          "technology": [
+            "watsonx.ai"
+          ],
+          "title": "ThirdPartyRisk"
+        },
+        {
+          "name": "solution-openpages-wx",
+          "description": null,
+          "homepageUrl": "https://ibm-client-engineering.github.io/solution-openpages-wx/",
+          "repositoryTopics": {
+            "nodes": []
+          },
+          "industry": "Unspecified",
+          "publish": "False",
+          "title": "[Insert Solution Name]"
+        },
+        {
           "name": "ce-solutions-hub",
           "description": "Client Engineering Solutions Hub",
           "homepageUrl": "https://ibm-client-engineering.github.io/ce-solutions-hub/",
@@ -152,17 +177,6 @@
             "watsonx.ai"
           ],
           "title": "IBM watsonx.ai on AWS"
-        },
-        {
-          "name": "solution-openpages-wx",
-          "description": null,
-          "homepageUrl": "https://ibm-client-engineering.github.io/solution-openpages-wx/",
-          "repositoryTopics": {
-            "nodes": []
-          },
-          "industry": "Unspecified",
-          "publish": "False",
-          "title": "[Insert Solution Name]"
         },
         {
           "name": "solution-watsonx-wca4z",
