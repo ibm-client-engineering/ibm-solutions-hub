@@ -41,8 +41,8 @@
 .projectTile {
     border: 1px solid var(--UI-ui-03, #E0E0E0);
     background: #FFF;
-    width: 300px;
-    height: 300px;
+    width: 350px;
+    height: 350px;
   }
 
 .projectTile__title {
@@ -53,15 +53,6 @@
     align-items: flex-start;
     gap: 8px;
     align-self: stretch;
-}
-
-.projectTile__industry {
-    display: flex;
-    //padding: 16px 16px 0px 0px;
-    flex-direction: column;
-    align-items: flex-start;
-    align-self: stretch;
-    font-style: italic;
 }
 
 .projectTile__description {
@@ -80,14 +71,21 @@
     gap: 16px;
   }
 
-.projectTile__techs {
-    font-weight: bold;
+
+.icon__column {
+    width: 16px;
+    margin-right: 0;
 }
+
+.tag__column {
+    width: 90%;
+    align-items: start;
+    margin-right: 0;
+}
+
 
 .project__row {
     padding: 0px 16px 0px 16px;
-    display: flex;
-    flex-wrap: wrap;
 }
 
 .toolkit_icon {
@@ -96,6 +94,14 @@
     margin-right: .5em;
     margin-left: 0px;
 }
+
+.enterprise_icon {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: .5em;
+    margin-left: 0px;
+}
+
 
 .filter-search {
     width: 30%;
