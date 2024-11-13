@@ -3,6 +3,28 @@
     "repositories": {
       "nodes": [
         {
+          "name": "solution-openpages-wx",
+          "description": null,
+          "homepageUrl": "https://ibm-client-engineering.github.io/solution-openpages-wx/",
+          "repositoryTopics": {
+            "nodes": []
+          },
+          "industry": "Unspecified",
+          "publish": "False",
+          "title": "[Insert Solution Name]"
+        },
+        {
+          "name": "engineering-journal-zOS-datagate",
+          "description": null,
+          "homepageUrl": null,
+          "repositoryTopics": {
+            "nodes": []
+          },
+          "industry": "Unspecified",
+          "publish": "False",
+          "title": "zOS-datagate"
+        },
+        {
           "name": "solution-ThirdPartyRisk",
           "description": "Evaluating third party information technology products and their cybersecurity risks using watsonx.ai.",
           "homepageUrl": null,
@@ -37,28 +59,6 @@
           "industry": "Unspecified",
           "publish": "False",
           "title": "[Insert Solution Name]"
-        },
-        {
-          "name": "solution-openpages-wx",
-          "description": null,
-          "homepageUrl": "https://ibm-client-engineering.github.io/solution-openpages-wx/",
-          "repositoryTopics": {
-            "nodes": []
-          },
-          "industry": "Unspecified",
-          "publish": "False",
-          "title": "[Insert Solution Name]"
-        },
-        {
-          "name": "engineering-journal-zOS-datagate",
-          "description": null,
-          "homepageUrl": null,
-          "repositoryTopics": {
-            "nodes": []
-          },
-          "industry": "Unspecified",
-          "publish": "False",
-          "title": "zOS-datagate"
         },
         {
           "name": "solution-mq-gitops",
