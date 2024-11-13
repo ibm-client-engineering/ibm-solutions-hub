@@ -30,6 +30,7 @@
 
 .repoTiles{
     margin-bottom: 0;
+    margin-top: 3rem;
     height: auto;
     width: 100%;
     display: grid;
@@ -103,21 +104,28 @@
 }
 
 
-.filter-search {
-    width: 30%;
-}
-
 .banner-search {
-    width: 70%;
+    width: 100%;
 }
 
 .search-row {
-    width: 100%;
     padding-left: 1em;
+    display: flex;
 }
+
 .filter-row {
     width: 100%;
     padding-left: 1em;
 }
+.filter-search {
+    width: 100%;
+}
 
+.filters__col {
+    display: inline-block;
+    min-width: 20rem;
+}
 
+.search_projects__col {
+    display: inline-block;
+}
