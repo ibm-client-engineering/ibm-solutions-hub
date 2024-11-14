@@ -3,9 +3,9 @@
     "repositories": {
       "nodes": [
         {
-          "name": "solution-openpages-wx",
+          "name": "Quarto-Sample",
           "description": null,
-          "homepageUrl": "https://ibm-client-engineering.github.io/solution-openpages-wx/",
+          "homepageUrl": null,
           "repositoryTopics": {
             "nodes": []
           },
@@ -14,20 +14,9 @@
           "title": "[Insert Solution Name]"
         },
         {
-          "name": "engineering-journal-zOS-datagate",
-          "description": null,
-          "homepageUrl": null,
-          "repositoryTopics": {
-            "nodes": []
-          },
-          "industry": "Unspecified",
-          "publish": "False",
-          "title": "zOS-datagate"
-        },
-        {
           "name": "solution-ThirdPartyRisk",
           "description": "Evaluating third party information technology products and their cybersecurity risks using watsonx.ai.",
-          "homepageUrl": null,
+          "homepageUrl": "https://ibm-client-engineering.github.io/solution-ThirdPartyRisk/",
           "repositoryTopics": {
             "nodes": []
           },
@@ -48,6 +37,28 @@
           "industry": "Unspecified",
           "publish": "False",
           "title": "IBM Client Engineering Solutions Hub"
+        },
+        {
+          "name": "solution-openpages-wx",
+          "description": null,
+          "homepageUrl": "https://ibm-client-engineering.github.io/solution-openpages-wx/",
+          "repositoryTopics": {
+            "nodes": []
+          },
+          "industry": "Unspecified",
+          "publish": "False",
+          "title": "[Insert Solution Name]"
+        },
+        {
+          "name": "engineering-journal-zOS-datagate",
+          "description": null,
+          "homepageUrl": null,
+          "repositoryTopics": {
+            "nodes": []
+          },
+          "industry": "Unspecified",
+          "publish": "False",
+          "title": "zOS-datagate"
         },
         {
           "name": "engineering-journal-quantum-safe",
