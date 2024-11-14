@@ -14,7 +14,6 @@ const ProjectsTiles = ({ data }) => {
       {data.map((repo, index) => (
         <ClickableTile id={repo.name} className="projectTile" key={index} href={repo.homepageUrl} target="_blank" rel="noopener noreferrer" renderIcon={Launch}>
           <h6 className="projectTile__title">{repo.title}</h6>
-          <p3 className="projectTile__industry">{repo.industry}</p3>
           <p3 className="projectTile__description">{repo.description}</p3>
           <Row className="project__row">
             <Column className='icon__column' lg={1}><Enterprise className="enterprise_icon"/></Column>
