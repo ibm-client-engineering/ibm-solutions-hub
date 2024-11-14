@@ -81,6 +81,7 @@
     width: 90%;
     align-items: start;
     margin-right: 0;
+    margin-left: .5em;
 }
 
 
@@ -91,7 +92,7 @@
 .toolkit_icon {
     margin-top: auto;
     margin-bottom: auto;
-    margin-right: .5em;
+    // margin-right: .5em;
     margin-left: 0px;
 }
 
@@ -127,4 +128,12 @@
 
 .search_projects__col {
     display: inline-block;
+}
+
+.projectTile__techs {
+    margin-left: 0;
+}
+
+.projectTile__industry {
+    margin-left: 0;
 }
