@@ -8,33 +8,40 @@ import {
     HeaderGlobalAction,
     SkipToContent,
   } from '@carbon/react';
-import { Search } from '@carbon/icons-react';
 import Link from 'next/link';
-  
-  const CarbonHeader = () => (
-    <HeaderContainer
-      render={({}) => (
-        <Header aria-label="Solutions Hub">
-          <SkipToContent />
-          <Link href="/" passHref legacyBehavior>
-            <HeaderName prefix="IBM">
-              Client Engineering Solutions Hub
-            </HeaderName>
-          </Link>
-          <HeaderNavigation aria-label="Solutions Hub">
-          <Link href="/projects" passHref legacyBehavior>
-            <HeaderMenuItem>Projects</HeaderMenuItem>
-          </Link>  
-          <Link href="/mission" passHref legacyBehavior>
-            <HeaderMenuItem>Mission</HeaderMenuItem>
-          </Link>
-          </HeaderNavigation>
-        </Header>
-      )}
-    />
-  );
-  
-  export default CarbonHeader;
+import { useState, useEffect } from 'react';
+
+
+const CarbonHeader = () => {
+  const [page, setPage] = useState(typeof window !== 'undefined' ? window.location.pathname: "/")
+  return (
+  <HeaderContainer
+    render={({}) => (
+      <Header aria-label="Solutions Hub">
+        <SkipToContent />
+        <Link href="/" passHref legacyBehavior>
+          <HeaderName prefix="IBM" onClick={() => setPage("/ce-solutions-hub")}>
+            Client Engineering Solutions Hub
+          </HeaderName>
+        </Link>
+        <HeaderNavigation aria-label="Solutions Hub">
+        <Link href="/" passHref legacyBehavior>
+          <HeaderMenuItem isActive={page === "/ce-solutions-hub"} onClick={() => setPage("/ce-solutions-hub")}>Home</HeaderMenuItem>
+        </Link>
+        <Link href="/projects" passHref legacyBehavior>
+          <HeaderMenuItem isActive={page === "/ce-solutions-hub/projects"} onClick={() => setPage("/ce-solutions-hub/projects")}>Projects</HeaderMenuItem>
+        </Link>  
+        <Link href="/mission" passHref legacyBehavior>
+          <HeaderMenuItem isActive={page === "/ce-solutions-hub/mission"} onClick={() => setPage("/ce-solutions-hub/mission")}>Mission</HeaderMenuItem>
+        </Link>
+        </HeaderNavigation>
+      </Header>
+    )}
+  />
+  )
+};
+
+export default CarbonHeader;
 
 /*
           <Link href="/methodology" passHref legacyBehavior>
