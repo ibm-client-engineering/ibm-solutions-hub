@@ -3,15 +3,37 @@
     "repositories": {
       "nodes": [
         {
-          "name": "Quarto-Sample",
+          "name": "engineering-journal-quantum-safe",
           "description": null,
-          "homepageUrl": null,
+          "homepageUrl": "https://ibm-client-engineering.github.io/engineering-journal-quantum-safe/",
           "repositoryTopics": {
             "nodes": []
           },
           "industry": "Unspecified",
           "publish": "False",
           "title": "[Insert Solution Name]"
+        },
+        {
+          "name": "Quarto-Sample",
+          "description": null,
+          "homepageUrl": "https://ibm-client-engineering.github.io/Quarto-Sample/",
+          "repositoryTopics": {
+            "nodes": []
+          },
+          "industry": "Unspecified",
+          "publish": "False",
+          "title": "[Insert Solution Name]"
+        },
+        {
+          "name": "ce-solutions-hub",
+          "description": "Client Engineering Solutions Hub",
+          "homepageUrl": "https://ibm-client-engineering.github.io/ce-solutions-hub/",
+          "repositoryTopics": {
+            "nodes": []
+          },
+          "industry": "Unspecified",
+          "publish": "False",
+          "title": "IBM Client Engineering Solutions Hub"
         },
         {
           "name": "solution-ThirdPartyRisk",
@@ -26,17 +48,6 @@
             "watsonx.ai"
           ],
           "title": "ThirdPartyRisk"
-        },
-        {
-          "name": "ce-solutions-hub",
-          "description": "Client Engineering Solutions Hub",
-          "homepageUrl": "https://ibm-client-engineering.github.io/ce-solutions-hub/",
-          "repositoryTopics": {
-            "nodes": []
-          },
-          "industry": "Unspecified",
-          "publish": "False",
-          "title": "IBM Client Engineering Solutions Hub"
         },
         {
           "name": "solution-openpages-wx",
@@ -59,17 +70,6 @@
           "industry": "Unspecified",
           "publish": "False",
           "title": "zOS-datagate"
-        },
-        {
-          "name": "engineering-journal-quantum-safe",
-          "description": null,
-          "homepageUrl": "https://ibm-client-engineering.github.io/engineering-journal-quantum-safe/",
-          "repositoryTopics": {
-            "nodes": []
-          },
-          "industry": "Unspecified",
-          "publish": "False",
-          "title": "[Insert Solution Name]"
         },
         {
           "name": "solution-mq-gitops",
