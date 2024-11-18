@@ -156,7 +156,7 @@ function ProjectsPage() {
         </Column>
         
         <Column className="search_projects__col">
-          <Column>
+          <Column className="searchbar__col">
             <Search className="banner-search" size="lg" placeholder="Search" labelText="Search" closeButtonLabelText="Clear search input" onChange={searchProjects} />
           </Column>
           <Column className="repoTiles">
