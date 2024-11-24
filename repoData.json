@@ -3,17 +3,6 @@
     "repositories": {
       "nodes": [
         {
-          "name": "Quarto-Sample",
-          "description": null,
-          "homepageUrl": "https://ibm-client-engineering.github.io/Quarto-Sample/",
-          "repositoryTopics": {
-            "nodes": []
-          },
-          "industry": "Unspecified",
-          "publish": "False",
-          "title": "[Insert Solution Name]"
-        },
-        {
           "name": "ce-solutions-hub",
           "description": "Client Engineering Solutions Hub",
           "homepageUrl": "https://ibm-client-engineering.github.io/ce-solutions-hub/",
@@ -23,6 +12,17 @@
           "industry": "Unspecified",
           "publish": "False",
           "title": "IBM Client Engineering Solutions Hub"
+        },
+        {
+          "name": "Quarto-Sample",
+          "description": null,
+          "homepageUrl": "https://ibm-client-engineering.github.io/Quarto-Sample/",
+          "repositoryTopics": {
+            "nodes": []
+          },
+          "industry": "Unspecified",
+          "publish": "False",
+          "title": "[Insert Solution Name]"
         },
         {
           "name": "solution-unified-virtual-assistant",
