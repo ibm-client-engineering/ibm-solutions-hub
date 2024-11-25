@@ -3,6 +3,21 @@
     "repositories": {
       "nodes": [
         {
+          "name": "solution-ThirdPartyRisk",
+          "description": "Evaluating third party information technology products and their cybersecurity risks using watsonx.ai.",
+          "homepageUrl": "https://ibm-client-engineering.github.io/solution-ThirdPartyRisk/",
+          "repositoryTopics": {
+            "nodes": []
+          },
+          "industry": "Banking",
+          "publish": "True",
+          "technology": [
+            "Openpages",
+            "watsonx.ai"
+          ],
+          "title": "Third Party Risk with watsonx.ai"
+        },
+        {
           "name": "ce-solutions-hub",
           "description": "Client Engineering Solutions Hub",
           "homepageUrl": "https://ibm-client-engineering.github.io/ce-solutions-hub/",
@@ -77,21 +92,6 @@
             "watsonx.ai"
           ],
           "title": "OpenPages watsonx.ai Translation"
-        },
-        {
-          "name": "solution-ThirdPartyRisk",
-          "description": "Evaluating third party information technology products and their cybersecurity risks using watsonx.ai.",
-          "homepageUrl": "https://ibm-client-engineering.github.io/solution-ThirdPartyRisk/",
-          "repositoryTopics": {
-            "nodes": []
-          },
-          "industry": "Banking",
-          "publish": "True",
-          "technology": [
-            "Openpages",
-            "watsonx.ai"
-          ],
-          "title": "Third Party Risk with watsonx.ai"
         },
         {
           "name": "engineering-journal-quantum-safe",
