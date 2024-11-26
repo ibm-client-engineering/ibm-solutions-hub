@@ -3,6 +3,32 @@
     "repositories": {
       "nodes": [
         {
+          "name": "solution-openpages-wxai-translation",
+          "description": "Leverage watsonx.ai to carry out language translation on the OpenPages platform.",
+          "homepageUrl": "https://ibm-client-engineering.github.io/solution-openpages-wxai-translation/",
+          "repositoryTopics": {
+            "nodes": []
+          },
+          "industry": "Banking",
+          "publish": "False",
+          "technology": [
+            "Openpages",
+            "watsonx.ai"
+          ],
+          "title": "OpenPages watsonx.ai Translation"
+        },
+        {
+          "name": "ce-solutions-hub",
+          "description": "Client Engineering Solutions Hub",
+          "homepageUrl": "https://ibm-client-engineering.github.io/ce-solutions-hub/",
+          "repositoryTopics": {
+            "nodes": []
+          },
+          "industry": "Unspecified",
+          "publish": "False",
+          "title": "IBM Client Engineering Solutions Hub"
+        },
+        {
           "name": "solution-ThirdPartyRisk",
           "description": "Evaluating third party information technology products and their cybersecurity risks using watsonx.ai.",
           "homepageUrl": "https://ibm-client-engineering.github.io/solution-ThirdPartyRisk/",
@@ -16,17 +42,6 @@
             "watsonx.ai"
           ],
           "title": "Third Party Risk with watsonx.ai"
-        },
-        {
-          "name": "ce-solutions-hub",
-          "description": "Client Engineering Solutions Hub",
-          "homepageUrl": "https://ibm-client-engineering.github.io/ce-solutions-hub/",
-          "repositoryTopics": {
-            "nodes": []
-          },
-          "industry": "Unspecified",
-          "publish": "False",
-          "title": "IBM Client Engineering Solutions Hub"
         },
         {
           "name": "Quarto-Sample",
@@ -77,21 +92,6 @@
             "watsonx.governance"
           ],
           "title": "Unified Virtual Assistant"
-        },
-        {
-          "name": "solution-openpages-wxai-translation",
-          "description": "Leverage watsonx.ai to carry out language translation on the OpenPages platform.",
-          "homepageUrl": "https://ibm-client-engineering.github.io/solution-openpages-wxai-translation/",
-          "repositoryTopics": {
-            "nodes": []
-          },
-          "industry": "Banking",
-          "publish": "False",
-          "technology": [
-            "Openpages",
-            "watsonx.ai"
-          ],
-          "title": "OpenPages watsonx.ai Translation"
         },
         {
           "name": "engineering-journal-quantum-safe",
