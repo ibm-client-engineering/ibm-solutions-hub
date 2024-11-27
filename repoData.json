@@ -3,19 +3,65 @@
     "repositories": {
       "nodes": [
         {
-          "name": "solution-openpages-wxai-translation",
-          "description": "Leverage watsonx.ai to carry out language translation on the OpenPages platform.",
-          "homepageUrl": "https://ibm-client-engineering.github.io/solution-openpages-wxai-translation/",
+          "name": "solution-template",
+          "description": null,
+          "homepageUrl": null,
+          "repositoryTopics": {
+            "nodes": [
+              {
+                "topic": {
+                  "name": "ibm-client-engineering"
+                }
+              }
+            ]
+          },
+          "industry": "Unspecified",
+          "publish": "False",
+          "title": "[Insert Solution Name]"
+        },
+        {
+          "name": "solution-ThirdPartyRisk-wxai",
+          "description": "Evaluating third party information technology products and their cybersecurity risks using watsonx.ai.",
+          "homepageUrl": "https://ibm-client-engineering.github.io/solution-ThirdPartyRisk-wxai/",
+          "repositoryTopics": {
+            "nodes": [
+              {
+                "topic": {
+                  "name": "openpages"
+                }
+              },
+              {
+                "topic": {
+                  "name": "watsonx-ai"
+                }
+              }
+            ]
+          },
+          "industry": "Banking",
+          "publish": "True",
+          "title": "Third Party Risk with watsonx.ai"
+        },
+        {
+          "name": "Quarto-Sample",
+          "description": null,
+          "homepageUrl": "https://ibm-client-engineering.github.io/Quarto-Sample/",
           "repositoryTopics": {
             "nodes": []
           },
-          "industry": "Banking",
+          "industry": "Unspecified",
           "publish": "False",
-          "technology": [
-            "Openpages",
-            "watsonx.ai"
-          ],
-          "title": "OpenPages watsonx.ai Translation"
+          "title": "[Insert Solution Name]"
+        },
+        {
+          "name": "engineering-journal-quantum-safe",
+          "description": null,
+          "homepageUrl": "https://ibm-client-engineering.github.io/engineering-journal-quantum-safe/",
+          "repositoryTopics": {
+            "nodes": []
+          },
+          "industry": "Unspecified",
+          "publish": "False",
+          "title": "[Insert Solution Name]"
         },
         {
           "name": "ce-solutions-hub",
@@ -29,30 +75,19 @@
           "title": "IBM Client Engineering Solutions Hub"
         },
         {
-          "name": "solution-ThirdPartyRisk",
-          "description": "Evaluating third party information technology products and their cybersecurity risks using watsonx.ai.",
-          "homepageUrl": "https://ibm-client-engineering.github.io/solution-ThirdPartyRisk/",
+          "name": "solution-openpages-wxai-translation",
+          "description": "Leverage watsonx.ai to carry out language translation on the OpenPages platform.",
+          "homepageUrl": "https://ibm-client-engineering.github.io/solution-openpages-wxai-translation/",
           "repositoryTopics": {
             "nodes": []
           },
           "industry": "Banking",
-          "publish": "True",
+          "publish": "False",
           "technology": [
             "Openpages",
             "watsonx.ai"
           ],
-          "title": "Third Party Risk with watsonx.ai"
-        },
-        {
-          "name": "Quarto-Sample",
-          "description": null,
-          "homepageUrl": "https://ibm-client-engineering.github.io/Quarto-Sample/",
-          "repositoryTopics": {
-            "nodes": []
-          },
-          "industry": "Unspecified",
-          "publish": "False",
-          "title": "[Insert Solution Name]"
+          "title": "OpenPages watsonx.ai Translation"
         },
         {
           "name": "solution-unified-virtual-assistant",
@@ -92,17 +127,6 @@
             "watsonx.governance"
           ],
           "title": "Unified Virtual Assistant"
-        },
-        {
-          "name": "engineering-journal-quantum-safe",
-          "description": null,
-          "homepageUrl": "https://ibm-client-engineering.github.io/engineering-journal-quantum-safe/",
-          "repositoryTopics": {
-            "nodes": []
-          },
-          "industry": "Unspecified",
-          "publish": "False",
-          "title": "[Insert Solution Name]"
         },
         {
           "name": "solution-openpages-wx",
@@ -501,23 +525,6 @@
         {
           "name": "solution-mq-aws-eks",
           "description": "IBM MQ on Amazon Elastic Container Service (EKS)",
-          "homepageUrl": null,
-          "repositoryTopics": {
-            "nodes": [
-              {
-                "topic": {
-                  "name": "ibm-client-engineering"
-                }
-              }
-            ]
-          },
-          "industry": "Unspecified",
-          "publish": "False",
-          "title": "[Insert Solution Name]"
-        },
-        {
-          "name": "solution-template",
-          "description": null,
           "homepageUrl": null,
           "repositoryTopics": {
             "nodes": [
