@@ -3,17 +3,11 @@
     "repositories": {
       "nodes": [
         {
-          "name": "solution-template",
+          "name": "Quarto-Sample",
           "description": null,
-          "homepageUrl": null,
+          "homepageUrl": "https://ibm-client-engineering.github.io/Quarto-Sample/",
           "repositoryTopics": {
-            "nodes": [
-              {
-                "topic": {
-                  "name": "ibm-client-engineering"
-                }
-              }
-            ]
+            "nodes": []
           },
           "industry": "Unspecified",
           "publish": "False",
@@ -39,14 +33,35 @@
           },
           "industry": "Banking",
           "publish": "True",
+          "technology": [
+            "Openpages",
+            "watsonx.ai"
+          ],
           "title": "Third Party Risk with watsonx.ai"
         },
         {
-          "name": "Quarto-Sample",
-          "description": null,
-          "homepageUrl": "https://ibm-client-engineering.github.io/Quarto-Sample/",
+          "name": "ce-solutions-hub",
+          "description": "Client Engineering Solutions Hub",
+          "homepageUrl": "https://ibm-client-engineering.github.io/ce-solutions-hub/",
           "repositoryTopics": {
             "nodes": []
+          },
+          "industry": "Unspecified",
+          "publish": "False",
+          "title": "IBM Client Engineering Solutions Hub"
+        },
+        {
+          "name": "solution-template",
+          "description": null,
+          "homepageUrl": null,
+          "repositoryTopics": {
+            "nodes": [
+              {
+                "topic": {
+                  "name": "ibm-client-engineering"
+                }
+              }
+            ]
           },
           "industry": "Unspecified",
           "publish": "False",
@@ -62,17 +77,6 @@
           "industry": "Unspecified",
           "publish": "False",
           "title": "[Insert Solution Name]"
-        },
-        {
-          "name": "ce-solutions-hub",
-          "description": "Client Engineering Solutions Hub",
-          "homepageUrl": "https://ibm-client-engineering.github.io/ce-solutions-hub/",
-          "repositoryTopics": {
-            "nodes": []
-          },
-          "industry": "Unspecified",
-          "publish": "False",
-          "title": "IBM Client Engineering Solutions Hub"
         },
         {
           "name": "solution-openpages-wxai-translation",
