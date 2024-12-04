@@ -18,6 +18,17 @@
           "title": "OpenPages watsonx.ai Translation"
         },
         {
+          "name": "engineering-journal-quantum-safe",
+          "description": null,
+          "homepageUrl": "https://ibm-client-engineering.github.io/engineering-journal-quantum-safe/",
+          "repositoryTopics": {
+            "nodes": []
+          },
+          "industry": "Unspecified",
+          "publish": "False",
+          "title": "[Insert Solution Name]"
+        },
+        {
           "name": "Quarto-Sample",
           "description": null,
           "homepageUrl": "https://ibm-client-engineering.github.io/Quarto-Sample/",
@@ -77,17 +88,6 @@
                 }
               }
             ]
-          },
-          "industry": "Unspecified",
-          "publish": "False",
-          "title": "[Insert Solution Name]"
-        },
-        {
-          "name": "engineering-journal-quantum-safe",
-          "description": null,
-          "homepageUrl": "https://ibm-client-engineering.github.io/engineering-journal-quantum-safe/",
-          "repositoryTopics": {
-            "nodes": []
           },
           "industry": "Unspecified",
           "publish": "False",
