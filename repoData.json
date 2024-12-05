@@ -3,6 +3,78 @@
     "repositories": {
       "nodes": [
         {
+          "name": "solution-wxai-aws",
+          "description": "Streamline company compliance standards and policies with a self-serve assistant powered by advanced LLM and RAG Techniques",
+          "homepageUrl": "https://ibm-client-engineering.github.io/solution-wxai-aws/",
+          "repositoryTopics": {
+            "nodes": [
+              {
+                "topic": {
+                  "name": "aws"
+                }
+              },
+              {
+                "topic": {
+                  "name": "watsonx-ai"
+                }
+              },
+              {
+                "topic": {
+                  "name": "watsonx-assistant"
+                }
+              }
+            ]
+          },
+          "industry": "Various",
+          "publish": "True",
+          "technology": [
+            "Openshift",
+            "watsonx.ai"
+          ],
+          "title": "Gen AI Compliance Virtual Assistant on AWS"
+        },
+        {
+          "name": "solution-filenet-aws",
+          "description": "Operationalize FileNet on AWS EKS with advanced containerization capabilities",
+          "homepageUrl": "https://ibm-client-engineering.github.io/solution-filenet-aws/",
+          "repositoryTopics": {
+            "nodes": [
+              {
+                "topic": {
+                  "name": "aws-eks"
+                }
+              },
+              {
+                "topic": {
+                  "name": "business-automation"
+                }
+              },
+              {
+                "topic": {
+                  "name": "filenet-content-manager"
+                }
+              }
+            ]
+          },
+          "industry": "Insurance",
+          "publish": "True",
+          "technology": [
+            "FileNet"
+          ],
+          "title": "Journey to the Cloud: Migrating FileNet to AWS EKS"
+        },
+        {
+          "name": "engineering-journal-quantum-safe",
+          "description": null,
+          "homepageUrl": "https://ibm-client-engineering.github.io/engineering-journal-quantum-safe/",
+          "repositoryTopics": {
+            "nodes": []
+          },
+          "industry": "Unspecified",
+          "publish": "False",
+          "title": "[Insert Solution Name]"
+        },
+        {
           "name": "Quarto-Sample",
           "description": null,
           "homepageUrl": "https://ibm-client-engineering.github.io/Quarto-Sample/",
@@ -12,6 +84,56 @@
           "industry": "Unspecified",
           "publish": "False",
           "title": "[Insert Solution Name]"
+        },
+        {
+          "name": "solution-sentibot",
+          "description": "News scraper and sentiment analyzer powered by watsonx.ai that saves research and prospecting time",
+          "homepageUrl": "https://ibm-client-engineering.github.io/solution-sentibot/",
+          "repositoryTopics": {
+            "nodes": [
+              {
+                "topic": {
+                  "name": "watsonx-ai"
+                }
+              },
+              {
+                "topic": {
+                  "name": "generative-ai"
+                }
+              }
+            ]
+          },
+          "industry": "Banking",
+          "publish": "True",
+          "technology": [
+            "watsonx.ai"
+          ],
+          "title": "SentiBot: Gen-AI Powered News Scraper and Sentiment Analyzer"
+        },
+        {
+          "name": "solution-sfg-aws",
+          "description": "Installing IBM Sterling File Gateway (and other B2Bi components) on Amazon EKS",
+          "homepageUrl": "https://ibm-client-engineering.github.io/solution-sfg-aws/",
+          "repositoryTopics": {
+            "nodes": [
+              {
+                "topic": {
+                  "name": "aws-eks"
+                }
+              },
+              {
+                "topic": {
+                  "name": "ibm-sterling"
+                }
+              }
+            ]
+          },
+          "industry": "Finance",
+          "publish": "True",
+          "technology": [
+            "Sterling File Gateway"
+          ],
+          "title": "Adopting IBM Sterling File Gateway on Amazon EKS"
         },
         {
           "name": "solution-openpages-wxai-translation",
@@ -27,6 +149,17 @@
             "watsonx.ai"
           ],
           "title": "OpenPages watsonx.ai Translation"
+        },
+        {
+          "name": "ce-solutions-hub",
+          "description": "Client Engineering Solutions Hub",
+          "homepageUrl": "https://ibm-client-engineering.github.io/ce-solutions-hub/",
+          "repositoryTopics": {
+            "nodes": []
+          },
+          "industry": "Unspecified",
+          "publish": "False",
+          "title": "IBM Client Engineering Solutions Hub"
         },
         {
           "name": "solution-ThirdPartyRisk-wxai",
@@ -58,59 +191,6 @@
           "name": "test",
           "description": null,
           "homepageUrl": null,
-          "repositoryTopics": {
-            "nodes": []
-          },
-          "industry": "Unspecified",
-          "publish": "False",
-          "title": "[Insert Solution Name]"
-        },
-        {
-          "name": "solution-wxai-aws",
-          "description": "Gen AI Compliance Virtual Assistant on AWS",
-          "homepageUrl": "https://ibm-client-engineering.github.io/solution-wxai-aws/",
-          "repositoryTopics": {
-            "nodes": [
-              {
-                "topic": {
-                  "name": "aws"
-                }
-              },
-              {
-                "topic": {
-                  "name": "watsonx-ai"
-                }
-              },
-              {
-                "topic": {
-                  "name": "watsonx-assistant"
-                }
-              }
-            ]
-          },
-          "industry": "Various",
-          "publish": "True",
-          "technology": [
-            "Openshift",
-            "watsonx.ai"
-          ],
-          "title": "Gen AI Compliance Virtual Assistant on AWS"
-        },
-        {
-          "name": "ce-solutions-hub",
-          "description": "Client Engineering Solutions Hub",
-          "homepageUrl": "https://ibm-client-engineering.github.io/ce-solutions-hub/",
-          "repositoryTopics": {
-            "nodes": []
-          },
-          "industry": "Unspecified",
-          "publish": "False",
-          "title": "IBM Client Engineering Solutions Hub"
-        },
-        {
-          "name": "engineering-journal-quantum-safe",
-          "description": null,
-          "homepageUrl": "https://ibm-client-engineering.github.io/engineering-journal-quantum-safe/",
           "repositoryTopics": {
             "nodes": []
           },
@@ -317,61 +397,6 @@
           "title": "[Insert Solution Name]"
         },
         {
-          "name": "solution-filenet-aws",
-          "description": "Solution to deploy IBM FileNet Content Manager on AWS EKS",
-          "homepageUrl": "https://ibm-client-engineering.github.io/solution-filenet-aws/",
-          "repositoryTopics": {
-            "nodes": [
-              {
-                "topic": {
-                  "name": "aws-eks"
-                }
-              },
-              {
-                "topic": {
-                  "name": "business-automation"
-                }
-              },
-              {
-                "topic": {
-                  "name": "filenet-content-manager"
-                }
-              }
-            ]
-          },
-          "industry": "Insurance",
-          "publish": "True",
-          "technology": [
-            "FileNet"
-          ],
-          "title": "FileNet Content Manager on AWS EKS "
-        },
-        {
-          "name": "solution-sentibot",
-          "description": "A news scraper and sentiment analyzer powered by watsonx.ai",
-          "homepageUrl": "https://ibm-client-engineering.github.io/solution-sentibot/",
-          "repositoryTopics": {
-            "nodes": [
-              {
-                "topic": {
-                  "name": "watsonx-ai"
-                }
-              },
-              {
-                "topic": {
-                  "name": "generative-ai"
-                }
-              }
-            ]
-          },
-          "industry": "Banking",
-          "publish": "True",
-          "technology": [
-            "watsonx.ai"
-          ],
-          "title": "Sentibot"
-        },
-        {
           "name": "solution-mq-rdqm-hadr",
           "description": "Set up IBM MQ Traditional with RDQM ",
           "homepageUrl": "",
@@ -530,7 +555,7 @@
             ]
           },
           "industry": "Finance",
-          "publish": "True",
+          "publish": "False",
           "technology": [
             "Openshift",
             "Process Mining"
@@ -566,31 +591,6 @@
           "title": "Watsonx News Scraper"
         },
         {
-          "name": "solution-sfg-aws",
-          "description": "Installing IBM Sterling File Gateway (and other B2Bi components) on Amazon EKS",
-          "homepageUrl": "https://ibm-client-engineering.github.io/solution-sfg-aws/",
-          "repositoryTopics": {
-            "nodes": [
-              {
-                "topic": {
-                  "name": "aws-eks"
-                }
-              },
-              {
-                "topic": {
-                  "name": "ibm-sterling"
-                }
-              }
-            ]
-          },
-          "industry": "Finance",
-          "publish": "True",
-          "technology": [
-            "Sterling File Gateway"
-          ],
-          "title": "Sterling File Gateway on AWS EKS"
-        },
-        {
           "name": "solution-satellite",
           "description": "Deploying an application on a satellite location on IBM and AWS using IBM Cloud Console, Terraform, and Helmcharts",
           "homepageUrl": "https://ibm-client-engineering.github.io/solution-satellite/",
@@ -609,7 +609,7 @@
             ]
           },
           "industry": "Banking",
-          "publish": "True",
+          "publish": "False",
           "technology": [
             "IBM Cloud Satellite",
             "Terraform"
@@ -635,7 +635,7 @@
             ]
           },
           "industry": "Banking",
-          "publish": "True",
+          "publish": "False",
           "technology": [
             "Ansible",
             "Aspera"
@@ -666,7 +666,7 @@
             ]
           },
           "industry": "Various",
-          "publish": "True",
+          "publish": "False",
           "technology": [
             "Watsonx Orchestrate"
           ],
@@ -686,7 +686,7 @@
             ]
           },
           "industry": "Various",
-          "publish": "True",
+          "publish": "False",
           "technology": [
             "CP4BA"
           ],
