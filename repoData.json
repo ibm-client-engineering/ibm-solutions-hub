@@ -3,32 +3,6 @@
     "repositories": {
       "nodes": [
         {
-          "name": "solution-openpages-wxai-translation",
-          "description": "Leverage watsonx.ai to carry out language translation on the OpenPages platform.",
-          "homepageUrl": "https://ibm-client-engineering.github.io/solution-openpages-wxai-translation/",
-          "repositoryTopics": {
-            "nodes": []
-          },
-          "industry": "Banking",
-          "publish": "False",
-          "technology": [
-            "Openpages",
-            "watsonx.ai"
-          ],
-          "title": "OpenPages watsonx.ai Translation"
-        },
-        {
-          "name": "engineering-journal-quantum-safe",
-          "description": null,
-          "homepageUrl": "https://ibm-client-engineering.github.io/engineering-journal-quantum-safe/",
-          "repositoryTopics": {
-            "nodes": []
-          },
-          "industry": "Unspecified",
-          "publish": "False",
-          "title": "[Insert Solution Name]"
-        },
-        {
           "name": "Quarto-Sample",
           "description": null,
           "homepageUrl": "https://ibm-client-engineering.github.io/Quarto-Sample/",
@@ -40,15 +14,19 @@
           "title": "[Insert Solution Name]"
         },
         {
-          "name": "ce-solutions-hub",
-          "description": "Client Engineering Solutions Hub",
-          "homepageUrl": "https://ibm-client-engineering.github.io/ce-solutions-hub/",
+          "name": "solution-openpages-wxai-translation",
+          "description": "Leverage watsonx.ai to carry out language translation on the OpenPages platform.",
+          "homepageUrl": "https://ibm-client-engineering.github.io/solution-openpages-wxai-translation/",
           "repositoryTopics": {
             "nodes": []
           },
-          "industry": "Unspecified",
-          "publish": "False",
-          "title": "IBM Client Engineering Solutions Hub"
+          "industry": "Banking",
+          "publish": "True",
+          "technology": [
+            "Openpages",
+            "watsonx.ai"
+          ],
+          "title": "OpenPages watsonx.ai Translation"
         },
         {
           "name": "solution-ThirdPartyRisk-wxai",
@@ -75,6 +53,70 @@
             "watsonx.ai"
           ],
           "title": "Third Party Risk with watsonx.ai"
+        },
+        {
+          "name": "test",
+          "description": null,
+          "homepageUrl": null,
+          "repositoryTopics": {
+            "nodes": []
+          },
+          "industry": "Unspecified",
+          "publish": "False",
+          "title": "[Insert Solution Name]"
+        },
+        {
+          "name": "solution-wxai-aws",
+          "description": "Gen AI Compliance Virtual Assistant on AWS",
+          "homepageUrl": "https://ibm-client-engineering.github.io/solution-wxai-aws/",
+          "repositoryTopics": {
+            "nodes": [
+              {
+                "topic": {
+                  "name": "aws"
+                }
+              },
+              {
+                "topic": {
+                  "name": "watsonx-ai"
+                }
+              },
+              {
+                "topic": {
+                  "name": "watsonx-assistant"
+                }
+              }
+            ]
+          },
+          "industry": "Various",
+          "publish": "True",
+          "technology": [
+            "Openshift",
+            "watsonx.ai"
+          ],
+          "title": "Gen AI Compliance Virtual Assistant on AWS"
+        },
+        {
+          "name": "ce-solutions-hub",
+          "description": "Client Engineering Solutions Hub",
+          "homepageUrl": "https://ibm-client-engineering.github.io/ce-solutions-hub/",
+          "repositoryTopics": {
+            "nodes": []
+          },
+          "industry": "Unspecified",
+          "publish": "False",
+          "title": "IBM Client Engineering Solutions Hub"
+        },
+        {
+          "name": "engineering-journal-quantum-safe",
+          "description": null,
+          "homepageUrl": "https://ibm-client-engineering.github.io/engineering-journal-quantum-safe/",
+          "repositoryTopics": {
+            "nodes": []
+          },
+          "industry": "Unspecified",
+          "publish": "False",
+          "title": "[Insert Solution Name]"
         },
         {
           "name": "solution-template",
@@ -207,37 +249,6 @@
           "industry": "Unspecified",
           "publish": "False",
           "title": "[Insert Solution Name]"
-        },
-        {
-          "name": "solution-wxai-aws",
-          "description": "Deploying watsonx.ai on AWS for AI Assistant Solutions",
-          "homepageUrl": "https://ibm-client-engineering.github.io/solution-wxai-aws/",
-          "repositoryTopics": {
-            "nodes": [
-              {
-                "topic": {
-                  "name": "aws"
-                }
-              },
-              {
-                "topic": {
-                  "name": "watsonx-ai"
-                }
-              },
-              {
-                "topic": {
-                  "name": "watsonx-assistant"
-                }
-              }
-            ]
-          },
-          "industry": "Various",
-          "publish": "True",
-          "technology": [
-            "Openshift",
-            "watsonx.ai"
-          ],
-          "title": "IBM watsonx.ai on AWS"
         },
         {
           "name": "solution-watsonx-wca4z",
