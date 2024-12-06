@@ -42,9 +42,47 @@
 .mission_img__container {
   background-image: url("./mission.png");
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   background-position: center;
   size: 200%;
 }
 
-  
+.body__column {
+  margin-top: 5vh;
+  margin-left: 10vw;
+  margin-right: 10vw;
+  max-width: 60%;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 28px;
+}
+
+p {
+  font-size: 28px;
+  line-height: 36px;
+  margin-bottom: 36px;
+}
+
+.pillar__column {
+  width: 50%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.pictogram {
+  fill: #057303;
+  stroke-width: 500;
+  margin-bottom: 36px;
+}
+
+h3 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+li {
+  font-size: 24px;
+}
+
