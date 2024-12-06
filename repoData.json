@@ -3,6 +3,28 @@
     "repositories": {
       "nodes": [
         {
+          "name": "Quarto-Sample",
+          "description": null,
+          "homepageUrl": "https://ibm-client-engineering.github.io/Quarto-Sample/",
+          "repositoryTopics": {
+            "nodes": []
+          },
+          "industry": "Unspecified",
+          "publish": "False",
+          "title": "[Insert Solution Name]"
+        },
+        {
+          "name": "ce-solutions-hub",
+          "description": "Client Engineering Solutions Hub",
+          "homepageUrl": "https://ibm-client-engineering.github.io/ce-solutions-hub/",
+          "repositoryTopics": {
+            "nodes": []
+          },
+          "industry": "Unspecified",
+          "publish": "False",
+          "title": "IBM Client Engineering Solutions Hub"
+        },
+        {
           "name": "solution-wxai-aws",
           "description": "Streamline company compliance standards and policies with a self-serve assistant powered by advanced LLM and RAG Techniques",
           "homepageUrl": "https://ibm-client-engineering.github.io/solution-wxai-aws/",
@@ -75,17 +97,6 @@
           "title": "[Insert Solution Name]"
         },
         {
-          "name": "Quarto-Sample",
-          "description": null,
-          "homepageUrl": "https://ibm-client-engineering.github.io/Quarto-Sample/",
-          "repositoryTopics": {
-            "nodes": []
-          },
-          "industry": "Unspecified",
-          "publish": "False",
-          "title": "[Insert Solution Name]"
-        },
-        {
           "name": "solution-sentibot",
           "description": "News scraper and sentiment analyzer powered by watsonx.ai that saves research and prospecting time",
           "homepageUrl": "https://ibm-client-engineering.github.io/solution-sentibot/",
@@ -149,17 +160,6 @@
             "watsonx.ai"
           ],
           "title": "OpenPages watsonx.ai Translation"
-        },
-        {
-          "name": "ce-solutions-hub",
-          "description": "Client Engineering Solutions Hub",
-          "homepageUrl": "https://ibm-client-engineering.github.io/ce-solutions-hub/",
-          "repositoryTopics": {
-            "nodes": []
-          },
-          "industry": "Unspecified",
-          "publish": "False",
-          "title": "IBM Client Engineering Solutions Hub"
         },
         {
           "name": "solution-ThirdPartyRisk-wxai",
