@@ -3,26 +3,15 @@
     "repositories": {
       "nodes": [
         {
-          "name": "Quarto-Sample",
+          "name": "engineering-journal-zOS-datagate",
           "description": null,
-          "homepageUrl": "https://ibm-client-engineering.github.io/Quarto-Sample/",
+          "homepageUrl": "https://ibm-client-engineering.github.io/engineering-journal-zOS-datagate/",
           "repositoryTopics": {
             "nodes": []
           },
           "industry": "Unspecified",
           "publish": "False",
-          "title": "[Insert Solution Name]"
-        },
-        {
-          "name": "ce-solutions-hub",
-          "description": "Client Engineering Solutions Hub",
-          "homepageUrl": "https://ibm-client-engineering.github.io/ce-solutions-hub/",
-          "repositoryTopics": {
-            "nodes": []
-          },
-          "industry": "Unspecified",
-          "publish": "False",
-          "title": "IBM Client Engineering Solutions Hub"
+          "title": "zOS-datagate"
         },
         {
           "name": "solution-wxai-aws",
@@ -86,17 +75,6 @@
           "title": "Journey to the Cloud: Migrating FileNet to AWS EKS"
         },
         {
-          "name": "engineering-journal-quantum-safe",
-          "description": null,
-          "homepageUrl": "https://ibm-client-engineering.github.io/engineering-journal-quantum-safe/",
-          "repositoryTopics": {
-            "nodes": []
-          },
-          "industry": "Unspecified",
-          "publish": "False",
-          "title": "[Insert Solution Name]"
-        },
-        {
           "name": "solution-sentibot",
           "description": "News scraper and sentiment analyzer powered by watsonx.ai that saves research and prospecting time",
           "homepageUrl": "https://ibm-client-engineering.github.io/solution-sentibot/",
@@ -120,6 +98,39 @@
             "watsonx.ai"
           ],
           "title": "SentiBot: Gen-AI Powered News Scraper and Sentiment Analyzer"
+        },
+        {
+          "name": "ce-solutions-hub",
+          "description": "Client Engineering Solutions Hub",
+          "homepageUrl": "https://ibm-client-engineering.github.io/ce-solutions-hub/",
+          "repositoryTopics": {
+            "nodes": []
+          },
+          "industry": "Unspecified",
+          "publish": "False",
+          "title": "IBM Client Engineering Solutions Hub"
+        },
+        {
+          "name": "Quarto-Sample",
+          "description": null,
+          "homepageUrl": "https://ibm-client-engineering.github.io/Quarto-Sample/",
+          "repositoryTopics": {
+            "nodes": []
+          },
+          "industry": "Unspecified",
+          "publish": "False",
+          "title": "[Insert Solution Name]"
+        },
+        {
+          "name": "engineering-journal-quantum-safe",
+          "description": null,
+          "homepageUrl": "https://ibm-client-engineering.github.io/engineering-journal-quantum-safe/",
+          "repositoryTopics": {
+            "nodes": []
+          },
+          "industry": "Unspecified",
+          "publish": "False",
+          "title": "[Insert Solution Name]"
         },
         {
           "name": "solution-sfg-aws",
@@ -188,17 +199,6 @@
           "title": "Third Party Risk with watsonx.ai"
         },
         {
-          "name": "test",
-          "description": null,
-          "homepageUrl": null,
-          "repositoryTopics": {
-            "nodes": []
-          },
-          "industry": "Unspecified",
-          "publish": "False",
-          "title": "[Insert Solution Name]"
-        },
-        {
           "name": "solution-template",
           "description": null,
           "homepageUrl": null,
@@ -264,17 +264,6 @@
           "industry": "Unspecified",
           "publish": "False",
           "title": "[Insert Solution Name]"
-        },
-        {
-          "name": "engineering-journal-zOS-datagate",
-          "description": null,
-          "homepageUrl": null,
-          "repositoryTopics": {
-            "nodes": []
-          },
-          "industry": "Unspecified",
-          "publish": "False",
-          "title": "zOS-datagate"
         },
         {
           "name": "solution-mq-gitops",
