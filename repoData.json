@@ -3,6 +3,17 @@
     "repositories": {
       "nodes": [
         {
+          "name": "ce-solutions-hub",
+          "description": "Client Engineering Solutions Hub",
+          "homepageUrl": "https://ibm-client-engineering.github.io/ce-solutions-hub/",
+          "repositoryTopics": {
+            "nodes": []
+          },
+          "industry": "Unspecified",
+          "publish": "False",
+          "title": "IBM Client Engineering Solutions Hub"
+        },
+        {
           "name": "engineering-journal-zOS-datagate",
           "description": null,
           "homepageUrl": "https://ibm-client-engineering.github.io/engineering-journal-zOS-datagate/",
@@ -98,17 +109,6 @@
             "watsonx.ai"
           ],
           "title": "SentiBot: Gen-AI Powered News Scraper and Sentiment Analyzer"
-        },
-        {
-          "name": "ce-solutions-hub",
-          "description": "Client Engineering Solutions Hub",
-          "homepageUrl": "https://ibm-client-engineering.github.io/ce-solutions-hub/",
-          "repositoryTopics": {
-            "nodes": []
-          },
-          "industry": "Unspecified",
-          "publish": "False",
-          "title": "IBM Client Engineering Solutions Hub"
         },
         {
           "name": "Quarto-Sample",
