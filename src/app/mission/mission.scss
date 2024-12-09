@@ -34,9 +34,10 @@
 
 .title__column {
   display: flex;
-  align-items: center;
-  text-align: center;
+  text-align: left;
   justify-content: center;
+  align-items: left;
+  flex-direction: column;
 }
 
 .mission_img__container {
@@ -54,9 +55,21 @@
   max-width: 60%;
 }
 
+h1 {
+  font-weight: 300;
+  font-size: 54px;
+  //line-height: 64px;
+}
+
 h2 {
   font-weight: 700;
   font-size: 28px;
+}
+
+h5 {
+  color: #525252;
+  font-weight: 400;
+  font-size: 20px;
 }
 
 p {

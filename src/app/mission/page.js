@@ -11,6 +11,7 @@ const MissionPage = () => {
       <Row className='mission_banner__row' lg={6}>
         <Column className="title__column" lg={8}>
           <h1>Our Mission</h1>
+          <h5>Providing a centralized place to showcase IBM Client Engineering Solutions</h5>
         </Column>
         <Column className='mission_img__container' lg={8}>
         </Column>
