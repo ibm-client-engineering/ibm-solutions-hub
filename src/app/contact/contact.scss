@@ -35,9 +35,10 @@
 
 .title__column {
     display: flex;
-    align-items: center;
-    text-align: center;
+    text-align: left;
     justify-content: center;
+    align-items: left;
+    flex-direction: column;
 }
 
 .assistant_img__container {
@@ -52,13 +53,21 @@
     margin-top: 5vh;
     margin-left: 10vw;
     margin-right: 10vw;
-    max-width: 50%;
+    margin-bottom: 5vh;
+    max-width: 70%;
+    display: flex;
 }
 
-.submit__row {
-    padding-left: 16px;
+
+.monday__form {
+    border: 0;
+    justify-self: center;
+    //box-shadow: 5px 5px 56px 0px rgba(0,0,0,0.25);
 }
 
-.form__row {
-    margin-top: 1em;
+.form-wrapper-component .form-content-component {
+    border-style: solid;
+    border-color: #E0E0E0;
+    border-width: 4px;
+    box-shadow: none;
 }
