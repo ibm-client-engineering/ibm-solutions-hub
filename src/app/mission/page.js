@@ -3,7 +3,7 @@
 import React from 'react';
 import './mission.scss'; 
 import {Row, Column, FlexGrid, UnorderedList, ListItem} from '@carbon/react';
-import {Idea, Collaboration} from '@carbon/pictograms-react';
+import {Idea, Collaborate} from '@carbon/icons-react';
 
 const MissionPage = () => {
   return (
@@ -24,7 +24,7 @@ const MissionPage = () => {
           <p><a href="https://www.ibm.com/client-engineering">Learn more about Client Engineering &rarr;</a></p>
 
           <Column className='pillar__column'>
-            <Collaboration className='pictogram'/>
+            <Collaborate className='pictogram'/>
             <p><h3>Transparency and Collaboration</h3></p>
             <p>
               <UnorderedList>
