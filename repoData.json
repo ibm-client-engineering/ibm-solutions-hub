@@ -3,6 +3,38 @@
     "repositories": {
       "nodes": [
         {
+          "name": "solution-AskCSM",
+          "description": "An innovative solution designed to handle inquiries related to Enterprise License Agreements (ELA)",
+          "homepageUrl": "https://ibm-client-engineering.github.io/solution-AskCSM/",
+          "repositoryTopics": {
+            "nodes": []
+          },
+          "industry": "Finance",
+          "publish": "True",
+          "technology": [
+            "Watson Discovery",
+            "Watsonx Assistant",
+            "watsonx.ai"
+          ],
+          "title": "Enterprise License Agreements AI Assistant"
+        },
+        {
+          "name": "solution-openpages-wx",
+          "description": "Incorporate Internal Audit methodologies and OpenPages user guide knowledge into OpenPages via watsonx Assistant.",
+          "homepageUrl": "https://ibm-client-engineering.github.io/solution-openpages-wx/",
+          "repositoryTopics": {
+            "nodes": []
+          },
+          "industry": "Finance",
+          "publish": "True",
+          "technology": [
+            "Openpages",
+            "Watsonx Assistant",
+            "watsonx.ai"
+          ],
+          "title": "OpenPages Internal Audit AI Assistant "
+        },
+        {
           "name": "ce-solutions-hub",
           "description": "Client Engineering Solutions Hub",
           "homepageUrl": "https://ibm-client-engineering.github.io/ce-solutions-hub/",
@@ -255,17 +287,6 @@
           "title": "Unified Virtual Assistant"
         },
         {
-          "name": "solution-openpages-wx",
-          "description": null,
-          "homepageUrl": "https://ibm-client-engineering.github.io/solution-openpages-wx/",
-          "repositoryTopics": {
-            "nodes": []
-          },
-          "industry": "Unspecified",
-          "publish": "False",
-          "title": "[Insert Solution Name]"
-        },
-        {
           "name": "solution-mq-gitops",
           "description": "MQ automation through gitops",
           "homepageUrl": null,
@@ -334,17 +355,6 @@
           "name": "solution-wca4z-onprem",
           "description": null,
           "homepageUrl": "https://ibm-client-engineering.github.io/solution-wca4z-onprem/",
-          "repositoryTopics": {
-            "nodes": []
-          },
-          "industry": "Unspecified",
-          "publish": "False",
-          "title": "[Insert Solution Name]"
-        },
-        {
-          "name": "solution-AskCSM",
-          "description": null,
-          "homepageUrl": "https://ibm-client-engineering.github.io/solution-AskCSM/",
           "repositoryTopics": {
             "nodes": []
           },
