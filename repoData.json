@@ -3,6 +3,39 @@
     "repositories": {
       "nodes": [
         {
+          "name": "engineering-journal-quantum-safe",
+          "description": null,
+          "homepageUrl": "https://ibm-client-engineering.github.io/engineering-journal-quantum-safe/",
+          "repositoryTopics": {
+            "nodes": []
+          },
+          "industry": "Unspecified",
+          "publish": "False",
+          "title": "[Insert Solution Name]"
+        },
+        {
+          "name": "Quarto-Sample",
+          "description": null,
+          "homepageUrl": "https://ibm-client-engineering.github.io/Quarto-Sample/",
+          "repositoryTopics": {
+            "nodes": []
+          },
+          "industry": "Unspecified",
+          "publish": "False",
+          "title": "[Insert Solution Name]"
+        },
+        {
+          "name": "ce-solutions-hub",
+          "description": "Client Engineering Solutions Hub",
+          "homepageUrl": "https://ibm-client-engineering.github.io/ce-solutions-hub/",
+          "repositoryTopics": {
+            "nodes": []
+          },
+          "industry": "Unspecified",
+          "publish": "False",
+          "title": "IBM Client Engineering Solutions Hub"
+        },
+        {
           "name": "solution-AskCSM",
           "description": "An innovative solution designed to handle inquiries related to Enterprise License Agreements (ELA)",
           "homepageUrl": "https://ibm-client-engineering.github.io/solution-AskCSM/",
@@ -33,17 +66,6 @@
             "watsonx.ai"
           ],
           "title": "OpenPages Internal Audit AI Assistant "
-        },
-        {
-          "name": "ce-solutions-hub",
-          "description": "Client Engineering Solutions Hub",
-          "homepageUrl": "https://ibm-client-engineering.github.io/ce-solutions-hub/",
-          "repositoryTopics": {
-            "nodes": []
-          },
-          "industry": "Unspecified",
-          "publish": "False",
-          "title": "IBM Client Engineering Solutions Hub"
         },
         {
           "name": "engineering-journal-zOS-datagate",
@@ -141,28 +163,6 @@
             "watsonx.ai"
           ],
           "title": "SentiBot: Gen-AI Powered News Scraper and Sentiment Analyzer"
-        },
-        {
-          "name": "Quarto-Sample",
-          "description": null,
-          "homepageUrl": "https://ibm-client-engineering.github.io/Quarto-Sample/",
-          "repositoryTopics": {
-            "nodes": []
-          },
-          "industry": "Unspecified",
-          "publish": "False",
-          "title": "[Insert Solution Name]"
-        },
-        {
-          "name": "engineering-journal-quantum-safe",
-          "description": null,
-          "homepageUrl": "https://ibm-client-engineering.github.io/engineering-journal-quantum-safe/",
-          "repositoryTopics": {
-            "nodes": []
-          },
-          "industry": "Unspecified",
-          "publish": "False",
-          "title": "[Insert Solution Name]"
         },
         {
           "name": "solution-sfg-aws",
@@ -588,32 +588,6 @@
           "industry": "Unspecified",
           "publish": "False",
           "title": "Watsonx News Scraper"
-        },
-        {
-          "name": "solution-satellite",
-          "description": "Deploying an application on a satellite location on IBM and AWS using IBM Cloud Console, Terraform, and Helmcharts",
-          "homepageUrl": "https://ibm-client-engineering.github.io/solution-satellite/",
-          "repositoryTopics": {
-            "nodes": [
-              {
-                "topic": {
-                  "name": "aspera-sync"
-                }
-              },
-              {
-                "topic": {
-                  "name": "satellite"
-                }
-              }
-            ]
-          },
-          "industry": "Banking",
-          "publish": "False",
-          "technology": [
-            "IBM Cloud Satellite",
-            "Terraform"
-          ],
-          "title": "IBM Satellite on IBM Cloud and AWS"
         },
         {
           "name": "solution-aspera-sync",
