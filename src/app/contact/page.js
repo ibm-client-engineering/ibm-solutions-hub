@@ -9,9 +9,9 @@ const ContactUs = () => {
 
   return (
     <FlexGrid className="contact__grid">
-      <Row className='contact_banner__row' lg={6}>
+      <Row className='contact_banner__row'>
         <Column className="title__column" lg={8}>
-          <h1>Contact Us</h1>
+          <p className="banner-title">Contact Us</p>
         </Column>
         <Column className='assistant_img__container' lg={8}>
         </Column>
