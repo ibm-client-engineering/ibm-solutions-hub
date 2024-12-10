@@ -16,8 +16,9 @@
 
 .banner-title {
     @include type-style ('heading-06');
-    padding-top: 32px;
-    padding-bottom: 48px;
+    padding-top: 64px;
+    padding-left: 32px;
+    padding-bottom: 16px;
 }
 
 .banner-image-container {
@@ -41,8 +42,8 @@
 .projectTile {
     border: 1px solid var(--UI-ui-03, #E0E0E0);
     background: #FFF;
-    width: 350px;
-    height: 350px;
+    width: 325px;
+    height: 325px;
   }
 
 .projectTile__title {
@@ -109,14 +110,9 @@
 }
 
 .search-row {
-    padding-left: 1em;
     display: flex;
 }
 
-.filter-row {
-    width: 100%;
-    padding-left: 1em;
-}
 .filter-search {
     width: 100%;
 }
@@ -128,6 +124,7 @@
 
 .search_projects__col {
     display: inline-block;
+    margin-right: 0;
 }
 
 .projectTile__techs {
@@ -136,4 +133,8 @@
 
 .projectTile__industry {
     margin-left: 0;
+}
+
+.searchbar__col {
+    margin-right: 0;
 }

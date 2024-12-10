@@ -34,6 +34,9 @@ const CarbonHeader = () => {
         <Link href="/mission" passHref legacyBehavior>
           <HeaderMenuItem isActive={page === "/ce-solutions-hub/mission"} onClick={() => setPage("/ce-solutions-hub/mission")}>Mission</HeaderMenuItem>
         </Link>
+        <Link href="/contact" passHref legacyBehavior>
+          <HeaderMenuItem isActive={page === "/ce-solutions-hub/contact"} onClick={() => setPage("/ce-solutions-hub/contact")}>Contact Us</HeaderMenuItem>
+        </Link>
         </HeaderNavigation>
       </Header>
     )}
