@@ -25,7 +25,7 @@ const MissionPage = () => {
           <br />
           <h4>Client Engineering is a no-cost investment for IBM’s clients. <a href="/ce-solutions-hub/contact/">Connect with us today!</a></h4>
           <br />
-          <h4><a href="https://www.ibm.com/client-engineering">Learn more about Client Engineering &rarr;</a></h4>
+          <h4><a href="https://www.ibm.com/client-engineering" target="_blank" rel="noopener noreferrer">Learn more about Client Engineering</a></h4>
           <br />
           <br />
           <Column className='pillar__column'>

@@ -16,8 +16,9 @@
 
 .banner-title {
     @include type-style ('heading-06');
-    padding-top: 32px;
-    padding-bottom: 48px;
+    padding-top: 64px;
+    padding-left: 32px;
+    padding-bottom: 16px;
 }
 
 .banner-image-container {
