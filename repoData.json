@@ -3,7 +3,18 @@
     "repositories": {
       "nodes": [
         {
-          "name": "Quarto-Sample",
+          "name": "Enron-Accounting-automation",
+          "description": "Automated the accounting for Enron's business using Watsonx.governance",
+          "homepageUrl": null,
+          "repositoryTopics": {
+            "nodes": []
+          },
+          "industry": "Unspecified",
+          "publish": "False",
+          "title": "[Insert Solution Name]"
+        },
+        {
+          "name": "solution-template-quarto",
           "description": null,
           "homepageUrl": "https://ibm-client-engineering.github.io/Quarto-Sample/",
           "repositoryTopics": {
@@ -14,8 +25,47 @@
           "title": "[Insert Solution Name]"
         },
         {
+          "name": "solution-unified-virtual-assistant",
+          "description": "Build a unified virtual assistant on watsonx Orchestrate with gen-AI routing, IAM, governance, RAG, and third-party integrations.",
+          "homepageUrl": "https://ibm-client-engineering.github.io/solution-unified-virtual-assistant/",
+          "repositoryTopics": {
+            "nodes": [
+              {
+                "topic": {
+                  "name": "generative-ai"
+                }
+              },
+              {
+                "topic": {
+                  "name": "watsonx-ai"
+                }
+              },
+              {
+                "topic": {
+                  "name": "watsonx-orchestrate"
+                }
+              },
+              {
+                "topic": {
+                  "name": "ibm-security-verify"
+                }
+              }
+            ]
+          },
+          "industry": "Insurance",
+          "publish": "True",
+          "technology": [
+            "Security Verify",
+            "Watsonx Discovery",
+            "Watsonx Orchestrate",
+            "watsonx.ai",
+            "watsonx.governance"
+          ],
+          "title": "Unified Virtual Assistant"
+        },
+        {
           "name": "ce-solutions-hub",
-          "description": "Client Engineering Solutions Hub",
+          "description": "IBM Client Engineering Solutions Hub",
           "homepageUrl": "https://ibm-client-engineering.github.io/ce-solutions-hub/",
           "repositoryTopics": {
             "nodes": []
@@ -246,45 +296,6 @@
           "industry": "Unspecified",
           "publish": "False",
           "title": "[Insert Solution Name]"
-        },
-        {
-          "name": "solution-unified-virtual-assistant",
-          "description": "Build a unified virtual assistant on watsonx Orchestrate with gen-AI routing, IAM, governance, RAG, and third-party integrations.",
-          "homepageUrl": "https://ibm-client-engineering.github.io/solution-unified-virtual-assistant/",
-          "repositoryTopics": {
-            "nodes": [
-              {
-                "topic": {
-                  "name": "generative-ai"
-                }
-              },
-              {
-                "topic": {
-                  "name": "watsonx-ai"
-                }
-              },
-              {
-                "topic": {
-                  "name": "watsonx-orchestrate"
-                }
-              },
-              {
-                "topic": {
-                  "name": "ibm-security-verify"
-                }
-              }
-            ]
-          },
-          "industry": "Insurance",
-          "publish": "True",
-          "technology": [
-            "Security Verify",
-            "Watsonx Discovery",
-            "Watsonx Orchestrate",
-            "watsonx.ai",
-            "watsonx.governance"
-          ],
-          "title": "Unified Virtual Assistant"
         },
         {
           "name": "solution-mq-gitops",
