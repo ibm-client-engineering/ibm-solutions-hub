@@ -11,42 +11,47 @@ const MissionPage = () => {
       <Row className='mission_banner__row'>
         <Column className="title__column" lg={8}>
           <p className="banner-title">Our Mission</p>
-          <p className="banner-subtitle">Providing a centralized place to showcase IBM Client Engineering Solutions</p>
+          <p className="banner-subtitle">Build Better, Build Faster</p>
         </Column>
         <Column className='mission_img__container' lg={8}>
         </Column>
-        
       </Row>
       <Row className="body__row" lg={10}>
         <Column className='body__column'>
-          <h3>The Solutions Hub</h3>
+          <h3>Solutions Hub</h3>
+          <h4>The Solutions Hub documents our engineering journeys with the depth and authenticity that technical audiences deserve. We capture the complete story of how IBM Client Engineering solves complex business challenges using IBM Technology - from architectural decisions to implementation approaches - creating a rich technical knowledge base that demonstrates our deep expertise.</h4>
           <br />
-          <h4>The Solutions Hub documents best practices for creating technical solutions at IBM Client Engineering. This site allows IBMers, clients, and interested parties to participate, provide feedback, and benefit from collective knowledge. </h4>
+          <h3>Our Purpose</h3>
+          <h4>For too long, technical documentation has been relegated to marketing summaries or buried in internal repositories. The Solutions Hub changes this by bringing engineering knowledge into the open, connecting detailed technical content with compelling storytelling. Each solution showcases not just what we built, but exactly how we built it - providing the depth that developers and architects need to understand our approach.</h4>
           <br />
-          <h4>Client Engineering is a no-cost investment for IBM’s clients. <a href="/ce-solutions-hub/contact/">Connect with us today!</a></h4>
+          <h3>How We Work</h3>
+          <h4><strong>We believe in working in the open</strong>, documenting engineering progress and decisions as they happen. Our solutions capture:</h4>
+          <UnorderedList className='pillar__column__list'>
+            <ListItem>Detailed architectural patterns and technical decisions</ListItem>
+            <ListItem>Real implementation approaches with IBM Technology</ListItem>
+            <ListItem>Engineering challenges overcome and lessons learned</ListItem>
+            <ListItem>Integration patterns and deployment considerations</ListItem>
+            <ListItem>The complete technical story behind successful client outcomes</ListItem>
+          </UnorderedList>
           <br />
-          <h4><a href="https://www.ibm.com/client-engineering" target="_blank" rel="noopener noreferrer">Learn more about Client Engineering</a></h4>
+          <h3>Core Principles</h3><br></br>
+          <h4><strong>Make Engineering Visible</strong></h4>
+          <h4>Every solution represents carefully documented engineering work that shows exactly how we leverage IBM Technology to solve real business challenges. Our standardized templates ensure we capture the technical depth engineers, architects and decision-makers need while maintaining clarity for broader audiences. No more black boxes or guesswork – we show exactly how we build things.</h4><br></br>
+          <h4><strong>Documentation as Communication - Scale Knowledge</strong></h4>
+          <h4>By making our engineering approach transparent and accessible, we create opportunities for meaningful technical dialogue with clients, partners, and the broader technical community. Each solution connects to a wider narrative about how IBM solves complex challenges. We're creating a library of detailed technical content that teams can access anytime. Always available, easily searchable, and constantly growing.</h4><br></br>
+          <h4><strong>Building on Success</strong></h4>
+          <h4>When our teams document their solutions, they contribute to a growing body of engineering knowledge that benefits our entire ecosystem. This systematic approach to knowledge sharing helps others build upon proven patterns rather than starting from scratch.</h4>
           <br />
-          <br />
-          <Column className='pillar__column'>
-            <Collaborate className='pictogram'/>
-            <h3>Transparency and Collaboration</h3>
-            <br />
-              <UnorderedList className='pillar__column__list'>
-                <ListItem>Representation of IBM’s commitment to transparency and collaboration</ListItem>
-                <ListItem>Showcase of real-life customer experiences</ListItem>
-                <ListItem>Encouragement of the adoption of IBM Technology</ListItem>
-              </UnorderedList>
-          </Column>
-          <Column className='pillar__column'>
-            <Idea className='pictogram'/>
-            <h3>Co-Create and Innovate</h3>
-            <br />
-              <UnorderedList className='pillar__column__list'>
-                <ListItem>Collaboration with clients</ListItem>
-                <ListItem>Utilization of IBM Technology and methodology to address business challenges </ListItem>
-              </UnorderedList>
-          </Column>
+          <h3>Experience Our Solutions</h3>
+          <h4>The Solutions Hub provides multiple ways to engage with our technical content:</h4>
+          <UnorderedList className='pillar__column__list'>
+            <ListItem>Explore detailed technical documentation</ListItem>
+            <ListItem>Watch engineering story videos</ListItem>
+            <ListItem>Study architecture diagrams and decision records</ListItem>
+            <ListItem>Follow implementation guides</ListItem>
+            <ListItem>Understand our problem-solving methodology</ListItem>
+          </UnorderedList><br></br>
+          <h4>Whether you're an IBM engineer, client, or technology partner, you'll find valuable insights into how we approach and solve complex technical challenges. We invite you to explore our solutions and engage with our engineering community.</h4><br></br>
         </Column>
       </Row>
     </FlexGrid>
@@ -54,4 +59,3 @@ const MissionPage = () => {
 };
 
 export default MissionPage;
-
