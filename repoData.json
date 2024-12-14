@@ -3,9 +3,20 @@
     "repositories": {
       "nodes": [
         {
-          "name": "Enron-Accounting-automation",
-          "description": "Automated the accounting for Enron's business using Watsonx.governance",
-          "homepageUrl": null,
+          "name": "ce-solutions-hub",
+          "description": "IBM Client Engineering Solutions Hub",
+          "homepageUrl": "https://ibm-client-engineering.github.io/ce-solutions-hub/",
+          "repositoryTopics": {
+            "nodes": []
+          },
+          "industry": "Unspecified",
+          "publish": "False",
+          "title": "IBM Client Engineering Solutions Hub"
+        },
+        {
+          "name": "solution-template-quarto",
+          "description": null,
+          "homepageUrl": "https://ibm-client-engineering.github.io/solution-template-quarto/",
           "repositoryTopics": {
             "nodes": []
           },
@@ -14,14 +25,17 @@
           "title": "[Insert Solution Name]"
         },
         {
-          "name": "solution-template-quarto",
-          "description": null,
-          "homepageUrl": "https://ibm-client-engineering.github.io/Quarto-Sample/",
+          "name": "Quarto-dryrun",
+          "description": "test",
+          "homepageUrl": null,
           "repositoryTopics": {
             "nodes": []
           },
           "industry": "Unspecified",
           "publish": "False",
+          "technology": [
+            "Ansible Lightspeed"
+          ],
           "title": "[Insert Solution Name]"
         },
         {
@@ -62,17 +76,6 @@
             "watsonx.governance"
           ],
           "title": "Unified Virtual Assistant"
-        },
-        {
-          "name": "ce-solutions-hub",
-          "description": "IBM Client Engineering Solutions Hub",
-          "homepageUrl": "https://ibm-client-engineering.github.io/ce-solutions-hub/",
-          "repositoryTopics": {
-            "nodes": []
-          },
-          "industry": "Unspecified",
-          "publish": "False",
-          "title": "IBM Client Engineering Solutions Hub"
         },
         {
           "name": "engineering-journal-quantum-safe",
