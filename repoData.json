@@ -3,6 +3,22 @@
     "repositories": {
       "nodes": [
         {
+          "name": "solution-askfinance",
+          "description": "AskFinance is a conversational AI platform that empowers controllers in the CFO Office to make informed decisions by providing direct access to ERP system data, leveraging LLMs to analyze financial trends, and providing actionable insights.",
+          "homepageUrl": "https://ibm-client-engineering.github.io/solution-askfinance/",
+          "repositoryTopics": {
+            "nodes": []
+          },
+          "industry": "US Financial Service Market",
+          "publish": "False",
+          "technology": [
+            "watson Discovery",
+            "watsonx Assistant",
+            "watsonx.ai"
+          ],
+          "title": "solution-AskFinance"
+        },
+        {
           "name": "solution-template-quarto",
           "description": null,
           "homepageUrl": "https://ibm-client-engineering.github.io/solution-template-quarto/",
@@ -12,6 +28,17 @@
           "industry": "Unspecified",
           "publish": "False",
           "title": "[Insert Solution Name]"
+        },
+        {
+          "name": "ce-solutions-hub",
+          "description": "IBM Client Engineering Solutions Hub",
+          "homepageUrl": "https://ibm-client-engineering.github.io/ce-solutions-hub/",
+          "repositoryTopics": {
+            "nodes": []
+          },
+          "industry": "Unspecified",
+          "publish": "False",
+          "title": "IBM Client Engineering Solutions Hub"
         },
         {
           "name": "unified-virtual-assistant",
@@ -38,17 +65,6 @@
             "Cloud Pak for Data"
           ],
           "title": "[Insert Solution Name]"
-        },
-        {
-          "name": "ce-solutions-hub",
-          "description": "IBM Client Engineering Solutions Hub",
-          "homepageUrl": "https://ibm-client-engineering.github.io/ce-solutions-hub/",
-          "repositoryTopics": {
-            "nodes": []
-          },
-          "industry": "Unspecified",
-          "publish": "False",
-          "title": "IBM Client Engineering Solutions Hub"
         },
         {
           "name": "solution-unified-virtual-assistant",
@@ -110,8 +126,6 @@
           "industry": "Finance",
           "publish": "True",
           "technology": [
-            "Watson Discovery",
-            "Watsonx Assistant",
             "watsonx.ai"
           ],
           "title": "Enterprise License Agreements AI Assistant"
@@ -127,7 +141,6 @@
           "publish": "True",
           "technology": [
             "Openpages",
-            "Watsonx Assistant",
             "watsonx.ai"
           ],
           "title": "OpenPages Internal Audit AI Assistant "
@@ -349,8 +362,6 @@
           "industry": "Various",
           "publish": "True",
           "technology": [
-            "Watson Discovery",
-            "Watsonx Assistant",
             "watsonx.ai"
           ],
           "title": "AI Assistants"
