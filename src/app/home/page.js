@@ -16,7 +16,7 @@ export default function LandingPage() {
     <FlexGrid className="landing-page" fullWidth>
       <Row condensed className='row-padding'>
         <Column lg={4} md={2} sm={1} >
-          <h1 className="landing-page__header"><strong>IBM Client Engineering</strong></h1>
+          <h1 className="landing-page__header"><strong>IBM</strong></h1>
           <br /><br />
           <h1 className="landing-page__header-description">Working in the Open</h1>
         </Column>
@@ -78,9 +78,9 @@ export default function LandingPage() {
 
       <Row condensed className='row-padding'>
         <Column md={2} lg={4} sm={1} className="landing-page__subheader">
-          <h3>Recent Projects</h3>
+          <h3>Recent Solutions</h3>
           <br />
-          <h4 className='subheading-text'>Recently published projects from the Client Engineering Team</h4>
+          <h4 className='subheading-text'>Recently published solutions from the IBM Client Engineering Team</h4>
         </Column>
         <RecentProjectsTiles data={recentRepos.slice(0, 3)}></RecentProjectsTiles>
         <Column lg={4} md={2} sm={1}></Column> {}
