@@ -3,9 +3,9 @@
     "repositories": {
       "nodes": [
         {
-          "name": "solution-template-quarto",
-          "description": null,
-          "homepageUrl": "https://ibm-client-engineering.github.io/solution-template-quarto/",
+          "name": "solution-ThirdPartyRisk",
+          "description": "Evaluating third party information technology products and their cybersecurity risks using watsonx.ai.",
+          "homepageUrl": null,
           "repositoryTopics": {
             "nodes": []
           },
@@ -25,6 +25,28 @@
           "title": "Unified Virtual Assistant"
         },
         {
+          "name": "ce-solutions-hub",
+          "description": "IBM Client Engineering Solutions Hub",
+          "homepageUrl": "https://ibm-client-engineering.github.io/ce-solutions-hub/",
+          "repositoryTopics": {
+            "nodes": []
+          },
+          "industry": "Unspecified",
+          "publish": "False",
+          "title": "IBM Client Engineering Solutions Hub"
+        },
+        {
+          "name": "solution-template-quarto",
+          "description": null,
+          "homepageUrl": "https://ibm-client-engineering.github.io/solution-template-quarto/",
+          "repositoryTopics": {
+            "nodes": []
+          },
+          "industry": "Unspecified",
+          "publish": "False",
+          "title": "[Insert Solution Name]"
+        },
+        {
           "name": "Test-Form",
           "description": "Brief description test",
           "homepageUrl": "https://ibm-client-engineering.github.io/Test-Form/",
@@ -38,17 +60,6 @@
             "Guardium Data Protect"
           ],
           "title": "Test-Form"
-        },
-        {
-          "name": "ce-solutions-hub",
-          "description": "IBM Client Engineering Solutions Hub",
-          "homepageUrl": "https://ibm-client-engineering.github.io/ce-solutions-hub/",
-          "repositoryTopics": {
-            "nodes": []
-          },
-          "industry": "Unspecified",
-          "publish": "False",
-          "title": "IBM Client Engineering Solutions Hub"
         },
         {
           "name": "solution-askfinance",
