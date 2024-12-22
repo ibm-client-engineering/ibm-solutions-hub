@@ -3,6 +3,17 @@
     "repositories": {
       "nodes": [
         {
+          "name": "ce-solutions-hub",
+          "description": "IBM Client Engineering Solutions Hub",
+          "homepageUrl": "https://ibm-client-engineering.github.io/ce-solutions-hub/",
+          "repositoryTopics": {
+            "nodes": []
+          },
+          "industry": "Unspecified",
+          "publish": "False",
+          "title": "IBM Client Engineering Solutions Hub"
+        },
+        {
           "name": "solution-ThirdPartyRisk",
           "description": "Evaluating third party information technology products and their cybersecurity risks using watsonx.ai.",
           "homepageUrl": null,
@@ -23,17 +34,6 @@
           "industry": "Unspecified",
           "publish": "False",
           "title": "Unified Virtual Assistant"
-        },
-        {
-          "name": "ce-solutions-hub",
-          "description": "IBM Client Engineering Solutions Hub",
-          "homepageUrl": "https://ibm-client-engineering.github.io/ce-solutions-hub/",
-          "repositoryTopics": {
-            "nodes": []
-          },
-          "industry": "Unspecified",
-          "publish": "False",
-          "title": "IBM Client Engineering Solutions Hub"
         },
         {
           "name": "solution-template-quarto",
