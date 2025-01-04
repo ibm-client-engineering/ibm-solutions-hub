@@ -3,6 +3,21 @@
     "repositories": {
       "nodes": [
         {
+          "name": "solution-openpages-wxai-translation",
+          "description": "Leverage watsonx.ai to carry out language translation on the OpenPages platform.",
+          "homepageUrl": "https://ibm-client-engineering.github.io/solution-openpages-wxai-translation/",
+          "repositoryTopics": {
+            "nodes": []
+          },
+          "industry": "Banking",
+          "publish": "True",
+          "technology": [
+            "Openpages",
+            "watsonx.ai"
+          ],
+          "title": "OpenPages watsonx.ai Translation"
+        },
+        {
           "name": "ce-solutions-hub",
           "description": "IBM Client Engineering Solutions Hub",
           "homepageUrl": "https://ibm-client-engineering.github.io/ce-solutions-hub/",
@@ -292,21 +307,6 @@
             "Sterling File Gateway"
           ],
           "title": "Adopting IBM Sterling File Gateway on Amazon EKS"
-        },
-        {
-          "name": "solution-openpages-wxai-translation",
-          "description": "Leverage watsonx.ai to carry out language translation on the OpenPages platform.",
-          "homepageUrl": "https://ibm-client-engineering.github.io/solution-openpages-wxai-translation/",
-          "repositoryTopics": {
-            "nodes": []
-          },
-          "industry": "Banking",
-          "publish": "True",
-          "technology": [
-            "Openpages",
-            "watsonx.ai"
-          ],
-          "title": "OpenPages watsonx.ai Translation"
         },
         {
           "name": "solution-ThirdPartyRisk-wxai",
