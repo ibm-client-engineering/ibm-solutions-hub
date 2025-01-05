@@ -3,6 +3,17 @@
     "repositories": {
       "nodes": [
         {
+          "name": "ce-solutions-hub",
+          "description": "IBM Client Engineering Solutions Hub",
+          "homepageUrl": "https://ibm-client-engineering.github.io/ce-solutions-hub/",
+          "repositoryTopics": {
+            "nodes": []
+          },
+          "industry": "Unspecified",
+          "publish": "False",
+          "title": "IBM Client Engineering Solutions Hub"
+        },
+        {
           "name": "solution-openpages-wxai-translation",
           "description": "Leverage watsonx.ai to carry out language translation on the OpenPages platform.",
           "homepageUrl": "https://ibm-client-engineering.github.io/solution-openpages-wxai-translation/",
@@ -16,17 +27,6 @@
             "watsonx.ai"
           ],
           "title": "OpenPages watsonx.ai Translation"
-        },
-        {
-          "name": "ce-solutions-hub",
-          "description": "IBM Client Engineering Solutions Hub",
-          "homepageUrl": "https://ibm-client-engineering.github.io/ce-solutions-hub/",
-          "repositoryTopics": {
-            "nodes": []
-          },
-          "industry": "Unspecified",
-          "publish": "False",
-          "title": "IBM Client Engineering Solutions Hub"
         },
         {
           "name": "solution-ThirdPartyRisk",
