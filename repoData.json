@@ -3,6 +3,17 @@
     "repositories": {
       "nodes": [
         {
+          "name": "unified-virtual-assistant",
+          "description": "Build a unified virtual assistant on watsonx Orchestrate with gen-AI routing, IAM, governance, RAG, and third-party integrations.",
+          "homepageUrl": null,
+          "repositoryTopics": {
+            "nodes": []
+          },
+          "industry": "Unspecified",
+          "publish": "False",
+          "title": "Unified Virtual Assistant"
+        },
+        {
           "name": "ce-solutions-hub",
           "description": "IBM Client Engineering Solutions Hub",
           "homepageUrl": "https://ibm-client-engineering.github.io/ce-solutions-hub/",
@@ -38,17 +49,6 @@
           "industry": "Unspecified",
           "publish": "False",
           "title": "[Insert Solution Name]"
-        },
-        {
-          "name": "unified-virtual-assistant",
-          "description": "Build a unified virtual assistant on watsonx Orchestrate with gen-AI routing, IAM, governance, RAG, and third-party integrations.",
-          "homepageUrl": null,
-          "repositoryTopics": {
-            "nodes": []
-          },
-          "industry": "Unspecified",
-          "publish": "False",
-          "title": "Unified Virtual Assistant"
         },
         {
           "name": "solution-template-quarto",
