@@ -24,7 +24,7 @@ const industriesArray = Array.from(industries);
 const urlParams = typeof window !== 'undefined' ? new URLSearchParams(window.location.search) : null;
 const industry = urlParams ? urlParams.get('industry') : null;
 const initialSelectedIndustries = industry ? [industry] : [];
-const tech = urlParams ? urlParams.get('industry') : null;
+const tech = urlParams ? urlParams.get('tech') : null;
 const initialSelectedTechs = tech ? [tech] : [];
 
 

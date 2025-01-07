@@ -21,7 +21,7 @@ const CarbonHeader = () => {
         <SkipToContent />
         <Link href="/" passHref legacyBehavior>
           <HeaderName prefix="IBM" onClick={() => setPage("/ce-solutions-hub")}>
-            Client Engineering Solutions Hub
+            Solutions Hub
           </HeaderName>
         </Link>
         <HeaderNavigation aria-label="Solutions Hub">

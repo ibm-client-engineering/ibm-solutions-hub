@@ -19,12 +19,15 @@ const MissionPage = () => {
       <Row className="body__row" lg={10}>
         <Column className="body__column">
           <h3>Solutions Hub</h3>
+          <br />
           <h4>The Solutions Hub documents our engineering journeys with the depth and authenticity that technical audiences deserve. We capture the complete story of how IBM Client Engineering solves complex business challenges using IBM Technology - from architectural decisions to implementation approaches - creating a rich technical knowledge base that demonstrates our deep expertise.</h4>
           <br />
           <h3>Our Purpose</h3>
+          <br />
           <h4>For too long, technical documentation has been relegated to marketing summaries or buried in internal repositories. The Solutions Hub changes this by bringing engineering knowledge into the open, connecting detailed technical content with compelling storytelling. Each solution showcases not just what we built, but exactly how we built it - providing the depth that developers and architects need to understand our approach.</h4>
           <br />
           <h3>How We Work</h3>
+          <br />
           <h4><strong>We believe in working in the open</strong>, documenting engineering progress and decisions as they happen. Our solutions capture:</h4>
           <UnorderedList className="pillar__column__list">
             <ListItem>Detailed architectural patterns and technical decisions</ListItem>
@@ -43,6 +46,7 @@ const MissionPage = () => {
           <h4>When our teams document their solutions, they contribute to a growing body of engineering knowledge that benefits our entire ecosystem. This systematic approach to knowledge sharing helps others build upon proven patterns rather than starting from scratch.</h4>
           <br />
           <h3>Experience Our Solutions</h3>
+          <br />
           <h4>The Solutions Hub provides multiple ways to engage with our technical content:</h4>
           <UnorderedList className="pillar__column__list">
             <ListItem>Explore detailed technical documentation</ListItem>
