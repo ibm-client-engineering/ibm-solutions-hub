@@ -31,7 +31,7 @@
     margin-right: 0;
     justify-content: center;
     @include type-style ('heading-03');
-    padding-top: 32px;
+    padding-bottom: 32px;
 }
 
 .title__column {
@@ -85,4 +85,5 @@
 
 .pillar__column__list {
   @include type-style ('heading-03');
+  padding-left: 16px;
 }
