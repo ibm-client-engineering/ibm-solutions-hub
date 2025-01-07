@@ -26,6 +26,9 @@ const industry = urlParams ? urlParams.get('industry') : null;
 const initialSelectedIndustries = industry ? [industry] : [];
 const tech = urlParams ? urlParams.get('tech') : null;
 const initialSelectedTechs = tech ? [tech] : [];
+const tileSearch = urlParams ? urlParams.get('tile') : null;
+const initialSearch = tileSearch ? tileSearch : "";
+
 
 
 function ProjectsPage() {
@@ -117,6 +120,16 @@ function ProjectsPage() {
       renderProjects();
     };
 
+
+  //run once in case there is a given tile value (if user is coming here after selecting a tile)
+
+  useEffect(() => {
+    if (tileSearch) {
+      let initialEvent = {"target": {"value": initialSearch}};
+      searchProjects(initialEvent);
+    }
+  });
+
   return (
     <Grid fullWidth narrow>
       <Column className="banner-container" lg={16} md={8} sm={4}> {/*lg={16} md={8} sm={4}*/}
@@ -157,7 +170,7 @@ function ProjectsPage() {
         
         <Column className="search_projects__col">
           <Column className="searchbar__col">
-            <Search className="banner-search" size="lg" placeholder="Search" labelText="Search" closeButtonLabelText="Clear search input" onChange={searchProjects} />
+            <Search className="banner-search" size="lg" placeholder="Search" labelText="Search" closeButtonLabelText="Clear search input" defaultValue={initialSearch} onChange={searchProjects} />
           </Column>
           <Column className="repoTiles">
             <ProjectsTiles data={repoData}></ProjectsTiles>

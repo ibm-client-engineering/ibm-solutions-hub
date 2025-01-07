@@ -25,7 +25,7 @@ export default function LandingPage() {
               className="clickable-tile-1"
               renderIcon={ArrowRight}
               style={{ height: '240px' }}
-              href="/ibm-solutions-hub/projects?topic=generative-ai"
+              href="/ce-solutions-hub/projects?tile=Generative%20AI"
             >
               <WatsonxAi size={32} />
               <br /><br /><br /><br />
@@ -33,7 +33,7 @@ export default function LandingPage() {
               <p1 className="clickable-tile-description">Easily deploy and embed AI across your business, manage all data sources, and accelerate responsible AI workflows—all on one platform</p1>
           </ClickableTile>
           <ClickableTile className="clickable-tile-2" renderIcon={ArrowRight} style={{ height: '240px' }}
-            href="/ibm-solutions-hub/projects">
+            href="/ce-solutions-hub/projects?tile=Security">
             <IbmSecurity size={32} />
             <br /><br /><br /><br />
             <h4 className="clickable-tile-title">Security</h4>
@@ -42,7 +42,7 @@ export default function LandingPage() {
         </Column>
         <Column lg={4} md={2} sm={1}>
           <ClickableTile className="clickable-tile-3" renderIcon={ArrowRight} style={{ height: '240px' }}
-            href="/ibm-solutions-hub/projects?topic=data"
+            href="/ce-solutions-hub/projects?tile=Data"
             >
             <Data_1 size={32} />
             <br /><br /><br /><br />
@@ -50,7 +50,7 @@ export default function LandingPage() {
             <p1 className="clickable-tile-description">Predict outcomes faster using a platform built with data fabric architecture. Collect, organize and analyze data, no matter where it resides</p1>
           </ClickableTile>
           <ClickableTile className="clickable-tile-4" renderIcon={ArrowRight} style={{ height: '240px' }}
-            href="/ibm-solutions-hub/projects"
+            href="/ce-solutions-hub/projects?tile=Automation"
             >
             <WorkflowAutomation size={32} />
             <br /><br /><br /><br />
@@ -60,14 +60,14 @@ export default function LandingPage() {
         </Column>
         <Column lg={4} md={2} sm={1}>
           <ClickableTile className="clickable-tile-5" renderIcon={ArrowRight} style={{ height: '240px' }}
-            href="/ibm-solutions-hub/projects">
+            href="/ce-solutions-hub/projects?tile=Hybrid%20Cloud">
             <CloudApp size={32} />
             <br /><br /><br /><br />
             <h4 className="clickable-tile-title">Hybrid Cloud</h4>
             <p1 className="clickable-tile-description">Hybrid cloud allows for the seamless integration of platforms, applications, and infrastructure built on public cloud, private cloud and on-prem</p1>
           </ClickableTile>
           <ClickableTile className="clickable-tile-6" renderIcon={ArrowRight} style={{ height: '240px' }}
-            href="/ibm-solutions-hub/projects">
+            href="/ce-solutions-hub/projects?tile=Z">
             <ZSystems size={32} />
             <br /><br /><br /><br />
             <h4 className="clickable-tile-title">IBM Z</h4>
