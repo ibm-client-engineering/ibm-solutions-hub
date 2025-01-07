@@ -20,22 +20,22 @@ const CarbonHeader = () => {
       <Header aria-label="Solutions Hub">
         <SkipToContent />
         <Link href="/" passHref legacyBehavior>
-          <HeaderName prefix="IBM" onClick={() => setPage("/ce-solutions-hub")}>
+          <HeaderName prefix="IBM" onClick={() => setPage("/ibm-solutions-hub")}>
             Solutions Hub
           </HeaderName>
         </Link>
         <HeaderNavigation aria-label="Solutions Hub">
         <Link href="/" passHref legacyBehavior>
-          <HeaderMenuItem isActive={page === "/ce-solutions-hub"} onClick={() => setPage("/ce-solutions-hub")}>Home</HeaderMenuItem>
+          <HeaderMenuItem isActive={page === "/ibm-solutions-hub"} onClick={() => setPage("/ibm-solutions-hub")}>Home</HeaderMenuItem>
         </Link>
         <Link href="/projects" passHref legacyBehavior>
-          <HeaderMenuItem isActive={page === "/ce-solutions-hub/projects"} onClick={() => setPage("/ce-solutions-hub/projects")}>Projects</HeaderMenuItem>
+          <HeaderMenuItem isActive={page === "/ibm-solutions-hub/projects"} onClick={() => setPage("/ibm-solutions-hub/projects")}>Projects</HeaderMenuItem>
         </Link>  
         <Link href="/mission" passHref legacyBehavior>
-          <HeaderMenuItem isActive={page === "/ce-solutions-hub/mission"} onClick={() => setPage("/ce-solutions-hub/mission")}>Mission</HeaderMenuItem>
+          <HeaderMenuItem isActive={page === "/ibm-solutions-hub/mission"} onClick={() => setPage("/ibm-solutions-hub/mission")}>Mission</HeaderMenuItem>
         </Link>
         <Link href="/contact" passHref legacyBehavior>
-          <HeaderMenuItem isActive={page === "/ce-solutions-hub/contact"} onClick={() => setPage("/ce-solutions-hub/contact")}>Contact Us</HeaderMenuItem>
+          <HeaderMenuItem isActive={page === "/ibm-solutions-hub/contact"} onClick={() => setPage("/ibm-solutions-hub/contact")}>Contact Us</HeaderMenuItem>
         </Link>
         </HeaderNavigation>
       </Header>

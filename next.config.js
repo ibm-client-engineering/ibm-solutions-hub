@@ -2,7 +2,7 @@
 const nextConfig = {
     output: 'export',
     distDir: 'build',
-    basePath: "/ce-solutions-hub",
+    basePath: "/ibm-solutions-hub",
 }
 
 module.exports = nextConfig
