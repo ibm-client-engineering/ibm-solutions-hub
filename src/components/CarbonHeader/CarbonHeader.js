@@ -26,7 +26,7 @@ const CarbonHeader = () => {
         </Link>
         <HeaderNavigation aria-label="Solutions Hub">
         <Link href="/" passHref legacyBehavior>
-          <HeaderMenuItem isActive={page === "/ibm-solutions-hub"} onClick={() => setPage("/ibm-solutions-hub")}>Home</HeaderMenuItem>
+          <HeaderMenuItem isActive={page === "/ibm-solutions-hub" || page === "/ibm-solutions-hub/"} onClick={() => setPage("/ibm-solutions-hub")}>Home</HeaderMenuItem>
         </Link>
         <Link href="/projects" passHref legacyBehavior>
           <HeaderMenuItem isActive={page === "/ibm-solutions-hub/projects"} onClick={() => setPage("/ibm-solutions-hub/projects")}>Projects</HeaderMenuItem>
