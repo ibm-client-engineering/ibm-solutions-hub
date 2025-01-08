@@ -3,26 +3,15 @@
     "repositories": {
       "nodes": [
         {
-          "name": "unified-virtual-assistant",
-          "description": "Build a unified virtual assistant on watsonx Orchestrate with gen-AI routing, IAM, governance, RAG, and third-party integrations.",
-          "homepageUrl": null,
+          "name": "solution-template-quarto",
+          "description": null,
+          "homepageUrl": "https://ibm-client-engineering.github.io/solution-template-quarto/",
           "repositoryTopics": {
             "nodes": []
           },
           "industry": "Unspecified",
           "publish": "False",
-          "title": "Unified Virtual Assistant"
-        },
-        {
-          "name": "ce-solutions-hub",
-          "description": "IBM Client Engineering Solutions Hub",
-          "homepageUrl": "https://ibm-client-engineering.github.io/ce-solutions-hub/",
-          "repositoryTopics": {
-            "nodes": []
-          },
-          "industry": "Unspecified",
-          "publish": "False",
-          "title": "IBM Client Engineering Solutions Hub"
+          "title": "[Insert Solution Name]"
         },
         {
           "name": "solution-openpages-wxai-translation",
@@ -40,20 +29,31 @@
           "title": "OpenPages watsonx.ai Translation"
         },
         {
-          "name": "solution-ThirdPartyRisk",
-          "description": "Evaluating third party information technology products and their cybersecurity risks using watsonx.ai.",
+          "name": "ibm-solutions-hub",
+          "description": "IBM Solutions Hub",
+          "homepageUrl": "https://ibm-client-engineering.github.io/ibm-solutions-hub/",
+          "repositoryTopics": {
+            "nodes": []
+          },
+          "industry": "Unspecified",
+          "publish": "False",
+          "title": "IBM Client Engineering Solutions Hub"
+        },
+        {
+          "name": "unified-virtual-assistant",
+          "description": "Build a unified virtual assistant on watsonx Orchestrate with gen-AI routing, IAM, governance, RAG, and third-party integrations.",
           "homepageUrl": null,
           "repositoryTopics": {
             "nodes": []
           },
           "industry": "Unspecified",
           "publish": "False",
-          "title": "[Insert Solution Name]"
+          "title": "Unified Virtual Assistant"
         },
         {
-          "name": "solution-template-quarto",
-          "description": null,
-          "homepageUrl": "https://ibm-client-engineering.github.io/solution-template-quarto/",
+          "name": "solution-ThirdPartyRisk",
+          "description": "Evaluating third party information technology products and their cybersecurity risks using watsonx.ai.",
+          "homepageUrl": null,
           "repositoryTopics": {
             "nodes": []
           },
