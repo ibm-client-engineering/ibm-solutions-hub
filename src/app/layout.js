@@ -2,8 +2,8 @@ import './globals.scss';
 import { Providers } from './providers';
 
 export const metadata = {
-  title: 'Solutions Hub',
-  description: 'IBM Client Engineering Solutions Hub',
+  title: 'IBM Solutions Hub',
+  description: 'IBM Solutions Hub',
 }
 
 export default function RootLayout({ children }) {

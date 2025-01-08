@@ -20,7 +20,7 @@ const MissionPage = () => {
         <Column className="body__column">
           <h3>Solutions Hub</h3>
           <br />
-          <h4>The Solutions Hub documents our engineering journeys with the depth and authenticity that technical audiences deserve. We capture the complete story of how IBM Client Engineering solves complex business challenges using IBM Technology - from architectural decisions to implementation approaches - creating a rich technical knowledge base that demonstrates our deep expertise.</h4>
+          <h4>The Solutions Hub documents our engineering journeys with the depth and authenticity that technical audiences deserve. We capture the complete story of how IBM solves complex business challenges using IBM Technology - from architectural decisions to implementation approaches - creating a rich technical knowledge base that demonstrates our deep expertise.</h4>
           <br />
           <h3>Our Purpose</h3>
           <br />
