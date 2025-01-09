@@ -3,6 +3,33 @@
     "repositories": {
       "nodes": [
         {
+          "name": "ibm-solutions-hub",
+          "description": "IBM Solutions Hub for Financial Services",
+          "homepageUrl": "https://ibm-client-engineering.github.io/ibm-solutions-hub/",
+          "repositoryTopics": {
+            "nodes": []
+          },
+          "industry": "Unspecified",
+          "publish": "False",
+          "title": "IBM Client Engineering Solutions Hub"
+        },
+        {
+          "name": "solution-askfinance",
+          "description": "AskFinance is a conversational AI platform that empowers controllers in the CFO Office to make informed decisions by providing direct access to ERP system data, leveraging LLMs to analyze financial trends, and providing actionable insights.",
+          "homepageUrl": "https://ibm-client-engineering.github.io/solution-askfinance/",
+          "repositoryTopics": {
+            "nodes": []
+          },
+          "industry": "US Financial Service Market",
+          "publish": "False",
+          "technology": [
+            "watson Discovery",
+            "watsonx Assistant",
+            "watsonx.ai"
+          ],
+          "title": "solution-AskFinance"
+        },
+        {
           "name": "solution-template-quarto",
           "description": null,
           "homepageUrl": "https://ibm-client-engineering.github.io/solution-template-quarto/",
@@ -27,17 +54,6 @@
             "watsonx.ai"
           ],
           "title": "OpenPages watsonx.ai Translation"
-        },
-        {
-          "name": "ibm-solutions-hub",
-          "description": "IBM Solutions Hub",
-          "homepageUrl": "https://ibm-client-engineering.github.io/ibm-solutions-hub/",
-          "repositoryTopics": {
-            "nodes": []
-          },
-          "industry": "Unspecified",
-          "publish": "False",
-          "title": "IBM Client Engineering Solutions Hub"
         },
         {
           "name": "unified-virtual-assistant",
@@ -75,22 +91,6 @@
             "Guardium Data Protect"
           ],
           "title": "Test-Form"
-        },
-        {
-          "name": "solution-askfinance",
-          "description": "AskFinance is a conversational AI platform that empowers controllers in the CFO Office to make informed decisions by providing direct access to ERP system data, leveraging LLMs to analyze financial trends, and providing actionable insights.",
-          "homepageUrl": "https://ibm-client-engineering.github.io/solution-askfinance/",
-          "repositoryTopics": {
-            "nodes": []
-          },
-          "industry": "US Financial Service Market",
-          "publish": "False",
-          "technology": [
-            "watson Discovery",
-            "watsonx Assistant",
-            "watsonx.ai"
-          ],
-          "title": "solution-AskFinance"
         },
         {
           "name": "solution-quarto-dryrun",
@@ -591,7 +591,7 @@
             ]
           },
           "industry": "Various",
-          "publish": "True",
+          "publish": "False",
           "technology": [
             "Watsonx Orchestrate",
             "watsonx.ai"
