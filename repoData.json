@@ -3,14 +3,14 @@
     "repositories": {
       "nodes": [
         {
-          "name": "ibm-solutions-hub",
-          "description": "IBM Solutions Hub for Financial Services",
-          "homepageUrl": "https://ibm-client-engineering.github.io/ibm-solutions-hub/",
+          "name": "solution-test-sahaj",
+          "description": "Test",
+          "homepageUrl": null,
           "repositoryTopics": {
             "nodes": []
           },
           "publish": "False",
-          "title": "IBM Client Engineering Solutions Hub"
+          "title": "[Insert Solution Name]"
         },
         {
           "name": "solution-ai-assistants",
@@ -35,9 +35,7 @@
               }
             ]
           },
-          "industry": [
-            "Cross Industry"
-          ],
+          "industry": "Cross Industry",
           "publish": "True",
           "technology": [
             "watsonx.ai"
@@ -45,7 +43,82 @@
           "pillar": [
             "Data"
           ],
-          "title": "AI Assistants"
+          "title": "AI Assistants for Customer Care"
+        },
+        {
+          "name": "ibm-solutions-hub",
+          "description": "IBM Solutions Hub for Financial Services",
+          "homepageUrl": "https://ibm-client-engineering.github.io/ibm-solutions-hub/",
+          "repositoryTopics": {
+            "nodes": []
+          },
+          "publish": "False",
+          "title": "IBM Client Engineering Solutions Hub"
+        },
+        {
+          "name": "solution-ThirdPartyRisk-wxai",
+          "description": "Evaluating third party information technology products and their cybersecurity risks using watsonx.ai.",
+          "homepageUrl": "https://ibm-client-engineering.github.io/solution-ThirdPartyRisk-wxai/",
+          "repositoryTopics": {
+            "nodes": [
+              {
+                "topic": {
+                  "name": "openpages"
+                }
+              },
+              {
+                "topic": {
+                  "name": "watsonx-ai"
+                }
+              }
+            ]
+          },
+          "industry": "Banking",
+          "publish": "True",
+          "technology": [
+            "Openpages",
+            "watsonx.ai"
+          ],
+          "pillar": [
+            "Data"
+          ],
+          "title": "Evaluating Third Party Risk with AI"
+        },
+        {
+          "name": "solution-openpages-wx",
+          "description": "Incorporate Internal Audit methodologies and OpenPages user guide knowledge into OpenPages via watsonx Assistant.",
+          "homepageUrl": "https://ibm-client-engineering.github.io/solution-openpages-wx/",
+          "repositoryTopics": {
+            "nodes": []
+          },
+          "industry": "Banking",
+          "publish": "True",
+          "technology": [
+            "Openpages",
+            "watsonx.ai"
+          ],
+          "pillar": [
+            "Data"
+          ],
+          "title": "Internal Audit AI Assistant"
+        },
+        {
+          "name": "solution-openpages-wxai-translation",
+          "description": "Leverage watsonx.ai to carry out language translation on the OpenPages platform.",
+          "homepageUrl": "https://ibm-client-engineering.github.io/solution-openpages-wxai-translation/",
+          "repositoryTopics": {
+            "nodes": []
+          },
+          "industry": "Banking",
+          "publish": "True",
+          "technology": [
+            "Openpages",
+            "watsonx.ai"
+          ],
+          "pillar": [
+            "Data"
+          ],
+          "title": "Translating AI Governance Policies"
         },
         {
           "name": "solution-template-quarto",
@@ -73,35 +146,12 @@
           "title": "solution-AskFinance"
         },
         {
-          "name": "solution-openpages-wxai-translation",
-          "description": "Leverage watsonx.ai to carry out language translation on the OpenPages platform.",
-          "homepageUrl": "https://ibm-client-engineering.github.io/solution-openpages-wxai-translation/",
-          "repositoryTopics": {
-            "nodes": []
-          },
-          "industry": [
-            "Banking"
-          ],
-          "publish": "True",
-          "technology": [
-            "Openpages",
-            "watsonx.ai"
-          ],
-          "pillar": [
-            "Data"
-          ],
-          "title": "OpenPages watsonx.ai Translation"
-        },
-        {
           "name": "unified-virtual-assistant",
           "description": "Build a unified virtual assistant on watsonx Orchestrate with gen-AI routing, IAM, governance, RAG, and third-party integrations.",
           "homepageUrl": null,
           "repositoryTopics": {
             "nodes": []
           },
-          "industry": [
-            "Insurance"
-          ],
           "publish": "False",
           "pillar": [
             "Data"
@@ -177,9 +227,7 @@
               }
             ]
           },
-          "industry": [
-            "Insurance"
-          ],
+          "industry": "Insurance",
           "publish": "True",
           "technology": [
             "Security Verify",
@@ -209,9 +257,7 @@
           "repositoryTopics": {
             "nodes": []
           },
-          "industry": [
-            "Banking"
-          ],
+          "industry": "Banking",
           "publish": "True",
           "technology": [
             "watsonx.ai"
@@ -220,26 +266,6 @@
             "Data"
           ],
           "title": "Enterprise License Agreements AI Assistant"
-        },
-        {
-          "name": "solution-openpages-wx",
-          "description": "Incorporate Internal Audit methodologies and OpenPages user guide knowledge into OpenPages via watsonx Assistant.",
-          "homepageUrl": "https://ibm-client-engineering.github.io/solution-openpages-wx/",
-          "repositoryTopics": {
-            "nodes": []
-          },
-          "industry": [
-            "Banking"
-          ],
-          "publish": "True",
-          "technology": [
-            "Openpages",
-            "watsonx.ai"
-          ],
-          "pillar": [
-            "Data"
-          ],
-          "title": "OpenPages Internal Audit AI Assistant "
         },
         {
           "name": "engineering-journal-zOS-datagate",
@@ -274,9 +300,7 @@
               }
             ]
           },
-          "industry": [
-            "Cross Industry"
-          ],
+          "industry": "Cross Industry",
           "publish": "True",
           "technology": [
             "Openshift",
@@ -310,9 +334,7 @@
               }
             ]
           },
-          "industry": [
-            "Insurance"
-          ],
+          "industry": "Insurance",
           "publish": "True",
           "technology": [
             "FileNet"
@@ -340,9 +362,7 @@
               }
             ]
           },
-          "industry": [
-            "Banking"
-          ],
+          "industry": "Banking",
           "publish": "True",
           "technology": [
             "watsonx.ai"
@@ -370,9 +390,7 @@
               }
             ]
           },
-          "industry": [
-            "Banking"
-          ],
+          "industry": "Banking",
           "publish": "True",
           "technology": [
             "Sterling File Gateway"
@@ -381,37 +399,6 @@
             "Automation"
           ],
           "title": "Adopting IBM Sterling File Gateway on Amazon EKS"
-        },
-        {
-          "name": "solution-ThirdPartyRisk-wxai",
-          "description": "Evaluating third party information technology products and their cybersecurity risks using watsonx.ai.",
-          "homepageUrl": "https://ibm-client-engineering.github.io/solution-ThirdPartyRisk-wxai/",
-          "repositoryTopics": {
-            "nodes": [
-              {
-                "topic": {
-                  "name": "openpages"
-                }
-              },
-              {
-                "topic": {
-                  "name": "watsonx-ai"
-                }
-              }
-            ]
-          },
-          "industry": [
-            "Banking"
-          ],
-          "publish": "True",
-          "technology": [
-            "Openpages",
-            "watsonx.ai"
-          ],
-          "pillar": [
-            "Data"
-          ],
-          "title": "Third Party Risk with watsonx.ai"
         },
         {
           "name": "solution-template",
