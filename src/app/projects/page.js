@@ -14,8 +14,10 @@ const pillars = new Set();
 const techs = new Set();
 repoData.forEach((node) => {
   repoFiltered.set(node.name, { "industry": true, "pillar": true, "search": true, "tech": true });
-  industries.add(node.industry);
-  pillars.add(node.pillar);
+  //if the object has a industry field, add it to the industries set
+  Object.hasOwn(node, "industry") ? node.industry.forEach((industry) => {industries.add(industry);}) : {};
+  //if the object has a pillar field, add it to the pillars set
+  Object.hasOwn(node, "pillar") ? node.pillar.forEach((pillar) => {pillars.add(pillar);}) : {};
   //if the object has a technology field, add it to the techs set
   Object.hasOwn(node, "technology") ? node.technology.forEach((tech) => {techs.add(tech);}) : {};
 });
@@ -61,6 +63,8 @@ function ProjectsPage() {
     repoData.forEach((node) => {
       let inTopic = false;
       let inTech = false;
+      let inIndustry = false;
+      let inPillar = false;
       node.repositoryTopics.nodes.forEach((topic) => {
         if (topic.topic.name.toLowerCase().includes(inputText)) {
           inTopic = true;
@@ -71,14 +75,22 @@ function ProjectsPage() {
           inTech = true;
         }
       });
+      node.industry?.forEach((industry) => {
+        if (industry.toLowerCase().includes(inputText)) {
+          inIndustry = true;
+        }
+      });
+      node.pillar?.forEach((pillar) => {
+        if (pillar.toLowerCase().includes(inputText)) {
+          inPillar = true;
+        }
+      });
 
       const isVisible = 
-        inTopic || inTech ||
+        inTopic || inTech || inIndustry || inPillar ||
         (node.name && node.name.toLowerCase().includes(inputText)) ||
         (node.description && node.description.toLowerCase().includes(inputText)) ||
-        (node.title && node.title.toLowerCase().includes(inputText)) ||
-        (node.industry && node.industry.toLowerCase().includes(inputText)) ||
-        (node.pillar && node.pillar.toLowerCase().includes(inputText));
+        (node.title && node.title.toLowerCase().includes(inputText));
 
       if (document.getElementById(node.name)) {
         const temp = repoFiltered.get(node.name);
@@ -113,14 +125,14 @@ function ProjectsPage() {
       const inputIndustries = e.selectedItems;
       setSelectedIndustries(inputIndustries);
       repoData.forEach((node) => {
-        const nodeIndustry = node.industry
+        const nodeIndustries = node.industry
         //Need to check that the repo has an industry field (it should), and if it does need to check if the selected industry/industries match
         //in the case where the repo has no industry listed, still needs to be true if there are no selected industries
-        const inRepo =  inputIndustries.some((industry) => Object.hasOwn(node, "industry") ? nodeIndustry === industry : inputIndustries.length == 0);
+        const inRepo =  inputIndustries.every((industry) => Object.hasOwn(node, "industry") ? nodeIndustries.includes(industry) : inputIndustries.length == 0);
 
         if (document.getElementById(node.name)) {
           const temp = repoFiltered.get(node.name);
-          temp.industry = inputIndustries.length > 0 ? inRepo : true;
+          temp.industry = inRepo
           repoFiltered.set(node.name, temp);
         }
       });
@@ -132,10 +144,10 @@ function ProjectsPage() {
       const inputPillars = e.selectedItems;
       setSelectedPillars(inputPillars);
       repoData.forEach((node) => {
-        const nodePillar = node.Pillar
+        const nodePillars = node.pillar
         //Need to check that the repo has an technology pillar field (it should), and if it does need to check if the selected pillar/pillars match
         //in the case where the repo has no pillar listed, still needs to be true if there are no selected pillars
-        const inRepo =  inputPillars.some((pillar) => Object.hasOwn(node, "pillar") ? nodePillar === pillar : inputPillars.length == 0);
+        const inRepo =  inputPillars.every((pillar) => Object.hasOwn(node, "pillar") ? nodePillars.includes(pillar) : inputPillars.length == 0);
 
         if (document.getElementById(node.name)) {
           const temp = repoFiltered.get(node.name);
