@@ -9,9 +9,53 @@
           "repositoryTopics": {
             "nodes": []
           },
-          "industry": "Unspecified",
           "publish": "False",
           "title": "IBM Client Engineering Solutions Hub"
+        },
+        {
+          "name": "solution-ai-assistants",
+          "description": "Enhancing Customer Care Journeys Using IBM watsonx AI Assistants",
+          "homepageUrl": "https://ibm-client-engineering.github.io/solution-ai-assistants/",
+          "repositoryTopics": {
+            "nodes": [
+              {
+                "topic": {
+                  "name": "generative-ai"
+                }
+              },
+              {
+                "topic": {
+                  "name": "watsonx-ai"
+                }
+              },
+              {
+                "topic": {
+                  "name": "watsonx-assistant"
+                }
+              }
+            ]
+          },
+          "industry": [
+            "Cross Industry"
+          ],
+          "publish": "True",
+          "technology": [
+            "watsonx.ai"
+          ],
+          "pillar": [
+            "Data"
+          ],
+          "title": "AI Assistants"
+        },
+        {
+          "name": "solution-template-quarto",
+          "description": null,
+          "homepageUrl": "https://ibm-client-engineering.github.io/solution-template-quarto/",
+          "repositoryTopics": {
+            "nodes": []
+          },
+          "publish": "False",
+          "title": "[Insert Solution Name]"
         },
         {
           "name": "solution-askfinance",
@@ -20,7 +64,6 @@
           "repositoryTopics": {
             "nodes": []
           },
-          "industry": "US Financial Service Market",
           "publish": "False",
           "technology": [
             "watson Discovery",
@@ -30,28 +73,22 @@
           "title": "solution-AskFinance"
         },
         {
-          "name": "solution-template-quarto",
-          "description": null,
-          "homepageUrl": "https://ibm-client-engineering.github.io/solution-template-quarto/",
-          "repositoryTopics": {
-            "nodes": []
-          },
-          "industry": "Unspecified",
-          "publish": "False",
-          "title": "[Insert Solution Name]"
-        },
-        {
           "name": "solution-openpages-wxai-translation",
           "description": "Leverage watsonx.ai to carry out language translation on the OpenPages platform.",
           "homepageUrl": "https://ibm-client-engineering.github.io/solution-openpages-wxai-translation/",
           "repositoryTopics": {
             "nodes": []
           },
-          "industry": "Banking",
+          "industry": [
+            "Banking"
+          ],
           "publish": "True",
           "technology": [
             "Openpages",
             "watsonx.ai"
+          ],
+          "pillar": [
+            "Data"
           ],
           "title": "OpenPages watsonx.ai Translation"
         },
@@ -62,8 +99,13 @@
           "repositoryTopics": {
             "nodes": []
           },
-          "industry": "Unspecified",
+          "industry": [
+            "Insurance"
+          ],
           "publish": "False",
+          "pillar": [
+            "Data"
+          ],
           "title": "Unified Virtual Assistant"
         },
         {
@@ -73,8 +115,10 @@
           "repositoryTopics": {
             "nodes": []
           },
-          "industry": "Unspecified",
           "publish": "False",
+          "pillar": [
+            "Data"
+          ],
           "title": "[Insert Solution Name]"
         },
         {
@@ -84,7 +128,6 @@
           "repositoryTopics": {
             "nodes": []
           },
-          "industry": "US Financial Service Market",
           "publish": "False",
           "technology": [
             "Concert",
@@ -99,7 +142,6 @@
           "repositoryTopics": {
             "nodes": []
           },
-          "industry": "Unspecified",
           "publish": "False",
           "technology": [
             "Ansible Lightspeed",
@@ -135,14 +177,18 @@
               }
             ]
           },
-          "industry": "Insurance",
+          "industry": [
+            "Insurance"
+          ],
           "publish": "True",
           "technology": [
             "Security Verify",
-            "Watsonx Discovery",
             "Watsonx Orchestrate",
             "watsonx.ai",
             "watsonx.governance"
+          ],
+          "pillar": [
+            "Data"
           ],
           "title": "Unified Virtual Assistant"
         },
@@ -153,7 +199,6 @@
           "repositoryTopics": {
             "nodes": []
           },
-          "industry": "Unspecified",
           "publish": "False",
           "title": "[Insert Solution Name]"
         },
@@ -164,10 +209,15 @@
           "repositoryTopics": {
             "nodes": []
           },
-          "industry": "Finance",
+          "industry": [
+            "Banking"
+          ],
           "publish": "True",
           "technology": [
             "watsonx.ai"
+          ],
+          "pillar": [
+            "Data"
           ],
           "title": "Enterprise License Agreements AI Assistant"
         },
@@ -178,11 +228,16 @@
           "repositoryTopics": {
             "nodes": []
           },
-          "industry": "Finance",
+          "industry": [
+            "Banking"
+          ],
           "publish": "True",
           "technology": [
             "Openpages",
             "watsonx.ai"
+          ],
+          "pillar": [
+            "Data"
           ],
           "title": "OpenPages Internal Audit AI Assistant "
         },
@@ -193,7 +248,6 @@
           "repositoryTopics": {
             "nodes": []
           },
-          "industry": "Unspecified",
           "publish": "False",
           "title": "zOS-datagate"
         },
@@ -220,11 +274,16 @@
               }
             ]
           },
-          "industry": "Various",
+          "industry": [
+            "Cross Industry"
+          ],
           "publish": "True",
           "technology": [
             "Openshift",
             "watsonx.ai"
+          ],
+          "pillar": [
+            "Data"
           ],
           "title": "Gen AI Compliance Virtual Assistant on AWS"
         },
@@ -251,10 +310,15 @@
               }
             ]
           },
-          "industry": "Insurance",
+          "industry": [
+            "Insurance"
+          ],
           "publish": "True",
           "technology": [
             "FileNet"
+          ],
+          "pillar": [
+            "Hybrid Cloud"
           ],
           "title": "Journey to the Cloud: Migrating FileNet to AWS EKS"
         },
@@ -276,10 +340,15 @@
               }
             ]
           },
-          "industry": "Banking",
+          "industry": [
+            "Banking"
+          ],
           "publish": "True",
           "technology": [
             "watsonx.ai"
+          ],
+          "pillar": [
+            "Data"
           ],
           "title": "SentiBot: Gen-AI Powered News Scraper and Sentiment Analyzer"
         },
@@ -301,10 +370,15 @@
               }
             ]
           },
-          "industry": "Finance",
+          "industry": [
+            "Banking"
+          ],
           "publish": "True",
           "technology": [
             "Sterling File Gateway"
+          ],
+          "pillar": [
+            "Automation"
           ],
           "title": "Adopting IBM Sterling File Gateway on Amazon EKS"
         },
@@ -326,11 +400,16 @@
               }
             ]
           },
-          "industry": "Banking",
+          "industry": [
+            "Banking"
+          ],
           "publish": "True",
           "technology": [
             "Openpages",
             "watsonx.ai"
+          ],
+          "pillar": [
+            "Data"
           ],
           "title": "Third Party Risk with watsonx.ai"
         },
@@ -347,7 +426,6 @@
               }
             ]
           },
-          "industry": "Unspecified",
           "publish": "False",
           "title": "[Insert Solution Name]"
         },
@@ -358,39 +436,8 @@
           "repositoryTopics": {
             "nodes": []
           },
-          "industry": "Unspecified",
           "publish": "False",
           "title": "[Insert Solution Name]"
-        },
-        {
-          "name": "solution-ai-assistants",
-          "description": "Enhancing Customer Care Journeys Using IBM watsonx AI Assistants",
-          "homepageUrl": "https://ibm-client-engineering.github.io/solution-ai-assistants/",
-          "repositoryTopics": {
-            "nodes": [
-              {
-                "topic": {
-                  "name": "generative-ai"
-                }
-              },
-              {
-                "topic": {
-                  "name": "watsonx-ai"
-                }
-              },
-              {
-                "topic": {
-                  "name": "watsonx-assistant"
-                }
-              }
-            ]
-          },
-          "industry": "Various",
-          "publish": "True",
-          "technology": [
-            "watsonx.ai"
-          ],
-          "title": "AI Assistants"
         },
         {
           "name": "solution-askhr",
@@ -399,7 +446,6 @@
           "repositoryTopics": {
             "nodes": []
           },
-          "industry": "Unspecified",
           "publish": "False",
           "title": "[Insert Solution Name]"
         },
@@ -410,7 +456,6 @@
           "repositoryTopics": {
             "nodes": []
           },
-          "industry": "Unspecified",
           "publish": "False",
           "title": "[Insert Solution Name]"
         },
@@ -421,7 +466,6 @@
           "repositoryTopics": {
             "nodes": []
           },
-          "industry": "Unspecified",
           "publish": "False",
           "title": "[Insert Solution Name]"
         },
@@ -432,7 +476,6 @@
           "repositoryTopics": {
             "nodes": []
           },
-          "industry": "Unspecified",
           "publish": "False",
           "title": "[Insert Solution Name]"
         },
@@ -443,7 +486,6 @@
           "repositoryTopics": {
             "nodes": []
           },
-          "industry": "Unspecified",
           "publish": "False",
           "title": "[Insert Solution Name]"
         },
@@ -454,7 +496,6 @@
           "repositoryTopics": {
             "nodes": []
           },
-          "industry": "Unspecified",
           "publish": "False",
           "title": "[Insert Solution Name]"
         },
@@ -491,7 +532,6 @@
               }
             ]
           },
-          "industry": "Unspecified",
           "publish": "False",
           "title": "[Insert Solution Name]"
         },
@@ -508,7 +548,6 @@
               }
             ]
           },
-          "industry": "Unspecified",
           "publish": "False",
           "title": "[Insert Solution Name]"
         },
@@ -519,7 +558,6 @@
           "repositoryTopics": {
             "nodes": []
           },
-          "industry": "Unspecified",
           "publish": "False",
           "title": "[Insert Solution Name]"
         },
@@ -530,7 +568,6 @@
           "repositoryTopics": {
             "nodes": []
           },
-          "industry": "Unspecified",
           "publish": "False",
           "title": "[Insert Solution Name]"
         },
@@ -552,7 +589,6 @@
               }
             ]
           },
-          "industry": "Unspecified",
           "publish": "False",
           "title": "Customer Care Virtual Agents"
         },
@@ -563,7 +599,6 @@
           "repositoryTopics": {
             "nodes": []
           },
-          "industry": "Unspecified",
           "publish": "False",
           "title": "[Insert Solution Name]"
         },
@@ -590,11 +625,13 @@
               }
             ]
           },
-          "industry": "Various",
           "publish": "False",
           "technology": [
             "Watsonx Orchestrate",
             "watsonx.ai"
+          ],
+          "pillar": [
+            "Data"
           ],
           "title": "Watsonx Orchestrate Integrations"
         },
@@ -616,7 +653,6 @@
               }
             ]
           },
-          "industry": "Finance",
           "publish": "False",
           "technology": [
             "Openshift",
@@ -637,7 +673,6 @@
               }
             ]
           },
-          "industry": "Unspecified",
           "publish": "False",
           "title": "[Insert Solution Name]"
         },
@@ -648,7 +683,6 @@
           "repositoryTopics": {
             "nodes": []
           },
-          "industry": "Unspecified",
           "publish": "False",
           "title": "Watsonx News Scraper"
         },
@@ -670,7 +704,6 @@
               }
             ]
           },
-          "industry": "Banking",
           "publish": "False",
           "technology": [
             "Ansible",
@@ -701,7 +734,6 @@
               }
             ]
           },
-          "industry": "Various",
           "publish": "False",
           "technology": [
             "Watsonx Orchestrate"
@@ -721,7 +753,6 @@
               }
             ]
           },
-          "industry": "Various",
           "publish": "False",
           "technology": [
             "CP4BA"
@@ -735,7 +766,6 @@
           "repositoryTopics": {
             "nodes": []
           },
-          "industry": "Unspecified",
           "publish": "False",
           "title": "[Insert Solution Name]"
         },
@@ -746,7 +776,6 @@
           "repositoryTopics": {
             "nodes": []
           },
-          "industry": "Unspecified",
           "publish": "False",
           "title": "[Insert Solution Name]"
         },
@@ -757,7 +786,6 @@
           "repositoryTopics": {
             "nodes": []
           },
-          "industry": "Unspecified",
           "publish": "False",
           "title": "[Insert Solution Name]"
         },
@@ -768,7 +796,6 @@
           "repositoryTopics": {
             "nodes": []
           },
-          "industry": "Unspecified",
           "publish": "False",
           "title": "[Insert Solution Name]"
         },
@@ -785,7 +812,6 @@
               }
             ]
           },
-          "industry": "Unspecified",
           "publish": "False",
           "title": "[Insert Solution Name]"
         },
@@ -802,7 +828,6 @@
               }
             ]
           },
-          "industry": "Unspecified",
           "publish": "False",
           "title": "[Insert Solution Name]"
         },
@@ -819,7 +844,6 @@
               }
             ]
           },
-          "industry": "Unspecified",
           "publish": "False",
           "title": "[Insert Solution Name]"
         },
@@ -830,7 +854,6 @@
           "repositoryTopics": {
             "nodes": []
           },
-          "industry": "Unspecified",
           "publish": "False",
           "title": "[Insert Solution Name]"
         },
@@ -841,7 +864,6 @@
           "repositoryTopics": {
             "nodes": []
           },
-          "industry": "Unspecified",
           "publish": "False",
           "title": "[Insert Solution Name]"
         },
@@ -852,7 +874,6 @@
           "repositoryTopics": {
             "nodes": []
           },
-          "industry": "Unspecified",
           "publish": "False",
           "title": "[Insert Solution Name]"
         }
