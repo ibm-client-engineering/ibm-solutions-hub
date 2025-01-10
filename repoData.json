@@ -13,6 +13,16 @@
           "title": "[Insert Solution Name]"
         },
         {
+          "name": "ibm-solutions-hub",
+          "description": "IBM Solutions Hub for Financial Services",
+          "homepageUrl": "https://ibm-client-engineering.github.io/ibm-solutions-hub/",
+          "repositoryTopics": {
+            "nodes": []
+          },
+          "publish": "False",
+          "title": "IBM Client Engineering Solutions Hub"
+        },
+        {
           "name": "solution-ai-assistants",
           "description": "Enhancing Customer Care Journeys Using IBM watsonx AI Assistants",
           "homepageUrl": "https://ibm-client-engineering.github.io/solution-ai-assistants/",
@@ -38,22 +48,14 @@
           "industry": "Cross Industry",
           "publish": "True",
           "technology": [
+            "Watson Discovery",
+            "watsonx Assistant",
             "watsonx.ai"
           ],
           "pillar": [
             "Data"
           ],
           "title": "AI Assistants for Customer Care"
-        },
-        {
-          "name": "ibm-solutions-hub",
-          "description": "IBM Solutions Hub for Financial Services",
-          "homepageUrl": "https://ibm-client-engineering.github.io/ibm-solutions-hub/",
-          "repositoryTopics": {
-            "nodes": []
-          },
-          "publish": "False",
-          "title": "IBM Client Engineering Solutions Hub"
         },
         {
           "name": "solution-ThirdPartyRisk-wxai",
@@ -76,7 +78,7 @@
           "industry": "Banking",
           "publish": "True",
           "technology": [
-            "Openpages",
+            "OpenPages",
             "watsonx.ai"
           ],
           "pillar": [
@@ -94,7 +96,8 @@
           "industry": "Banking",
           "publish": "True",
           "technology": [
-            "Openpages",
+            "OpenPages",
+            "watsonx Assistant",
             "watsonx.ai"
           ],
           "pillar": [
@@ -112,7 +115,7 @@
           "industry": "Banking",
           "publish": "True",
           "technology": [
-            "Openpages",
+            "OpenPages",
             "watsonx.ai"
           ],
           "pillar": [
@@ -138,11 +141,6 @@
             "nodes": []
           },
           "publish": "False",
-          "technology": [
-            "watson Discovery",
-            "watsonx Assistant",
-            "watsonx.ai"
-          ],
           "title": "solution-AskFinance"
         },
         {
@@ -179,10 +177,6 @@
             "nodes": []
           },
           "publish": "False",
-          "technology": [
-            "Concert",
-            "Guardium Data Protect"
-          ],
           "title": "Test-Form"
         },
         {
@@ -193,10 +187,6 @@
             "nodes": []
           },
           "publish": "False",
-          "technology": [
-            "Ansible Lightspeed",
-            "Cloud Pak for Data"
-          ],
           "title": "[Insert Solution Name]"
         },
         {
@@ -231,7 +221,7 @@
           "publish": "True",
           "technology": [
             "Security Verify",
-            "Watsonx Orchestrate",
+            "watsonx Orchestrate",
             "watsonx.ai",
             "watsonx.governance"
           ],
@@ -260,6 +250,7 @@
           "industry": "Banking",
           "publish": "True",
           "technology": [
+            "watsonx Assistant",
             "watsonx.ai"
           ],
           "pillar": [
@@ -303,7 +294,8 @@
           "industry": "Cross Industry",
           "publish": "True",
           "technology": [
-            "Openshift",
+            "OpenShift",
+            "watsonx Assistant",
             "watsonx.ai"
           ],
           "pillar": [
@@ -393,7 +385,7 @@
           "industry": "Banking",
           "publish": "True",
           "technology": [
-            "Sterling File Gateway"
+            "Sterling"
           ],
           "pillar": [
             "Automation"
@@ -613,10 +605,6 @@
             ]
           },
           "publish": "False",
-          "technology": [
-            "Watsonx Orchestrate",
-            "watsonx.ai"
-          ],
           "pillar": [
             "Data"
           ],
@@ -641,10 +629,6 @@
             ]
           },
           "publish": "False",
-          "technology": [
-            "Openshift",
-            "Process Mining"
-          ],
           "title": "Process Mining on Red Hat OpenShift"
         },
         {
@@ -692,10 +676,6 @@
             ]
           },
           "publish": "False",
-          "technology": [
-            "Ansible",
-            "Aspera"
-          ],
           "title": "Aspera Install Using Ansible Playbooks"
         },
         {
@@ -722,9 +702,6 @@
             ]
           },
           "publish": "False",
-          "technology": [
-            "Watsonx Orchestrate"
-          ],
           "title": "AWS Lambda on Watson Orchestrate"
         },
         {
@@ -741,9 +718,6 @@
             ]
           },
           "publish": "False",
-          "technology": [
-            "CP4BA"
-          ],
           "title": "Automated Document Processing"
         },
         {
