@@ -10,20 +10,25 @@ const repoData = data.organization.repositories.nodes.filter(repo => repo.publis
 // It maps the repo name to an object that describes if it falls under the search filter and/or the topic .ilter
 const repoFiltered = new Map(); 
 const industries = new Set();
+const pillars = new Set();
 const techs = new Set();
 repoData.forEach((node) => {
-  repoFiltered.set(node.name, { "industry": true, "search": true, "tech": true });
+  repoFiltered.set(node.name, { "industry": true, "pillar": true, "search": true, "tech": true });
   industries.add(node.industry);
+  pillars.add(node.pillar);
   //if the object has a technology field, add it to the techs set
   Object.hasOwn(node, "technology") ? node.technology.forEach((tech) => {techs.add(tech);}) : {};
 });
 const techsArray = Array.from(techs);
 const industriesArray = Array.from(industries);
+const pillarsArray = Array.from(pillars);
 
 // Parse URL parameters outside the component
 const urlParams = typeof window !== 'undefined' ? new URLSearchParams(window.location.search) : null;
 const industry = urlParams ? urlParams.get('industry') : null;
 const initialSelectedIndustries = industry ? [industry] : [];
+const pillar = urlParams ? urlParams.get('pillar') : null;
+const initialSelectedPillars = pillar ? [pillar] : [];
 const tech = urlParams ? urlParams.get('tech') : null;
 const initialSelectedTechs = tech ? [tech] : [];
 const tileSearch = urlParams ? urlParams.get('tile') : null;
@@ -34,12 +39,13 @@ const initialSearch = tileSearch ? tileSearch : "";
 function ProjectsPage() {
   const [selectedTechs, setSelectedTechs] = useState(initialSelectedTechs);
   const [selectedIndustries, setSelectedIndustries] = useState(initialSelectedIndustries);
+  const [selectedPillars, setSelectedPillars] = useState(initialSelectedPillars);
 
   // Define the renderProjects function, which updates the page based on the user inputted filters
   const renderProjects = () => {
     repoData.forEach((node) => {
       if (document.getElementById(node.name)) {
-        if (repoFiltered.get(node.name).industry && repoFiltered.get(node.name).search && repoFiltered.get(node.name).tech) {
+        if (repoFiltered.get(node.name).industry && repoFiltered.get(node.name).pillar && repoFiltered.get(node.name).search && repoFiltered.get(node.name).tech) {
           document.getElementById(node.name).style.display = "block";
         } else {
           document.getElementById(node.name).style.display = "none";
@@ -48,7 +54,7 @@ function ProjectsPage() {
     });
   };
 
-  //take the search value and see if it matches (at least partially) the name, title, description, or industry
+  //take the search value and see if it matches (at least partially) the name, title, description, industry, or technology pillar
   //updates the repoFiltered object, and calls renderProjects()
   const searchProjects = (e) => {
     const inputText = e.target.value.toLowerCase();
@@ -71,7 +77,8 @@ function ProjectsPage() {
         (node.name && node.name.toLowerCase().includes(inputText)) ||
         (node.description && node.description.toLowerCase().includes(inputText)) ||
         (node.title && node.title.toLowerCase().includes(inputText)) ||
-        (node.industry && node.industry.toLowerCase().includes(inputText));
+        (node.industry && node.industry.toLowerCase().includes(inputText)) ||
+        (node.pillar && node.pillar.toLowerCase().includes(inputText));
 
       if (document.getElementById(node.name)) {
         const temp = repoFiltered.get(node.name);
@@ -108,12 +115,31 @@ function ProjectsPage() {
       repoData.forEach((node) => {
         const nodeIndustry = node.industry
         //Need to check that the repo has an industry field (it should), and if it does need to check if the selected industry/industries match
-        //in the case where the repo has no industry listed, still needs to be true if there are no selected techs
+        //in the case where the repo has no industry listed, still needs to be true if there are no selected industries
         const inRepo =  inputIndustries.some((industry) => Object.hasOwn(node, "industry") ? nodeIndustry === industry : inputIndustries.length == 0);
 
         if (document.getElementById(node.name)) {
           const temp = repoFiltered.get(node.name);
           temp.industry = inputIndustries.length > 0 ? inRepo : true;
+          repoFiltered.set(node.name, temp);
+        }
+      });
+      renderProjects();
+    };
+
+    //callback function for the technology pillar filter, filters the projects by the pillars selected
+    const filterProjectsPillar = (e) => {
+      const inputPillars = e.selectedItems;
+      setSelectedPillars(inputPillars);
+      repoData.forEach((node) => {
+        const nodePillar = node.Pillar
+        //Need to check that the repo has an technology pillar field (it should), and if it does need to check if the selected pillar/pillars match
+        //in the case where the repo has no pillar listed, still needs to be true if there are no selected pillars
+        const inRepo =  inputPillars.some((pillar) => Object.hasOwn(node, "pillar") ? nodePillar === pillar : inputPillars.length == 0);
+
+        if (document.getElementById(node.name)) {
+          const temp = repoFiltered.get(node.name);
+          temp.pillar = inputPillars.length > 0 ? inRepo : true;
           repoFiltered.set(node.name, temp);
         }
       });
@@ -151,6 +177,19 @@ function ProjectsPage() {
             selectionFeedback="top-after-reopen" 
             onChange={filterProjectsIndustry} 
             initialSelectedItems={selectedIndustries} // Set selected items based on state
+          />
+          </Column>
+          <Column>
+          <FilterableMultiSelect 
+            id="carbon-multiselect" 
+            className="filter-search" 
+            size="lg" 
+            placeholder="Pillar" 
+            items={pillarsArray} 
+            itemToString={item => item ? item : ''} 
+            selectionFeedback="top-after-reopen" 
+            onChange={filterProjectsPillar} 
+            initialSelectedItems={selectedPillars} // Set selected items based on state
           />
           </Column>
           <Column>
