@@ -3,6 +3,49 @@
     "repositories": {
       "nodes": [
         {
+          "name": "solution-test-sahaj",
+          "description": "Test",
+          "homepageUrl": null,
+          "repositoryTopics": {
+            "nodes": []
+          },
+          "publish": "False",
+          "title": "[Insert Solution Name]"
+        },
+        {
+          "name": "solution-ai-assistants",
+          "description": "Enhancing Customer Care Journeys Using IBM watsonx AI Assistants",
+          "homepageUrl": "https://ibm-client-engineering.github.io/solution-ai-assistants/",
+          "repositoryTopics": {
+            "nodes": [
+              {
+                "topic": {
+                  "name": "generative-ai"
+                }
+              },
+              {
+                "topic": {
+                  "name": "watsonx-ai"
+                }
+              },
+              {
+                "topic": {
+                  "name": "watsonx-assistant"
+                }
+              }
+            ]
+          },
+          "industry": "Cross Industry",
+          "publish": "True",
+          "technology": [
+            "watsonx.ai"
+          ],
+          "pillar": [
+            "Data"
+          ],
+          "title": "AI Assistants for Customer Care"
+        },
+        {
           "name": "ibm-solutions-hub",
           "description": "IBM Solutions Hub for Financial Services",
           "homepageUrl": "https://ibm-client-engineering.github.io/ibm-solutions-hub/",
@@ -30,9 +73,7 @@
               }
             ]
           },
-          "industry": [
-            "Banking"
-          ],
+          "industry": "Banking",
           "publish": "True",
           "technology": [
             "Openpages",
@@ -50,9 +91,7 @@
           "repositoryTopics": {
             "nodes": []
           },
-          "industry": [
-            "Banking"
-          ],
+          "industry": "Banking",
           "publish": "True",
           "technology": [
             "Openpages",
@@ -70,9 +109,7 @@
           "repositoryTopics": {
             "nodes": []
           },
-          "industry": [
-            "Banking"
-          ],
+          "industry": "Banking",
           "publish": "True",
           "technology": [
             "Openpages",
@@ -82,41 +119,6 @@
             "Data"
           ],
           "title": "Translating AI Governance Policies"
-        },
-        {
-          "name": "solution-ai-assistants",
-          "description": "Enhancing Customer Care Journeys Using IBM watsonx AI Assistants",
-          "homepageUrl": "https://ibm-client-engineering.github.io/solution-ai-assistants/",
-          "repositoryTopics": {
-            "nodes": [
-              {
-                "topic": {
-                  "name": "generative-ai"
-                }
-              },
-              {
-                "topic": {
-                  "name": "watsonx-ai"
-                }
-              },
-              {
-                "topic": {
-                  "name": "watsonx-assistant"
-                }
-              }
-            ]
-          },
-          "industry": [
-            "Cross Industry"
-          ],
-          "publish": "True",
-          "technology": [
-            "watsonx.ai"
-          ],
-          "pillar": [
-            "Data"
-          ],
-          "title": "AI Assistants for Customer Care"
         },
         {
           "name": "solution-template-quarto",
@@ -150,9 +152,6 @@
           "repositoryTopics": {
             "nodes": []
           },
-          "industry": [
-            "Insurance"
-          ],
           "publish": "False",
           "pillar": [
             "Data"
@@ -228,9 +227,7 @@
               }
             ]
           },
-          "industry": [
-            "Insurance"
-          ],
+          "industry": "Insurance",
           "publish": "True",
           "technology": [
             "Security Verify",
@@ -260,9 +257,7 @@
           "repositoryTopics": {
             "nodes": []
           },
-          "industry": [
-            "Banking"
-          ],
+          "industry": "Banking",
           "publish": "True",
           "technology": [
             "watsonx.ai"
@@ -305,9 +300,7 @@
               }
             ]
           },
-          "industry": [
-            "Cross Industry"
-          ],
+          "industry": "Cross Industry",
           "publish": "True",
           "technology": [
             "Openshift",
@@ -341,9 +334,7 @@
               }
             ]
           },
-          "industry": [
-            "Insurance"
-          ],
+          "industry": "Insurance",
           "publish": "True",
           "technology": [
             "FileNet"
@@ -371,9 +362,7 @@
               }
             ]
           },
-          "industry": [
-            "Banking"
-          ],
+          "industry": "Banking",
           "publish": "True",
           "technology": [
             "watsonx.ai"
@@ -401,9 +390,7 @@
               }
             ]
           },
-          "industry": [
-            "Banking"
-          ],
+          "industry": "Banking",
           "publish": "True",
           "technology": [
             "Sterling File Gateway"
