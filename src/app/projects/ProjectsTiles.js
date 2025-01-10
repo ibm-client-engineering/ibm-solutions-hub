@@ -1,6 +1,6 @@
 'use client';
 import React from 'react';
-import { Launch, ToolKit, Enterprise } from '@carbon/icons-react';
+import { Launch, ToolKit, Enterprise, Portfolio } from '@carbon/icons-react';
 import {
   ClickableTile,
   Tag,
@@ -18,6 +18,10 @@ const ProjectsTiles = ({ data }) => {
           <Row className="project__row">
             <Column className='icon__column' lg={1}><Enterprise className="enterprise_icon"/></Column>
             <Column className='tag__column'><Tag className="projectTile__industry" type="cyan" key={index}>{repo.industry}</Tag></Column>
+          </Row>
+          <Row className="project__row">
+            <Column className='icon__column' lg={1}><Portfolio className="enterprise_icon"/></Column>
+            <Column className='tag__column'><Tag className="projectTile__pillar" type="purple" key={index}>{repo.pillar}</Tag></Column>
           </Row>
           <Row className="project__row">
           <Column className='icon__column' lg={1}><ToolKit className="toolkit_icon"/></Column>
