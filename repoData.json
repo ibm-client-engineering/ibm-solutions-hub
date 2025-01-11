@@ -3,14 +3,54 @@
     "repositories": {
       "nodes": [
         {
-          "name": "solution-test-sahaj",
-          "description": "Test",
-          "homepageUrl": null,
+          "name": "solution-test-run",
+          "description": "TEsting ",
+          "homepageUrl": "",
+          "repositoryTopics": {
+            "nodes": []
+          },
+          "industry": "Banking",
+          "publish": "False",
+          "technology": [
+            "Cloud Pak for Watson AIOps",
+            "Concert",
+            "Databand"
+          ],
+          "pillar": [
+            "Transaction Processing"
+          ],
+          "title": "Test Automation"
+        },
+        {
+          "name": "solution-template-quarto",
+          "description": null,
+          "homepageUrl": "https://ibm-client-engineering.github.io/solution-template-quarto/",
           "repositoryTopics": {
             "nodes": []
           },
           "publish": "False",
           "title": "[Insert Solution Name]"
+        },
+        {
+          "name": "unified-virtual-assistant",
+          "description": "Build a unified virtual assistant on watsonx Orchestrate with gen-AI routing, IAM, governance, RAG, and third-party integrations.",
+          "homepageUrl": "https://ibm-client-engineering.github.io/unified-virtual-assistant/",
+          "repositoryTopics": {
+            "nodes": []
+          },
+          "industry": "Cross Industry",
+          "publish": "True",
+          "technology": [
+            "Security Verify",
+            "watsonx Discovery",
+            "watsonx Orchestrate",
+            "watsonx.ai",
+            "watsonx.governance"
+          ],
+          "pillar": [
+            "Data"
+          ],
+          "title": "Unified Virtual Assistant"
         },
         {
           "name": "ibm-solutions-hub",
@@ -124,16 +164,6 @@
           "title": "Translating AI Governance Policies"
         },
         {
-          "name": "solution-template-quarto",
-          "description": null,
-          "homepageUrl": "https://ibm-client-engineering.github.io/solution-template-quarto/",
-          "repositoryTopics": {
-            "nodes": []
-          },
-          "publish": "False",
-          "title": "[Insert Solution Name]"
-        },
-        {
           "name": "solution-askfinance",
           "description": "AskFinance is a conversational AI platform that empowers controllers in the CFO Office to make informed decisions by providing direct access to ERP system data, leveraging LLMs to analyze financial trends, and providing actionable insights.",
           "homepageUrl": "https://ibm-client-engineering.github.io/solution-askfinance/",
@@ -142,19 +172,6 @@
           },
           "publish": "False",
           "title": "solution-AskFinance"
-        },
-        {
-          "name": "unified-virtual-assistant",
-          "description": "Build a unified virtual assistant on watsonx Orchestrate with gen-AI routing, IAM, governance, RAG, and third-party integrations.",
-          "homepageUrl": null,
-          "repositoryTopics": {
-            "nodes": []
-          },
-          "publish": "False",
-          "pillar": [
-            "Data"
-          ],
-          "title": "Unified Virtual Assistant"
         },
         {
           "name": "solution-ThirdPartyRisk",
@@ -218,7 +235,7 @@
             ]
           },
           "industry": "Insurance",
-          "publish": "True",
+          "publish": "False",
           "technology": [
             "Security Verify",
             "watsonx Orchestrate",
