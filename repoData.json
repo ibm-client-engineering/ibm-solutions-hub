@@ -3,14 +3,14 @@
     "repositories": {
       "nodes": [
         {
-          "name": "solution-template-quarto",
+          "name": "solution-journal-quantum-safe",
           "description": null,
-          "homepageUrl": "https://ibm-client-engineering.github.io/solution-template-quarto/",
+          "homepageUrl": "https://ibm-client-engineering.github.io/solution-journal-quantum-safe/",
           "repositoryTopics": {
             "nodes": []
           },
           "publish": "False",
-          "title": "[Insert Solution Name]"
+          "title": "IBM Quantum Safe Encryption"
         },
         {
           "name": "ibm-solutions-hub",
@@ -21,6 +21,16 @@
           },
           "publish": "False",
           "title": "IBM Client Engineering Solutions Hub"
+        },
+        {
+          "name": "solution-template-quarto",
+          "description": null,
+          "homepageUrl": "https://ibm-client-engineering.github.io/solution-template-quarto/",
+          "repositoryTopics": {
+            "nodes": []
+          },
+          "publish": "False",
+          "title": "[Insert Solution Name]"
         },
         {
           "name": "solution-test-run",
