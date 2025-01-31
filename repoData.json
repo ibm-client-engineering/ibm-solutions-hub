@@ -3,16 +3,6 @@
     "repositories": {
       "nodes": [
         {
-          "name": "https-github.com-bpaskin-MQ-ACE-zCX",
-          "description": "Customers want to move their ACE and MQ landscapes to containers, but don't want to move them to the cloud.  Since the customers have a mainframe they decided to use zCX.  ",
-          "homepageUrl": null,
-          "repositoryTopics": {
-            "nodes": []
-          },
-          "publish": "False",
-          "title": "[Insert Solution Name]"
-        },
-        {
           "name": "ibm-solutions-hub",
           "description": "IBM Solutions Hub for Financial Services",
           "homepageUrl": "https://ibm-client-engineering.github.io/ibm-solutions-hub/",
@@ -21,6 +11,16 @@
           },
           "publish": "False",
           "title": "IBM Client Engineering Solutions Hub"
+        },
+        {
+          "name": "https-github.com-bpaskin-MQ-ACE-zCX",
+          "description": "Customers want to move their ACE and MQ landscapes to containers, but don't want to move them to the cloud.  Since the customers have a mainframe they decided to use zCX.  ",
+          "homepageUrl": null,
+          "repositoryTopics": {
+            "nodes": []
+          },
+          "publish": "False",
+          "title": "[Insert Solution Name]"
         },
         {
           "name": "solution-journal-quantum-safe",
