@@ -3,9 +3,9 @@
     "repositories": {
       "nodes": [
         {
-          "name": "007-AI-Financial-Advisor",
+          "name": "solution-007-AI-Financial-Advisor",
           "description": "Build a 007 agent leveraging multiple LLMs, custom report generation and tax loss harvesting/reinvesting recommendations.",
-          "homepageUrl": "https://ibm-client-engineering.github.io/007-AI-Financial-Advisor/",
+          "homepageUrl": "https://ibm-client-engineering.github.io/solution-007-AI-Financial-Advisor/",
           "repositoryTopics": {
             "nodes": []
           },
