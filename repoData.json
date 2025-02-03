@@ -3,6 +3,16 @@
     "repositories": {
       "nodes": [
         {
+          "name": "ibm-solutions-hub",
+          "description": "IBM Solutions Hub for Financial Services",
+          "homepageUrl": "https://ibm-client-engineering.github.io/ibm-solutions-hub/",
+          "repositoryTopics": {
+            "nodes": []
+          },
+          "publish": "False",
+          "title": "IBM Client Engineering Solutions Hub"
+        },
+        {
           "name": "solution-007-AI-Financial-Advisor",
           "description": "Build a 007 agent leveraging multiple LLMs, custom report generation and tax loss harvesting/reinvesting recommendations.",
           "homepageUrl": "https://ibm-client-engineering.github.io/solution-007-AI-Financial-Advisor/",
@@ -20,16 +30,6 @@
             "Data"
           ],
           "title": "007 AI Financial Advisor"
-        },
-        {
-          "name": "ibm-solutions-hub",
-          "description": "IBM Solutions Hub for Financial Services",
-          "homepageUrl": "https://ibm-client-engineering.github.io/ibm-solutions-hub/",
-          "repositoryTopics": {
-            "nodes": []
-          },
-          "publish": "False",
-          "title": "IBM Client Engineering Solutions Hub"
         },
         {
           "name": "https-github.com-bpaskin-MQ-ACE-zCX",
