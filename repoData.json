@@ -3,6 +3,16 @@
     "repositories": {
       "nodes": [
         {
+          "name": "engineering-journal-wxai-deepseek",
+          "description": null,
+          "homepageUrl": null,
+          "repositoryTopics": {
+            "nodes": []
+          },
+          "publish": "False",
+          "title": "WatsonX AI with DeepSeek"
+        },
+        {
           "name": "ibm-solutions-hub",
           "description": "IBM Solutions Hub for Financial Services",
           "homepageUrl": "https://ibm-client-engineering.github.io/ibm-solutions-hub/",
