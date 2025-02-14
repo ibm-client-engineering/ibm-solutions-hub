@@ -3,6 +3,24 @@
     "repositories": {
       "nodes": [
         {
+          "name": "solution-journal-apic",
+          "description": "stuff to do",
+          "homepageUrl": "https://ibm-client-engineering.github.io/solution-journal-apic/",
+          "repositoryTopics": {
+            "nodes": []
+          },
+          "industry": "Banking",
+          "publish": "False",
+          "technology": [
+            "App Connect"
+          ],
+          "pillar": [
+            "Data",
+            "Hybrid Cloud"
+          ],
+          "title": "APIC Install and Configure"
+        },
+        {
           "name": "ibm-solutions-hub",
           "description": "IBM Solutions Hub for Financial Services",
           "homepageUrl": "https://ibm-client-engineering.github.io/ibm-solutions-hub/",
