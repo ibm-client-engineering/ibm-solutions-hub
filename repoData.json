@@ -3,6 +3,16 @@
     "repositories": {
       "nodes": [
         {
+          "name": "ibm-solutions-hub",
+          "description": "IBM Solutions Hub for Financial Services",
+          "homepageUrl": "https://ibm-client-engineering.github.io/ibm-solutions-hub/",
+          "repositoryTopics": {
+            "nodes": []
+          },
+          "publish": "False",
+          "title": "IBM Client Engineering Solutions Hub"
+        },
+        {
           "name": "solution-journal-apic",
           "description": "stuff to do",
           "homepageUrl": "https://ibm-client-engineering.github.io/solution-journal-apic/",
@@ -19,16 +29,6 @@
             "Hybrid Cloud"
           ],
           "title": "APIC Install and Configure"
-        },
-        {
-          "name": "ibm-solutions-hub",
-          "description": "IBM Solutions Hub for Financial Services",
-          "homepageUrl": "https://ibm-client-engineering.github.io/ibm-solutions-hub/",
-          "repositoryTopics": {
-            "nodes": []
-          },
-          "publish": "False",
-          "title": "IBM Client Engineering Solutions Hub"
         },
         {
           "name": "solution-template-quarto",
