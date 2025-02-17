@@ -58,7 +58,7 @@
             "nodes": []
           },
           "industry": "Banking",
-          "publish": "False",
+          "publish": "True",
           "technology": [
             "watsonx Discovery",
             "watsonx Orchestrate",
