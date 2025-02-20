@@ -315,16 +315,6 @@
           "title": "Unified Virtual Assistant"
         },
         {
-          "name": "engineering-journal-quantum-safe",
-          "description": null,
-          "homepageUrl": "https://ibm-client-engineering.github.io/engineering-journal-quantum-safe/",
-          "repositoryTopics": {
-            "nodes": []
-          },
-          "publish": "False",
-          "title": "[Insert Solution Name]"
-        },
-        {
           "name": "solution-AskCSM",
           "description": "An innovative solution designed to handle inquiries related to Enterprise License Agreements (ELA)",
           "homepageUrl": "https://ibm-client-engineering.github.io/solution-AskCSM/",
