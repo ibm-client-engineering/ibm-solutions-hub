@@ -3,14 +3,23 @@
     "repositories": {
       "nodes": [
         {
-          "name": "solution-journal-quantum-safe",
-          "description": null,
-          "homepageUrl": "https://ibm-client-engineering.github.io/solution-journal-quantum-safe/",
+          "name": "solution-007-AI-Financial-Advisor",
+          "description": "Build a 007 agent leveraging multiple LLMs, custom report generation and tax loss harvesting/reinvesting recommendations.",
+          "homepageUrl": "https://ibm-client-engineering.github.io/solution-007-AI-Financial-Advisor/",
           "repositoryTopics": {
             "nodes": []
           },
-          "publish": "False",
-          "title": "IBM Quantum Safe Encryption"
+          "industry": "Banking",
+          "publish": "True",
+          "technology": [
+            "watsonx Discovery",
+            "watsonx Orchestrate",
+            "watsonx.ai"
+          ],
+          "pillar": [
+            "Data"
+          ],
+          "title": "007 AI Financial Advisor"
         },
         {
           "name": "ibm-solutions-hub",
@@ -21,6 +30,16 @@
           },
           "publish": "False",
           "title": "IBM Client Engineering Solutions Hub"
+        },
+        {
+          "name": "solution-journal-quantum-safe",
+          "description": null,
+          "homepageUrl": "https://ibm-client-engineering.github.io/solution-journal-quantum-safe/",
+          "repositoryTopics": {
+            "nodes": []
+          },
+          "publish": "False",
+          "title": "IBM Quantum Safe Encryption"
         },
         {
           "name": "solution-journal-apic",
@@ -59,25 +78,6 @@
           },
           "publish": "False",
           "title": "WatsonX AI with DeepSeek"
-        },
-        {
-          "name": "solution-007-AI-Financial-Advisor",
-          "description": "Build a 007 agent leveraging multiple LLMs, custom report generation and tax loss harvesting/reinvesting recommendations.",
-          "homepageUrl": "https://ibm-client-engineering.github.io/solution-007-AI-Financial-Advisor/",
-          "repositoryTopics": {
-            "nodes": []
-          },
-          "industry": "Banking",
-          "publish": "True",
-          "technology": [
-            "watsonx Discovery",
-            "watsonx Orchestrate",
-            "watsonx.ai"
-          ],
-          "pillar": [
-            "Data"
-          ],
-          "title": "007 AI Financial Advisor"
         },
         {
           "name": "https-github.com-bpaskin-MQ-ACE-zCX",
