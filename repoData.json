@@ -3,6 +3,16 @@
     "repositories": {
       "nodes": [
         {
+          "name": "ibm-solutions-hub",
+          "description": "IBM Solutions Hub for Financial Services",
+          "homepageUrl": "https://ibm-client-engineering.github.io/ibm-solutions-hub/",
+          "repositoryTopics": {
+            "nodes": []
+          },
+          "publish": "False",
+          "title": "IBM Client Engineering Solutions Hub"
+        },
+        {
           "name": "solution-third-party-risk-AI",
           "description": "Evaluating third party information technology products and their cybersecurity risks using watsonx.ai. ",
           "homepageUrl": null,
@@ -19,16 +29,6 @@
             "Data"
           ],
           "title": "Evaluating Third Party Risk with AI"
-        },
-        {
-          "name": "ibm-solutions-hub",
-          "description": "IBM Solutions Hub for Financial Services",
-          "homepageUrl": "https://ibm-client-engineering.github.io/ibm-solutions-hub/",
-          "repositoryTopics": {
-            "nodes": []
-          },
-          "publish": "False",
-          "title": "IBM Client Engineering Solutions Hub"
         },
         {
           "name": "solution-007-AI-Financial-Advisor",
