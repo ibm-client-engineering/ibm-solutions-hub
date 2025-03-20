@@ -13,6 +13,16 @@
           "title": "[Insert Solution Name]"
         },
         {
+          "name": "ibm-solutions-hub",
+          "description": "IBM Solutions Hub for Financial Services",
+          "homepageUrl": "https://ibm-client-engineering.github.io/ibm-solutions-hub/",
+          "repositoryTopics": {
+            "nodes": []
+          },
+          "publish": "False",
+          "title": "IBM Client Engineering Solutions Hub"
+        },
+        {
           "name": "ITBench",
           "description": "Code repository for sample scenarios as part of ITBench, customized for use on and with watsonx.ai",
           "homepageUrl": "",
@@ -39,16 +49,6 @@
             "Data"
           ],
           "title": "Evaluating Third Party Risk with AI"
-        },
-        {
-          "name": "ibm-solutions-hub",
-          "description": "IBM Solutions Hub for Financial Services",
-          "homepageUrl": "https://ibm-client-engineering.github.io/ibm-solutions-hub/",
-          "repositoryTopics": {
-            "nodes": []
-          },
-          "publish": "False",
-          "title": "IBM Client Engineering Solutions Hub"
         },
         {
           "name": "solution-007-AI-Financial-Advisor",
