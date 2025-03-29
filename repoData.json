@@ -3,6 +3,16 @@
     "repositories": {
       "nodes": [
         {
+          "name": "ITBench-CISO-CAA-Agent",
+          "description": "Code repository for CISO agent as part of ITBench, customized for use on and with watsonx.ai",
+          "homepageUrl": "",
+          "repositoryTopics": {
+            "nodes": []
+          },
+          "publish": "False",
+          "title": "[Insert Solution Name]"
+        },
+        {
           "name": "ibm-solutions-hub",
           "description": "IBM Solutions Hub for Financial Services",
           "homepageUrl": "https://ibm-client-engineering.github.io/ibm-solutions-hub/",
@@ -29,16 +39,6 @@
             "Data"
           ],
           "title": "Evaluating Third Party Risk with AI"
-        },
-        {
-          "name": "ITBench-CISO-CAA-Agent",
-          "description": "Code repository for CISO agent as part of ITBench, customized for use on and with watsonx.ai",
-          "homepageUrl": "",
-          "repositoryTopics": {
-            "nodes": []
-          },
-          "publish": "False",
-          "title": "[Insert Solution Name]"
         },
         {
           "name": "ITBench",
