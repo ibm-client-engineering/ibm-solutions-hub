@@ -3,6 +3,44 @@
     "repositories": {
       "nodes": [
         {
+          "name": "solution-prompting-guide",
+          "description": "Prompting Guide for Watson Code Assistant",
+          "homepageUrl": null,
+          "repositoryTopics": {
+            "nodes": []
+          },
+          "industry": "Cross Industry",
+          "publish": "False",
+          "technology": [
+            "watsonx Code Assistant for Z"
+          ],
+          "pillar": [
+            "Automation"
+          ],
+          "title": "IBM Watsonx Prompting Guide"
+        },
+        {
+          "name": "unified-virtual-assistant",
+          "description": "Build a unified virtual assistant on watsonx Orchestrate with gen-AI routing, IAM, governance, RAG, and third-party integrations.",
+          "homepageUrl": "https://ibm-client-engineering.github.io/unified-virtual-assistant/",
+          "repositoryTopics": {
+            "nodes": []
+          },
+          "industry": "Cross Industry",
+          "publish": "True",
+          "technology": [
+            "Security Verify",
+            "watsonx Discovery",
+            "watsonx Orchestrate",
+            "watsonx.ai",
+            "watsonx.governance"
+          ],
+          "pillar": [
+            "Data"
+          ],
+          "title": "Unified Virtual Assistant"
+        },
+        {
           "name": "ibm-solutions-hub",
           "description": "IBM Solutions Hub for Financial Services",
           "homepageUrl": "https://ibm-client-engineering.github.io/ibm-solutions-hub/",
@@ -155,27 +193,6 @@
             "Transaction Processing"
           ],
           "title": "Test Automation"
-        },
-        {
-          "name": "unified-virtual-assistant",
-          "description": "Build a unified virtual assistant on watsonx Orchestrate with gen-AI routing, IAM, governance, RAG, and third-party integrations.",
-          "homepageUrl": "https://ibm-client-engineering.github.io/unified-virtual-assistant/",
-          "repositoryTopics": {
-            "nodes": []
-          },
-          "industry": "Cross Industry",
-          "publish": "True",
-          "technology": [
-            "Security Verify",
-            "watsonx Discovery",
-            "watsonx Orchestrate",
-            "watsonx.ai",
-            "watsonx.governance"
-          ],
-          "pillar": [
-            "Data"
-          ],
-          "title": "Unified Virtual Assistant"
         },
         {
           "name": "solution-ai-assistants",
