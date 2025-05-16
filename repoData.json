@@ -3,6 +3,25 @@
     "repositories": {
       "nodes": [
         {
+          "name": "solution-gcp-ikc",
+          "description": "Deploy IBM Knowledge Catalog on Google Cloud.",
+          "homepageUrl": null,
+          "repositoryTopics": {
+            "nodes": []
+          },
+          "industry": "Banking",
+          "publish": "False",
+          "technology": [
+            "Cloud Pak for Data",
+            "OpenShift",
+            "Watson Knowledge Catalog"
+          ],
+          "pillar": [
+            "Data"
+          ],
+          "title": "IBM Knowledge Catalog on GCP"
+        },
+        {
           "name": "ibm-solutions-hub",
           "description": "IBM Solutions Hub for Financial Services",
           "homepageUrl": "https://ibm-client-engineering.github.io/ibm-solutions-hub/",
