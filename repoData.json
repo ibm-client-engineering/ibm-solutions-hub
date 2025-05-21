@@ -3,6 +3,16 @@
     "repositories": {
       "nodes": [
         {
+          "name": "AI-for-GRC",
+          "description": null,
+          "homepageUrl": "https://ibm-client-engineering.github.io/AI-for-GRC/",
+          "repositoryTopics": {
+            "nodes": []
+          },
+          "publish": "False",
+          "title": "[Insert Solution Name]"
+        },
+        {
           "name": "solution-gcp-ikc",
           "description": "Deploy IBM Knowledge Catalog on Google Cloud.",
           "homepageUrl": null,
