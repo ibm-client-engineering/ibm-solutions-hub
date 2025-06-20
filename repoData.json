@@ -3,16 +3,6 @@
     "repositories": {
       "nodes": [
         {
-          "name": "solution-template-quarto",
-          "description": null,
-          "homepageUrl": "https://ibm-client-engineering.github.io/solution-template-quarto/",
-          "repositoryTopics": {
-            "nodes": []
-          },
-          "publish": "False",
-          "title": "[Insert Solution Name]"
-        },
-        {
           "name": "ibm-solutions-hub",
           "description": "IBM Solutions Hub for Financial Services",
           "homepageUrl": "https://ibm-client-engineering.github.io/ibm-solutions-hub/",
@@ -21,6 +11,16 @@
           },
           "publish": "False",
           "title": "IBM Client Engineering Solutions Hub"
+        },
+        {
+          "name": "solution-template-quarto",
+          "description": null,
+          "homepageUrl": "https://ibm-client-engineering.github.io/solution-template-quarto/",
+          "repositoryTopics": {
+            "nodes": []
+          },
+          "publish": "False",
+          "title": "[Insert Solution Name]"
         },
         {
           "name": "solution-aiops-handbook",
