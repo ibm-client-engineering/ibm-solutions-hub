@@ -3,6 +3,26 @@
     "repositories": {
       "nodes": [
         {
+          "name": "ITBench-CISO-CAA-Agent",
+          "description": "Code repository for CISO agent as part of ITBench, customized for use on and with watsonx.ai",
+          "homepageUrl": "",
+          "repositoryTopics": {
+            "nodes": []
+          },
+          "publish": "False",
+          "title": "[Insert Solution Name]"
+        },
+        {
+          "name": "ITBench",
+          "description": "Code repository for sample scenarios as part of ITBench, customized for use on and with watsonx.ai",
+          "homepageUrl": "",
+          "repositoryTopics": {
+            "nodes": []
+          },
+          "publish": "False",
+          "title": "[Insert Solution Name]"
+        },
+        {
           "name": "ibm-solutions-hub",
           "description": "IBM Solutions Hub for Financial Services",
           "homepageUrl": "https://ibm-client-engineering.github.io/ibm-solutions-hub/",
@@ -127,16 +147,6 @@
           "title": "[Insert Solution Name]"
         },
         {
-          "name": "ITBench-CISO-CAA-Agent",
-          "description": "Code repository for CISO agent as part of ITBench, customized for use on and with watsonx.ai",
-          "homepageUrl": "",
-          "repositoryTopics": {
-            "nodes": []
-          },
-          "publish": "False",
-          "title": "[Insert Solution Name]"
-        },
-        {
           "name": "solution-third-party-risk-AI",
           "description": "Evaluating third party information technology products and their cybersecurity risks using watsonx.ai. ",
           "homepageUrl": "https://ibm-client-engineering.github.io/solution-third-party-risk-AI/",
@@ -153,16 +163,6 @@
             "Data"
           ],
           "title": "Evaluating Third Party Risk with AI"
-        },
-        {
-          "name": "ITBench",
-          "description": "Code repository for sample scenarios as part of ITBench, customized for use on and with watsonx.ai",
-          "homepageUrl": "",
-          "repositoryTopics": {
-            "nodes": []
-          },
-          "publish": "False",
-          "title": "[Insert Solution Name]"
         },
         {
           "name": "solution-007-AI-Financial-Advisor",
