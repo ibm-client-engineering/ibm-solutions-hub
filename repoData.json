@@ -3,6 +3,16 @@
     "repositories": {
       "nodes": [
         {
+          "name": "ibm-solutions-hub",
+          "description": "IBM Solutions Hub for Financial Services",
+          "homepageUrl": "https://ibm-client-engineering.github.io/ibm-solutions-hub/",
+          "repositoryTopics": {
+            "nodes": []
+          },
+          "publish": "False",
+          "title": "IBM Client Engineering Solutions Hub"
+        },
+        {
           "name": "ITBench-CISO-CAA-Agent",
           "description": "Code repository for CISO agent as part of ITBench, customized for use on and with watsonx.ai",
           "homepageUrl": "",
@@ -21,16 +31,6 @@
           },
           "publish": "False",
           "title": "[Insert Solution Name]"
-        },
-        {
-          "name": "ibm-solutions-hub",
-          "description": "IBM Solutions Hub for Financial Services",
-          "homepageUrl": "https://ibm-client-engineering.github.io/ibm-solutions-hub/",
-          "repositoryTopics": {
-            "nodes": []
-          },
-          "publish": "False",
-          "title": "IBM Client Engineering Solutions Hub"
         },
         {
           "name": "solution-template-quarto",
