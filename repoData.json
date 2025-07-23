@@ -13,6 +13,16 @@
           "title": "terraform-aiops-vmware"
         },
         {
+          "name": "terraform-artifactory-vmware",
+          "description": null,
+          "homepageUrl": null,
+          "repositoryTopics": {
+            "nodes": []
+          },
+          "publish": "False",
+          "title": "Terraform Artifactory VMware Deployment"
+        },
+        {
           "name": "ibm-solutions-hub",
           "description": "IBM Solutions Hub for Financial Services",
           "homepageUrl": "https://ibm-client-engineering.github.io/ibm-solutions-hub/",
