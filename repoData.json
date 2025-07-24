@@ -3,6 +3,16 @@
     "repositories": {
       "nodes": [
         {
+          "name": "ibm-solutions-hub",
+          "description": "IBM Solutions Hub for Financial Services",
+          "homepageUrl": "https://ibm-client-engineering.github.io/ibm-solutions-hub/",
+          "repositoryTopics": {
+            "nodes": []
+          },
+          "publish": "False",
+          "title": "IBM Client Engineering Solutions Hub"
+        },
+        {
           "name": "terraform-aiops-vmware",
           "description": "Install AIOps on Linux using Terraform in a VMware environment",
           "homepageUrl": null,
@@ -21,16 +31,6 @@
           },
           "publish": "False",
           "title": "Terraform Artifactory VMware Deployment"
-        },
-        {
-          "name": "ibm-solutions-hub",
-          "description": "IBM Solutions Hub for Financial Services",
-          "homepageUrl": "https://ibm-client-engineering.github.io/ibm-solutions-hub/",
-          "repositoryTopics": {
-            "nodes": []
-          },
-          "publish": "False",
-          "title": "IBM Client Engineering Solutions Hub"
         },
         {
           "name": "ITBench-CISO-CAA-Agent",
