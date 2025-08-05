@@ -3,6 +3,23 @@
     "repositories": {
       "nodes": [
         {
+          "name": "solution-aiops-handbook",
+          "description": "Handbook for AIOps related pilots, deployments, and use cases",
+          "homepageUrl": "https://ibm-client-engineering.github.io/solution-aiops-handbook/",
+          "repositoryTopics": {
+            "nodes": []
+          },
+          "industry": "Banking",
+          "publish": "False",
+          "technology": [
+            "Cloud Pak for AIOps"
+          ],
+          "pillar": [
+            "Automation"
+          ],
+          "title": "AIOps Handbook"
+        },
+        {
           "name": "ibm-solutions-hub",
           "description": "IBM Solutions Hub for Financial Services",
           "homepageUrl": "https://ibm-client-engineering.github.io/ibm-solutions-hub/",
@@ -61,23 +78,6 @@
           },
           "publish": "False",
           "title": "[Insert Solution Name]"
-        },
-        {
-          "name": "solution-aiops-handbook",
-          "description": "Handbook for AIOps related pilots, deployments, and use cases",
-          "homepageUrl": "https://ibm-client-engineering.github.io/solution-aiops-handbook/",
-          "repositoryTopics": {
-            "nodes": []
-          },
-          "industry": "Banking",
-          "publish": "False",
-          "technology": [
-            "Cloud Pak for AIOps"
-          ],
-          "pillar": [
-            "Automation"
-          ],
-          "title": "AIOps Handbook"
         },
         {
           "name": "AI-for-GRC",
