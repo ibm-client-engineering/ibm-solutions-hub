@@ -3,6 +3,26 @@
     "repositories": {
       "nodes": [
         {
+          "name": "terraform-aiops-vmware",
+          "description": "Install AIOps on Linux using Terraform in a VMware environment",
+          "homepageUrl": null,
+          "repositoryTopics": {
+            "nodes": []
+          },
+          "publish": "False",
+          "title": "terraform-aiops-vmware"
+        },
+        {
+          "name": "ibm-solutions-hub",
+          "description": "IBM Solutions Hub for Financial Services",
+          "homepageUrl": "https://ibm-client-engineering.github.io/ibm-solutions-hub/",
+          "repositoryTopics": {
+            "nodes": []
+          },
+          "publish": "False",
+          "title": "IBM Client Engineering Solutions Hub"
+        },
+        {
           "name": "solution-aiops-handbook",
           "description": "Handbook for AIOps related pilots, deployments, and use cases",
           "homepageUrl": "https://ibm-client-engineering.github.io/solution-aiops-handbook/",
@@ -18,26 +38,6 @@
             "Automation"
           ],
           "title": "AIOps Handbook"
-        },
-        {
-          "name": "ibm-solutions-hub",
-          "description": "IBM Solutions Hub for Financial Services",
-          "homepageUrl": "https://ibm-client-engineering.github.io/ibm-solutions-hub/",
-          "repositoryTopics": {
-            "nodes": []
-          },
-          "publish": "False",
-          "title": "IBM Client Engineering Solutions Hub"
-        },
-        {
-          "name": "terraform-aiops-vmware",
-          "description": "Install AIOps on Linux using Terraform in a VMware environment",
-          "homepageUrl": null,
-          "repositoryTopics": {
-            "nodes": []
-          },
-          "publish": "False",
-          "title": "terraform-aiops-vmware"
         },
         {
           "name": "terraform-artifactory-vmware",
