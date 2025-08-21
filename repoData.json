@@ -3,6 +3,23 @@
     "repositories": {
       "nodes": [
         {
+          "name": "solution-aiops-handbook",
+          "description": "Handbook for AIOps related pilots, deployments, and use cases",
+          "homepageUrl": "https://ibm-client-engineering.github.io/solution-aiops-handbook/",
+          "repositoryTopics": {
+            "nodes": []
+          },
+          "industry": "Banking",
+          "publish": "False",
+          "technology": [
+            "Cloud Pak for AIOps"
+          ],
+          "pillar": [
+            "Automation"
+          ],
+          "title": "AIOps Handbook"
+        },
+        {
           "name": "terraform-aiops-vmware",
           "description": "Install AIOps on Linux using Terraform in a VMware environment",
           "homepageUrl": null,
@@ -21,23 +38,6 @@
           },
           "publish": "False",
           "title": "IBM Client Engineering Solutions Hub"
-        },
-        {
-          "name": "solution-aiops-handbook",
-          "description": "Handbook for AIOps related pilots, deployments, and use cases",
-          "homepageUrl": "https://ibm-client-engineering.github.io/solution-aiops-handbook/",
-          "repositoryTopics": {
-            "nodes": []
-          },
-          "industry": "Banking",
-          "publish": "False",
-          "technology": [
-            "Cloud Pak for AIOps"
-          ],
-          "pillar": [
-            "Automation"
-          ],
-          "title": "AIOps Handbook"
         },
         {
           "name": "terraform-artifactory-vmware",
