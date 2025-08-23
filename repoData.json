@@ -3,6 +3,26 @@
     "repositories": {
       "nodes": [
         {
+          "name": "packer-rhel-vsphere",
+          "description": "This repository provides a comprehensive Packer build for creating a Red Hat Enterprise Linux (RHEL) virtual machine image using VMWare vSphere.",
+          "homepageUrl": null,
+          "repositoryTopics": {
+            "nodes": []
+          },
+          "publish": "False",
+          "title": "[Insert Solution Name]"
+        },
+        {
+          "name": "ibm-solutions-hub",
+          "description": "IBM Solutions Hub for Financial Services",
+          "homepageUrl": "https://ibm-client-engineering.github.io/ibm-solutions-hub/",
+          "repositoryTopics": {
+            "nodes": []
+          },
+          "publish": "False",
+          "title": "IBM Client Engineering Solutions Hub"
+        },
+        {
           "name": "solution-aiops-handbook",
           "description": "Handbook for AIOps related pilots, deployments, and use cases",
           "homepageUrl": "https://ibm-client-engineering.github.io/solution-aiops-handbook/",
@@ -18,16 +38,6 @@
             "Automation"
           ],
           "title": "AIOps Handbook"
-        },
-        {
-          "name": "ibm-solutions-hub",
-          "description": "IBM Solutions Hub for Financial Services",
-          "homepageUrl": "https://ibm-client-engineering.github.io/ibm-solutions-hub/",
-          "repositoryTopics": {
-            "nodes": []
-          },
-          "publish": "False",
-          "title": "IBM Client Engineering Solutions Hub"
         },
         {
           "name": "terraform-aiops-vmware",
