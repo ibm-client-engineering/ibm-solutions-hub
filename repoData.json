@@ -3,6 +3,16 @@
     "repositories": {
       "nodes": [
         {
+          "name": "terraform-k3s-concert",
+          "description": null,
+          "homepageUrl": null,
+          "repositoryTopics": {
+            "nodes": []
+          },
+          "publish": "False",
+          "title": "[Insert Solution Name]"
+        },
+        {
           "name": "packer-rhel-vsphere",
           "description": "This repository provides a comprehensive Packer build for creating a Red Hat Enterprise Linux (RHEL) virtual machine image using VMWare vSphere.",
           "homepageUrl": null,
